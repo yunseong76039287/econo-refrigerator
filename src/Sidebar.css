@@ -1,0 +1,21 @@
+.sidebar {
+  width: 25%;
+  height: 900px;
+  background-color: dodgerblue;
+  float: left;
+}
+
+.ingredient {
+  color: white;
+  padding-left: 40px;
+  border-bottom: 1px double white;
+  border-width: 3px;
+  padding-bottom: 20px;
+}
+
+.ingredient_list {
+  list-style-type: none;
+  color: white;
+  line-height: 2em;
+  font-size: x-large;
+}
