@@ -1,16 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Contents from "./Contents";
-
+import Header from "./Home/Header";
+import Contents from "./Home/Contents";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <Sidebar />
       <Contents />
     </div>
   );

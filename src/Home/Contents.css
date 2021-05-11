@@ -1,6 +1,6 @@
 .contents {
   width: 75%;
-  height: 600px;
+  height: 90%;
   background-color: white;
-  float: left;
+  display: flex;
 }
