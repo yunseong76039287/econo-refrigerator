@@ -4,6 +4,7 @@ import "./Sidebar.css";
 const Sidebar = ({ selectedIngredients }) => {
   useEffect(() => {
     console.log(selectedIngredients);
+    localStorage.setItem("selectorIngredient", JSON.stringify(selectedIngredients));
   }, [selectedIngredients]);
 
   return (

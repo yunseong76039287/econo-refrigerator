@@ -10,16 +10,13 @@ const Contents = () => {
   return (
     <div className="contents">
       <Sidebar selectedIngredients={selectedIngredients} />
-      <div className="ingredientHolder">
+      <div className="ingredient-holder">
         <Search />
-      </div>
-      <div>
-        <p>검색창</p>
         <Ingredient
           selectedIngredients={selectedIngredients}
           setSelectedIngredients={setSelectedIngredients}
-        />
-      </div>
+          />
+          </div>
     </div>
   );
 };
