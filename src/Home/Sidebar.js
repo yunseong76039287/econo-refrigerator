@@ -3,8 +3,12 @@ import "./Sidebar.css";
 
 const Sidebar = ({ selectedIngredients }) => {
   useEffect(() => {
-    console.log(selectedIngredients);
-    localStorage.setItem("selectorIngredient", JSON.stringify(selectedIngredients));
+    const loadRefrigerator = localStorage.getItem('refrigeator');
+    if(loadRefrigerator !== null )
+    {
+      console.log(selectedIngredients);
+      localStorage.setItem("refrigerator", JSON.stringify(selectedIngredients));
+    }
   }, [selectedIngredients]);
 
   return (

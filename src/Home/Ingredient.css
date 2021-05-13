@@ -8,6 +8,7 @@
   column-gap: 10px;
   bottom: 10%;
   position: absolute;
+  top: 50px;
 }
 
 .ingredient-container-item {
