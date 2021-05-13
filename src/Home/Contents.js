@@ -15,8 +15,8 @@ const Contents = () => {
         <Ingredient
           selectedIngredients={selectedIngredients}
           setSelectedIngredients={setSelectedIngredients}
-          />
-          </div>
+        />
+      </div>
     </div>
   );
 };

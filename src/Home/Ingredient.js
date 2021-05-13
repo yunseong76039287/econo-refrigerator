@@ -28,8 +28,8 @@ const Ingredient = ({ selectedIngredients, setSelectedIngredients }) => {
       newSelectedIngredients.push(ingredient);
     });
     newSelectedIngredients.push(selectedIngredient);
-
     setSelectedIngredients(newSelectedIngredients);
+    localStorage.setItem("refrigerator", selectedIngredients);
   };
 
   return (
