@@ -1,0 +1,18 @@
+.result-container {
+  width: 60%;
+  height: 100%;
+  display: block;
+}
+.result-box {
+  width: 100%;
+  padding: 0px 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}

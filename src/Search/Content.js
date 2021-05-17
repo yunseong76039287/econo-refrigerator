@@ -1,20 +1,20 @@
 import React, { useState } from "react";
-import RecipeSelect from "./RecipeSelect";
+import Select from "./SearchResult";
 import Sidebar from "../Home/Sidebar";
-import "./RecipeContent.css";
+import "./Content.css";
 
 // 검색창을 재사용 할 수 있는지?
-const RecipeContent = () => {
+const Content = () => {
   const [selectedIngredients, setSelectedIngredients] = useState([]);
   return (
-    <div className="recipe-content">
+    <div className="search-content">
       <Sidebar
         selectedIngredients={selectedIngredients}
         setSelectedIngredients={setSelectedIngredients}
       />
-      <RecipeSelect />
+      <Select />
     </div>
   );
 };
 
-export default RecipeContent;
+export default Content;
