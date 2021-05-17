@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import Home from "./Home/Home.js";
-import Recipe from "./Recipe/Recipe.js";
+import RecipeHome from "./Recipe/RecipeHome.js";
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <Home /> */}
-    <Recipe />
+    <RecipeHome />
   </React.StrictMode>,
   document.getElementById("root")
 );
