@@ -1,0 +1,10 @@
+.recipe-container {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+.recipe-box {
+  position: absolute;
+  border: 1px solid black;
+  display: flex;
+}
