@@ -6,6 +6,7 @@
   grid-template-rows: repeat(4, 200px); /* 열의 갯수, 그리고 길이 */
   row-gap: 10px;
   column-gap: 10px;
+  flex-wrap: wrap;
 }
 
 .ingredient-container-item {

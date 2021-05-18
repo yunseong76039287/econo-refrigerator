@@ -1,12 +1,12 @@
 import React from "react";
 import "./Contents.css";
-import Search from "./Search.js";
+import Searchbar from "./Searchbar.js";
 import Ingredient from "./Ingredient.js";
 
 const Contents = ({ selectedIngredients, setSelectedIngredients }) => {
   return (
     <div className="contents">
-      <Search />
+      <Searchbar />
       <Ingredient
         selectedIngredients={selectedIngredients}
         setSelectedIngredients={setSelectedIngredients}

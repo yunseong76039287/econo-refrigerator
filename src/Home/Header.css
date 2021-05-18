@@ -3,6 +3,7 @@
   height: 15%;
   margin-top: 0px;
   background-color: cornflowerblue;
+  display: block;
 }
 
 .title {
@@ -10,5 +11,6 @@
   padding-left: 3%;
   font-size: 5vh;
   font-weight: 300;
-  float: left;
+  top:30%;
+  position:relative; 
 }
