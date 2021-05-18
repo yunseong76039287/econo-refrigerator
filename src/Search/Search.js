@@ -5,7 +5,6 @@ import Content from "./Content";
 const Search = () => {
   return (
     <div className="Search-home">
-      <Header />
       <Content />
     </div>
   );

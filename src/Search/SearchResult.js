@@ -1,7 +1,7 @@
 import React from "react";
 import "./SearchResult.css";
 
-const Select = () => {
+const SelectResult = () => {
   return (
     <div className="result-container">
       <div className="result-box">
@@ -26,4 +26,4 @@ const Select = () => {
   );
 };
 
-export default Select;
+export default SelectResult;

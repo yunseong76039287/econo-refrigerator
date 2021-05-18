@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Select from "./SearchResult";
+import SelectResult from "./SearchResult";
 import Sidebar from "../Home/Sidebar";
 import "./Content.css";
 
@@ -8,11 +8,7 @@ const Content = () => {
   const [selectedIngredients, setSelectedIngredients] = useState([]);
   return (
     <div className="search-content">
-      <Sidebar
-        selectedIngredients={selectedIngredients}
-        setSelectedIngredients={setSelectedIngredients}
-      />
-      <Select />
+      <SelectResult />
     </div>
   );
 };
