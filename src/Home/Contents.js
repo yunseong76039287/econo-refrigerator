@@ -1,25 +1,16 @@
-import React, { useEffect, useState } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 import "./Contents.css";
 import Search from "./Search.js";
 import Ingredient from "./Ingredient.js";
-import Sidebar from "./Sidebar";
 
-const Contents = () => {
-  const [selectedIngredients, setSelectedIngredients] = useState([]);
+const Contents = ({ selectedIngredients, setSelectedIngredients }) => {
   return (
     <div className="contents">
-      <Sidebar
+      <Search />
+      <Ingredient
         selectedIngredients={selectedIngredients}
         setSelectedIngredients={setSelectedIngredients}
       />
-      <div className="ingredient-holder">
-        <Search />
-        <Ingredient
-          selectedIngredients={selectedIngredients}
-          setSelectedIngredients={setSelectedIngredients}
-        />
-      </div>
     </div>
   );
 };

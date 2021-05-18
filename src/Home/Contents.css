@@ -1,12 +1,10 @@
 .contents {
-  width: 75%;
-  height: 90%;
-  background-color: white;
-  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.ingredient-holder {
+/* .ingredient-holder {
   width: 60%;
   height: 100%;
   position: relative;
-}
+} */
