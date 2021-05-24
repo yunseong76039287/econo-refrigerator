@@ -2,34 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./Ingredient.css";
 
-// const ingredientList = document.querySelector(".ingredient-list");
-// const ingredientContainer = document.querySelector(".ingredient-container");
-// const ingredientContainerItem = document.querySelector(
-//   ".ingredient-container-item"
-// );
-
-// const addIngredient = (text) => {
-//   const list = document.createElement("li");
-//   const span = document.createElement("span");
-//   span.innerHTML = text;
-//   list.appendChild(span);
-//   ingredientList.appendChild(list);
-// };
-
-// const selectIngredient = (event) => {
-//    addIngredient("재료 클릭 테스트");
-
-// };
-
 const Ingredient = ({ selectedIngredients, setSelectedIngredients }) => {
-  const selectIngredient = (event, selectedIngredient) => {
+  const selectIngredient = (event, selected) => {
     let newSelectedIngredients = [];
+
     selectedIngredients.forEach((ingredient) => {
       newSelectedIngredients.push(ingredient);
     });
-    newSelectedIngredients.push(selectedIngredient);
 
+    newSelectedIngredients.push(selected);
     setSelectedIngredients(newSelectedIngredients);
+
+    localStorage.setItem("refrigerator", JSON.stringify(selectedIngredients));
   };
 
   return (
@@ -40,39 +24,57 @@ const Ingredient = ({ selectedIngredients, setSelectedIngredients }) => {
       </div>
       <div className="ingredient-container-item">
         <span>대파</span>
+        <button onClick={() => selectIngredient(this, "대파")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>된장</span>
+        <button onClick={() => selectIngredient(this, "된장")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>마늘</span>
+        <button onClick={() => selectIngredient(this, "마늘")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>청양고추</span>
+        <button onClick={() => selectIngredient(this, "청양고추")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>소금</span>
+        <button onClick={() => selectIngredient(this, "소금")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>두부</span>
+        <button onClick={() => selectIngredient(this, "두부")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>간장</span>
+        <button onClick={() => selectIngredient(this, "간장")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>애호박</span>
+        <button onClick={() => selectIngredient(this, "애호박")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>감자</span>
+        <button onClick={() => selectIngredient(this, "감자")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>멸치</span>
+        <button onClick={() => selectIngredient(this, "멸치")}>추가</button>
       </div>
       <div className="ingredient-container-item">
         <span>다시마</span>
+        <button onClick={() => selectIngredient(this, "다시마")}>추가</button>
       </div>
     </div>
   );
 };
 
 export default Ingredient;
+
+/*
+
+
+
+
+  */
