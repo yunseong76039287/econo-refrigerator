@@ -1,11 +1,11 @@
 import React from "react";
-import "./Contents.css";
+import "./Home.css";
 import Searchbar from "./Searchbar.js";
 import Ingredient from "./Ingredient.js";
 
-const Contents = ({ selectedIngredients, setSelectedIngredients }) => {
+const Home = ({ selectedIngredients, setSelectedIngredients }) => {
   return (
-    <div className="contents">
+    <div className="home">
       <Searchbar />
       <Ingredient
         selectedIngredients={selectedIngredients}
@@ -15,4 +15,4 @@ const Contents = ({ selectedIngredients, setSelectedIngredients }) => {
   );
 };
 
-export default Contents;
+export default Home;

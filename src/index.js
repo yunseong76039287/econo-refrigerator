@@ -1,13 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Initial from "./Initial.js";
-import Search from "./Search/Search.js";
+import InitialPage from "./InitialPage.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Initial />
-    {/* <Search /> */}
+    <InitialPage />
   </React.StrictMode>,
   document.getElementById("root")
 );
