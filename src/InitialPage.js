@@ -3,6 +3,7 @@ import Header from "./Home/Header";
 import Sidebar from "./Home/Sidebar";
 import "./InitialPage.css";
 import Home from "./Home/Home";
+import Recipe from "./Recipe/Recipe.js";
 import Search from "./Search/Search";
 
 const InitialPage = () => {
@@ -16,12 +17,13 @@ const InitialPage = () => {
           setSelectedIngredients={setSelectedIngredients}
         />
         <div className="page">
-          {/* <Home
-          selectedIngredients={selectedIngredients}
-          setSelectedIngredients={setSelectedIngredients}
-        /> 
-         */}
-          <Search />
+          <Home
+            selectedIngredients={selectedIngredients}
+            setSelectedIngredients={setSelectedIngredients}
+          />
+
+          {/* <Search /> */}
+          {/* <Recipe /> */}
           {/* react router : 페이지 전환하는 개념.. react-router-dom : 페이지 전환  */}
         </div>
       </div>
