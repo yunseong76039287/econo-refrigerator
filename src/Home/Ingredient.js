@@ -19,12 +19,18 @@ const Ingredient = ({ selectedIngredients, setSelectedIngredients }) => {
   return (
     <div className="ingredient-container">
       <div className="ingredient-container-item">
-        양파
-        <button onClick={() => selectIngredient(this, "양파")}>추가</button>
+        <div className="ingredient-header">
+          <span>양파</span>
+          <button onClick={() => selectIngredient(this, "양파")}>추가</button>
+        </div>
+        <img src="/images/onion.jpg"></img>
       </div>
       <div className="ingredient-container-item">
-        <span>대파</span>
-        <button onClick={() => selectIngredient(this, "대파")}>추가</button>
+        <div className="ingredient-header">
+          <span>대파</span>
+          <button onClick={() => selectIngredient(this, "대파")}>추가</button>
+        </div>
+        <img src="/images/greenonion.jpg"></img>
       </div>
       <div className="ingredient-container-item">
         <span>된장</span>
@@ -71,10 +77,3 @@ const Ingredient = ({ selectedIngredients, setSelectedIngredients }) => {
 };
 
 export default Ingredient;
-
-/*
-
-
-
-
-  */
