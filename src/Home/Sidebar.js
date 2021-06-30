@@ -15,6 +15,12 @@ const Sidebar = ({ selectedIngredients, setSelectedIngredients }) => {
   console.log("임시 저장소 : " + selectedIngredients);
   console.log("selected에 저장된 값 : " + selectedIngredients);
 
+  const deleteIngredient = (event, target) => {
+    // const targetKey = window.localStorage.key(target);
+    // console.log(targetKey);
+    // window.localStorage.removeItem(targetKey);
+    console.log("call this function");
+  };
   return (
     <div className="sidebar">
       <h1 className="ingredient">재료 목록</h1>
@@ -22,7 +28,10 @@ const Sidebar = ({ selectedIngredients, setSelectedIngredients }) => {
         {selectedIngredients.map((selected) => {
           return (
             <li>
-              {selected} <button>삭제</button>
+              {selected}{" "}
+              <button onClick={() => deleteIngredient(this, selected)}>
+                삭제
+              </button>
             </li>
           );
         })}
