@@ -15,6 +15,7 @@
   flex-wrap: wrap;
 }
 .ingredient-header {
+  padding-top : 3px;
   display: flex;
   flex-direction: row;
 }

@@ -2,76 +2,62 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./Ingredient.css";
 
-const Ingredient = ({ selectedIngredients, setSelectedIngredients }) => {
+
+const Ingredient = ({ selectedIngredients, setSelectedIngredients}) => {
   const selectIngredient = (event, selected) => {
     let newSelectedIngredients = [];
 
     selectedIngredients.forEach((ingredient) => {
       newSelectedIngredients.push(ingredient);
     });
-
     newSelectedIngredients.push(selected);
     setSelectedIngredients(newSelectedIngredients);
-
+    
     localStorage.setItem("refrigerator", JSON.stringify(selectedIngredients));
+  };
+
+  let ingredientArray = [
+    {
+      "id" : 1,
+      "name" : "양파",
+      "imageUrl" : "/images/onion.jpg"
+    },
+    {
+      "id" : 2,
+      "name" : "대파",
+      "imageUrl" : "/images/greenonion.jpg"
+    },
+    {
+      "id" : 3,
+      "name" : "간장",
+      "imageUrl" : "/images/soysauce.jpg"
+    },
+    {
+      "id" : 4,
+      "name" : "된장",
+      "imageUrl" : "/images/Doenjang.jpg"
+    },
+    {
+      "id" : 5,
+      "name" : "고추장",
+      "imageUrl" : "/images/gochujang.jpg"
+    },
+  ];
+  function showIngredient({name, imageUrl}){
+    return(
+      <div className="ingredient-container-item">
+        <div className="ingredient-header">
+          <span>{name}</span>
+          <button onClick={() => selectIngredient(this, name)}>추가</button>
+        </div>
+        <img src={imageUrl}></img>
+      </div>
+    );
   };
 
   return (
     <div className="ingredient-container">
-      <div className="ingredient-container-item">
-        <div className="ingredient-header">
-          <span>양파</span>
-          <button onClick={() => selectIngredient(this, "양파")}>추가</button>
-        </div>
-        <img src="/images/onion.jpg"></img>
-      </div>
-      <div className="ingredient-container-item">
-        <div className="ingredient-header">
-          <span>대파</span>
-          <button onClick={() => selectIngredient(this, "대파")}>추가</button>
-        </div>
-        <img src="/images/greenonion.jpg"></img>
-      </div>
-      <div className="ingredient-container-item">
-        <span>된장</span>
-        <button onClick={() => selectIngredient(this, "된장")}>추가</button>
-      </div>
-      <div className="ingredient-container-item">
-        <span>마늘</span>
-        <button onClick={() => selectIngredient(this, "마늘")}>추가</button>
-      </div>
-      <div className="ingredient-container-item">
-        <span>청양고추</span>
-        <button onClick={() => selectIngredient(this, "청양고추")}>추가</button>
-      </div>
-      <div className="ingredient-container-item">
-        <span>소금</span>
-        <button onClick={() => selectIngredient(this, "소금")}>추가</button>
-      </div>
-      <div className="ingredient-container-item">
-        <span>두부</span>
-        <button onClick={() => selectIngredient(this, "두부")}>추가</button>
-      </div>
-      <div className="ingredient-container-item">
-        <span>간장</span>
-        <button onClick={() => selectIngredient(this, "간장")}>추가</button>
-      </div>
-      <div className="ingredient-container-item">
-        <span>애호박</span>
-        <button onClick={() => selectIngredient(this, "애호박")}>추가</button>
-      </div>
-      <div className="ingredient-container-item">
-        <span>감자</span>
-        <button onClick={() => selectIngredient(this, "감자")}>추가</button>
-      </div>
-      <div className="ingredient-container-item">
-        <span>멸치</span>
-        <button onClick={() => selectIngredient(this, "멸치")}>추가</button>
-      </div>
-      <div className="ingredient-container-item">
-        <span>다시마</span>
-        <button onClick={() => selectIngredient(this, "다시마")}>추가</button>
-      </div>
+    {ingredientArray.map(showIngredient)}
     </div>
   );
 };
