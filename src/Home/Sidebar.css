@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
 .sidebar {
   width: 30%;
   height: 100%;
@@ -5,7 +7,8 @@
   display: inline-block;
 }
 
-.ingredient {
+.sidebar-header{
+  font-family: 'Jua', sans-serif;
   color: white;
   padding-left: 40px;
   border-bottom: 1px double white;

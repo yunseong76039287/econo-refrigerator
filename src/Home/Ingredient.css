@@ -1,5 +1,6 @@
 /* 이미지 사이즈에 맞추어 추후에 행열 길이 변경 */
 
+
 .ingredient-container {
   display: grid;
   grid-template-rows: repeat(

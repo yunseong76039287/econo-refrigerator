@@ -23,7 +23,7 @@ const Sidebar = ({ selectedIngredients, setSelectedIngredients }) => {
   };
   return (
     <div className="sidebar">
-      <h1 className="ingredient">재료 목록</h1>
+      <h1 className="sidebar-header">재료 목록</h1>
       <ul className="ingredient-list">
         {selectedIngredients.map((selected) => {
           return (
