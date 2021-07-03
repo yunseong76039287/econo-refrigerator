@@ -10,7 +10,7 @@ const Content = () => {
         <h1 id="select-result-title">레시피 검색 결과</h1>
         <ResultBox
           name={"토마토 파스타"}
-          description={"간단하게 만들 수 있는 파스타"}
+          introduction={"간단하게 집에서 만들 수 있는 토마토 파스타"}
           imageUrl={"/images/test_pasta.jpg"}
           imageName={"pasta"}
         />
