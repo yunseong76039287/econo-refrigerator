@@ -1,6 +1,5 @@
 /* 이미지 사이즈에 맞추어 추후에 행열 길이 변경 */
 
-
 .ingredient-container {
   display: grid;
   grid-template-rows: repeat(
@@ -16,9 +15,10 @@
   flex-wrap: wrap;
 }
 .ingredient-header {
-  padding-top : 3px;
+  padding-top: 3px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .ingredient-container-item {
