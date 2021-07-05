@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Sidebar.css";
 
-const Sidebar = ({ selectedIngredients, setSelectedIngredients }) => {
+const Sidebar = ({ selectedIngredients, selectIngredient }) => {
   // localStorage 초기화
   let firstCheck = [];
   firstCheck = window.localStorage.getItem("refrigerator");

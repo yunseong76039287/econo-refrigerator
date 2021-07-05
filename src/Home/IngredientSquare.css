@@ -1,0 +1,10 @@
+.ingredient-header {
+  padding-top: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ingredient-container-item {
+  border: 1px solid rgba(153, 150, 150, 0.555);
+}

@@ -8,18 +8,48 @@ import Search from "./Search/Search";
 
 const InitialPage = () => {
   const [selectedIngredients, setSelectedIngredients] = useState([]);
+
+  const selectIngredient = (id) => {
+    const searchIngredient = selectIngredient.find((element) => {
+      if (element.id === id) return true;
+    });
+
+    // 중복 없음
+    if (searchIngredient === undefined) {
+      appendIngredientHooks(this, id);
+    }
+  };
+
+  // 이 함수 수정해야 함. name 기반 -> id 기반
+  // 수정하고 확인하기
+  const appendIngredientHooks = (event, selected) => {
+    let newSelectedIngredients = [];
+
+    selectedIngredients.forEach((ingredient) => {
+      newSelectedIngredients.push(ingredient);
+    });
+
+    newSelectedIngredients.push(selected);
+    setSelectedIngredients(newSelectedIngredients);
+
+    localStorage.setItem(
+      "refrigerator",
+      JSON.stringify(newSelectedIngredients)
+    );
+  };
+
   return (
     <div className="initial">
       <Header />
       <div className="contentsbody">
         <Sidebar
           selectedIngredients={selectedIngredients}
-          setSelectedIngredients={setSelectedIngredients}
+          selectIngredient={selectIngredient}
         />
         <div className="page">
           <Home
             selectedIngredients={selectedIngredients}
-            setSelectedIngredients={setSelectedIngredients}
+            selectIngredient={selectIngredient}
           />
 
           {/* <Search /> */}

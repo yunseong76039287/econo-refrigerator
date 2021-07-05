@@ -1,15 +1,15 @@
 import React from "react";
 import "./Home.css";
 import Searchbar from "./Searchbar.js";
-import Ingredient from "./Ingredient.js";
+import IngredientGrid from "./IngredientGrid.js";
 
-const Home = ({ selectedIngredients, setSelectedIngredients }) => {
+const Home = ({ selectedIngredients, selectIngredient }) => {
   return (
     <div className="home">
       <Searchbar />
-      <Ingredient
+      <IngredientGrid
         selectedIngredients={selectedIngredients}
-        setSelectedIngredients={setSelectedIngredients}
+        selectIngredient={selectIngredient}
       />
     </div>
   );
