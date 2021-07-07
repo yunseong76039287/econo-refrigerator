@@ -5,6 +5,7 @@ import "./InitialPage.css";
 import Home from "./Home/Home";
 import Recipe from "./Recipe/Recipe.js";
 import Search from "./Search/Search";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
 const InitialPage = () => {
   const [refrigeratorIngredients, setRefrigeratorIngredients] = useState([]);
@@ -40,26 +41,48 @@ const InitialPage = () => {
   };
 
   return (
-    <div className="initial">
-      <Header />
-      <div className="contentsbody">
-        <Sidebar
-          refrigeratorIngredients={refrigeratorIngredients}
-          selectIngredient={selectIngredient}
-          setRefrigeratorIngredients={setRefrigeratorIngredients}
-        />
-        <div className="page">
-          <Home
+    <BrowserRouter>
+      <div className="initial">
+        <Header />
+        <div className="contentsbody">
+          <Sidebar
             refrigeratorIngredients={refrigeratorIngredients}
             selectIngredient={selectIngredient}
+            setRefrigeratorIngredients={setRefrigeratorIngredients}
           />
+          <div className="page">
+            {/* <Home
+            refrigeratorIngredients={refrigeratorIngredients}
+            selectIngredient={selectIngredient}
+          /> */}
+            <p>
+              <Link to="/home">Home</Link>
+            </p>
+            <p>
+              <Link to="/search">Search</Link>
+            </p>
+            <p>
+              <Link to="/recipe">Recipe</Link>
+            </p>
 
-          {/* <Search /> */}
-          {/* <Recipe /> */}
-          {/* react router : 페이지 전환하는 개념.. react-router-dom : 페이지 전환  */}
+            <Switch>
+              <Route path="/home">
+                <Home
+                  refrigeratorIngredients={refrigeratorIngredients}
+                  selectIngredient={selectIngredient}
+                />
+              </Route>
+              <Route path="/search">
+                <Search />
+              </Route>
+              <Route path="/recipe">
+                <Recipe />
+              </Route>
+            </Switch>
+          </div>
         </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 };
 
