@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
 .recipe {
+  font-family: "Notos Sans KR", sans-serif;
   padding-left: 20px;
 }
 .recipe-name {
   padding: 15px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(153, 150, 150, 0.555);
   margin-bottom: 7px;
 }
 .like {
