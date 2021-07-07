@@ -7,13 +7,13 @@ const IngredientSquare = ({ id, name, imageUrl, selectIngredient }) => {
   return (
     <div className="ingredient-container-item">
       <div className="ingredient-header">
-        <span>{name}</span>
+        <span className="ingredient-name">{name}</span>
         <button
+          className="ingredient-add-button"
           onClick={() => {
-            selectIngredient(this, name);
+            selectIngredient(this, id);
             setIsOverlap(true);
           }}
-          style={isOverlap ? { display: "none" } : { display: "inline" }}
         >
           추가
         </button>

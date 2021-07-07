@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
-import ingredientDataArray from "../data/ingredientDataArray";
+import ingredientData from "../data/ingredientData";
 import "./IngredientGrid.css";
 import IngredientSquare from "./IngredientSquare";
 
-const IngredientGrid = ({ selectedIngredients, selectIngredient }) => {
+const IngredientGrid = ({ refrigeratorIngredients, selectIngredient }) => {
   return (
     <div className="ingredient-container">
-      {ingredientDataArray.map(({ id, name, imageUrl }) => (
+      {ingredientData.ingredientDataArray.map(({ id, name, imageUrl }) => (
         <IngredientSquare
           id={id}
           name={name}

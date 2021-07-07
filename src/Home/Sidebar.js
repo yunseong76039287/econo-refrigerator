@@ -1,37 +1,61 @@
 import React, { useState, useEffect } from "react";
+import ingredientData from "../data/ingredientData";
 import "./Sidebar.css";
 
-const Sidebar = ({ selectedIngredients, selectIngredient }) => {
+const Sidebar = ({
+  refrigeratorIngredients,
+  selectIngredient,
+  setRefrigeratorIngredients,
+}) => {
   // localStorage 초기화
   let firstCheck = [];
   firstCheck = window.localStorage.getItem("refrigerator");
   if (firstCheck === null) {
     window.localStorage.setItem(
       "refrigerator",
-      JSON.stringify(selectedIngredients)
+      JSON.stringify(refrigeratorIngredients)
     );
   }
   //localstorage에서 받은 값을 selectedIngredient에 저장하는법?
-  console.log("임시 저장소 : " + selectedIngredients);
-  console.log("selected에 저장된 값 : " + selectedIngredients);
+  console.log("임시 저장소 : " + refrigeratorIngredients);
+  console.log("selected에 저장된 값 : " + refrigeratorIngredients);
 
-  const deleteIngredient = (event, target) => {
-    // const targetKey = window.localStorage.key(target);
-    // console.log(targetKey);
-    // window.localStorage.removeItem(targetKey);
-    console.log("call this function");
+  const deleteIngredient = (event, id) => {
+    const removeTarget = refrigeratorIngredients.find((element) => {
+      if (element === id) return true;
+      return false;
+    });
+    console.log(removeTarget);
+    // removeTarget을 찾았으니 hook의 state를 변화시키자. (filter 사용)
+    const newRefrigeratorIngredients = refrigeratorIngredients.filter(
+      (element) => element !== removeTarget
+    );
+    console.log(newRefrigeratorIngredients);
+    setRefrigeratorIngredients(newRefrigeratorIngredients);
+    // localStorage 갱신.
+    window.localStorage.setItem(
+      "refrigerator",
+      JSON.stringify(newRefrigeratorIngredients)
+    );
+    // isOverlap의 상태를 변경해야 함.
+
+    return 0;
   };
+
   return (
     <div className="sidebar">
-      <h1 className="sidebar-header">재료 목록</h1>
+      <h1 className="sidebar-header">냉장고</h1>
       <ul className="ingredient-list">
-        {selectedIngredients.map((selected) => {
+        {refrigeratorIngredients.map((selected) => {
+          const name = ingredientData.getIngredientNameById(selected);
           return (
             <li>
-              {selected}{" "}
-              <button onClick={() => deleteIngredient(this, selected)}>
-                삭제
-              </button>
+              <div className="ingredient-element">
+                {name}
+                <button onClick={() => deleteIngredient(this, selected)}>
+                  삭제
+                </button>
+              </div>
             </li>
           );
         })}
