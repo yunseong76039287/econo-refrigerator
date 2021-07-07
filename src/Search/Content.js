@@ -7,7 +7,7 @@ const Content = () => {
   return (
     <div className="search-content">
       <div className="result-container">
-        <h1 id="select-result-title">레시피 검색 결과</h1>
+        <h1 className="select-result-title">레시피 검색 결과</h1>
         <ResultBox
           name={"토마토 파스타"}
           introduction={"간단하게 집에서 만들 수 있는 토마토 파스타"}
