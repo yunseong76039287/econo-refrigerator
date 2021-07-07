@@ -7,30 +7,31 @@ import Recipe from "./Recipe/Recipe.js";
 import Search from "./Search/Search";
 
 const InitialPage = () => {
-  const [selectedIngredients, setSelectedIngredients] = useState([]);
+  const [refrigeratorIngredients, setRefrigeratorIngredients] = useState([]);
 
-  const selectIngredient = (id) => {
-    const searchIngredient = selectIngredient.find((element) => {
-      if (element.id === id) return true;
+  // 재료를 선택할 때 중복을 검사하는 함수
+  const selectIngredient = (event, id) => {
+    const searchIngredient = refrigeratorIngredients.find((element) => {
+      if (element === id) return true;
+      return false;
     });
-
+    console.log("찾은 id" + searchIngredient);
     // 중복 없음
     if (searchIngredient === undefined) {
-      appendIngredientHooks(this, id);
+      return appendIngredientHooks(this, id);
     }
   };
 
-  // 이 함수 수정해야 함. name 기반 -> id 기반
-  // 수정하고 확인하기
-  const appendIngredientHooks = (event, selected) => {
+  // 재료 추가 함수
+  const appendIngredientHooks = (event, id) => {
     let newSelectedIngredients = [];
 
-    selectedIngredients.forEach((ingredient) => {
-      newSelectedIngredients.push(ingredient);
+    refrigeratorIngredients.forEach((ingredientId) => {
+      newSelectedIngredients.push(ingredientId);
     });
 
-    newSelectedIngredients.push(selected);
-    setSelectedIngredients(newSelectedIngredients);
+    newSelectedIngredients.push(id);
+    setRefrigeratorIngredients(newSelectedIngredients);
 
     localStorage.setItem(
       "refrigerator",
@@ -43,12 +44,13 @@ const InitialPage = () => {
       <Header />
       <div className="contentsbody">
         <Sidebar
-          selectedIngredients={selectedIngredients}
+          refrigeratorIngredients={refrigeratorIngredients}
           selectIngredient={selectIngredient}
+          setRefrigeratorIngredients={setRefrigeratorIngredients}
         />
         <div className="page">
           <Home
-            selectedIngredients={selectedIngredients}
+            refrigeratorIngredients={refrigeratorIngredients}
             selectIngredient={selectIngredient}
           />
 

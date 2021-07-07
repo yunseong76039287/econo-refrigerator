@@ -3,12 +3,12 @@ import "./Home.css";
 import Searchbar from "./Searchbar.js";
 import IngredientGrid from "./IngredientGrid.js";
 
-const Home = ({ selectedIngredients, selectIngredient }) => {
+const Home = ({ refrigeratorIngredients, selectIngredient }) => {
   return (
     <div className="home">
       <Searchbar />
       <IngredientGrid
-        selectedIngredients={selectedIngredients}
+        refrigeratorIngredients={refrigeratorIngredients}
         selectIngredient={selectIngredient}
       />
     </div>
