@@ -1,24 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
 
 .sidebar {
-  width: 30%;
+  width: 25%;
   height: 100%;
-  background-color: dodgerblue;
+  background-color: #2a63ae;
   display: inline-block;
+  border-right: 1px solid #3772bf;
 }
 
-.sidebar-header{
-  font-family: 'Jua', sans-serif;
+.sidebar-header {
+  font-family: "Noto Sans KR", sans-serif;
   color: white;
   padding-left: 40px;
-  border-bottom: 1px double white;
+  border-bottom: 1px double #3772bf;
   border-width: 3px;
   padding-bottom: 20px;
 }
 
 .ingredient-list {
+  font-family: "Noto Sans KR", sans-serif;
   list-style-type: none;
   color: white;
   line-height: 2em;
   font-size: x-large;
 }
+
+.ingredient-element {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #3772bf;
+}
+
+/*
+  dodgerblue
+*/

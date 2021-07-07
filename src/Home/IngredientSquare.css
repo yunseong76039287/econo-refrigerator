@@ -1,8 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
 .ingredient-header {
+  font-family: "Noto sans KR", sans-serif;
   padding-top: 3px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.ingredient-name {
+  margin-top: 7px;
+  margin-left: 12px;
+}
+
+.ingredient-add-button {
+  margin-top: 7px;
+  margin-right: 12px;
 }
 
 .ingredient-container-item {
