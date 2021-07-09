@@ -1,27 +1,25 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import InitialPageTemplate from "./InitialPageTemplate";
+import Home from "./Home/Home";
 import Search from "./Search/Search";
 import Recipe from "./Recipe/Recipe";
+
 const Router = () => {
   return (
     <BrowserRouter>
-      <div>
-        <p>
-          <Link to="/search">Search</Link>
-        </p>
-        <p>
-          <Link to="/recipe">Recipe</Link>
-        </p>
-
-        <Switch>
-          <Route path="/search">
-            <Search />
-          </Route>
-          <Route path="/recipe">
-            <Recipe />
-          </Route>
-        </Switch>
-      </div>
+      <Switch>
+        <Route path="/recipe">
+          <Recipe />
+        </Route>
+        <Route path="/search">
+          <InitialPageTemplate Page={Search} />
+        </Route>
+        <Route exact path="/">
+          <InitialPageTemplate Page={Home} />
+        </Route>
+        <Redirect to="/" />
+      </Switch>
     </BrowserRouter>
   );
 };

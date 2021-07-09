@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Header from "./Home/Header";
 import Sidebar from "./Home/Sidebar";
-import "./InitialPage.css";
+import "./InitialPageTemplate.css";
 import Home from "./Home/Home";
 import Recipe from "./Recipe/Recipe.js";
 import Search from "./Search/Search";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
-const InitialPage = () => {
+const InitialPageTemplate = ({ Page }) => {
   const [refrigeratorIngredients, setRefrigeratorIngredients] = useState([]);
 
   // 재료를 선택할 때 중복을 검사하는 함수
@@ -41,49 +41,29 @@ const InitialPage = () => {
   };
 
   return (
-    <BrowserRouter>
-      <div className="initial">
-        <Header />
-        <div className="contentsbody">
-          <Sidebar
-            refrigeratorIngredients={refrigeratorIngredients}
-            selectIngredient={selectIngredient}
-            setRefrigeratorIngredients={setRefrigeratorIngredients}
-          />
-          <div className="page">
-            {/* <Home
+    <div className="initial">
+      <Header />
+      <div className="contentsbody">
+        <Sidebar
+          refrigeratorIngredients={refrigeratorIngredients}
+          selectIngredient={selectIngredient}
+          setRefrigeratorIngredients={setRefrigeratorIngredients}
+        />
+        <div className="page">
+          {/* <Home
             refrigeratorIngredients={refrigeratorIngredients}
             selectIngredient={selectIngredient}
           /> */}
-            <p>
-              <Link to="/home">Home</Link>
-            </p>
-            <p>
-              <Link to="/search">Search</Link>
-            </p>
-            <p>
-              <Link to="/recipe">Recipe</Link>
-            </p>
+          {/* <Link to="/">Home</Link>
+            <Link to="/search">Search</Link> */}
+          <Link to="/recipe">Recipe</Link>
+          <Link to="/search">sea</Link>
 
-            <Switch>
-              <Route path="/home">
-                <Home
-                  refrigeratorIngredients={refrigeratorIngredients}
-                  selectIngredient={selectIngredient}
-                />
-              </Route>
-              <Route path="/search">
-                <Search />
-              </Route>
-              <Route path="/recipe">
-                <Recipe />
-              </Route>
-            </Switch>
-          </div>
+          <Page />
         </div>
       </div>
-    </BrowserRouter>
+    </div>
   );
 };
 
-export default InitialPage;
+export default InitialPageTemplate;

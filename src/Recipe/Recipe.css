@@ -24,6 +24,7 @@
 
 .recipe-image {
   display: block;
-  padding: 5px;
-  margin: 0px auto;
+  margin: 0px;
+  height: 300px;
+  width: 300px;
 }
