@@ -14,7 +14,7 @@ const ResultBox = ({ name, introduction, imageUrl, imageName }) => {
           <p id="preview">{introduction}</p>
         </div>
       </Link>
-      <Toggle likeToggleOn={likeToggleOn} setLikeToggleOn={setLikeToggleOn} />;
+      <Toggle likeToggleOn={likeToggleOn} setLikeToggleOn={setLikeToggleOn} />
     </div>
   );
 };
