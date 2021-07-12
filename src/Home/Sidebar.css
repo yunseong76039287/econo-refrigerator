@@ -35,6 +35,12 @@
 
 .search-link {
   color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.search-link:hover {
+  background-color: #3772bf;
 }
 /*
   dodgerblue
