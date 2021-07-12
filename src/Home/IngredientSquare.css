@@ -21,3 +21,6 @@
 .ingredient-container-item {
   border: 1px solid rgba(153, 150, 150, 0.555);
 }
+.ingredient-container-item:hover {
+  border: 1px solid black;
+}
