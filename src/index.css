@@ -28,7 +28,11 @@ iframe,
 p,
 blockquote,
 pre,
-a,
+a {
+  text-decoration: none;
+  color: black;
+}
+,
 abbr,
 acronym,
 address,

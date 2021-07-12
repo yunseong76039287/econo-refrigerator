@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ingredientData from "../data/ingredientData";
+import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
 const Sidebar = ({
@@ -60,6 +61,9 @@ const Sidebar = ({
           );
         })}
       </ul>
+      <Link to="/search" className="search-link">
+        레시피 보러 가기
+      </Link>
     </div>
   );
 };

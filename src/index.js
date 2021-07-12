@@ -6,8 +6,8 @@ import InitialPageTemplate from "./InitialPageTemplate";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
-    {/* <InitialPageTemplate /> */}
+    {/* <Router /> */}
+    <InitialPageTemplate />
   </React.StrictMode>,
   document.getElementById("root")
 );

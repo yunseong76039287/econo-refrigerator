@@ -1,6 +1,6 @@
 import React from "react";
 import "./Recipe.css";
-
+import { Link } from "react-router-dom";
 // description을 컴포넌트로 받아올 수 있나?
 
 const Recipe = ({ name, imageSrc, introduction, description }) => {
@@ -33,6 +33,7 @@ const Recipe = ({ name, imageSrc, introduction, description }) => {
         className="recipe-description"
         dangerouslySetInnerHTML={{ __html: str }}
       />
+      <Link to="/search">뒤로가기</Link>
     </div>
   );
 };

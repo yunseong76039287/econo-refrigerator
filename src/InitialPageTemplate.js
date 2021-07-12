@@ -5,7 +5,7 @@ import "./InitialPageTemplate.css";
 import Home from "./Home/Home";
 import Recipe from "./Recipe/Recipe.js";
 import Search from "./Search/Search";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
 
 const InitialPageTemplate = ({ Page }) => {
   const [refrigeratorIngredients, setRefrigeratorIngredients] = useState([]);
@@ -41,28 +41,77 @@ const InitialPageTemplate = ({ Page }) => {
   };
 
   return (
-    <div className="initial">
-      <Header />
-      <div className="contentsbody">
-        <Sidebar
-          refrigeratorIngredients={refrigeratorIngredients}
-          selectIngredient={selectIngredient}
-          setRefrigeratorIngredients={setRefrigeratorIngredients}
-        />
-        <div className="page">
-          {/* <Home
+    <BrowserRouter>
+      <div className="initial">
+        <Header />
+        {/*
+                      <Sidebar
+              refrigeratorIngredients={refrigeratorIngredients}
+              selectIngredient={selectIngredient}
+              setRefrigeratorIngredients={setRefrigeratorIngredients}
+            />
+           <Home
             refrigeratorIngredients={refrigeratorIngredients}
             selectIngredient={selectIngredient}
           /> */}
-          {/* <Link to="/">Home</Link>
+        {/* <Link to="/">Home</Link>
             <Link to="/search">Search</Link> */}
-          <Link to="/recipe">Recipe</Link>
+        {/* <Link to="/recipe">Recipe</Link>
           <Link to="/search">sea</Link>
 
-          <Page />
-        </div>
+          <Page /> */}
+
+        <Switch>
+          <Route
+            path="/recipe"
+            component={() => {
+              return (
+                <div className="contentsbody">
+                  <Recipe />
+                </div>
+              );
+            }}
+          >
+            <Recipe />
+          </Route>
+          <Route
+            path="/search"
+            component={() => {
+              return (
+                <div className="contentsbody">
+                  <Sidebar
+                    refrigeratorIngredients={refrigeratorIngredients}
+                    selectIngredient={selectIngredient}
+                    setRefrigeratorIngredients={setRefrigeratorIngredients}
+                  />
+                  <Search />
+                </div>
+              );
+            }}
+          ></Route>
+          <Route
+            exact
+            path="/"
+            component={() => {
+              return (
+                <div className="contentsbody">
+                  <Sidebar
+                    refrigeratorIngredients={refrigeratorIngredients}
+                    selectIngredient={selectIngredient}
+                    setRefrigeratorIngredients={setRefrigeratorIngredients}
+                  />
+                  <Home
+                    refrigeratorIngredients={refrigeratorIngredients}
+                    selectIngredient={selectIngredient}
+                  />
+                </div>
+              );
+            }}
+          ></Route>
+          <Redirect to="/" />
+        </Switch>
       </div>
-    </div>
+    </BrowserRouter>
   );
 };
 
