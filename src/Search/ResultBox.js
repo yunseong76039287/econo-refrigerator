@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ResultBox.css";
 import { Link } from "react-router-dom";
-
+import Toggle from "./Toggle";
 const ResultBox = ({ name, introduction, imageUrl, imageName }) => {
+  const [likeToggleOn, setLikeToggleOn] = useState(false);
+
   return (
     <div className="result-box">
       <Link exact to="/recipe" className="result-link">
@@ -12,7 +14,7 @@ const ResultBox = ({ name, introduction, imageUrl, imageName }) => {
           <p id="preview">{introduction}</p>
         </div>
       </Link>
-      <button id="like">❤</button>
+      <Toggle likeToggleOn={likeToggleOn} setLikeToggleOn={setLikeToggleOn} />;
     </div>
   );
 };

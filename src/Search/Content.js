@@ -2,7 +2,6 @@ import React from "react";
 import "./Content.css";
 import ResultBox from "./ResultBox";
 
-// 검색창을 재사용 할 수 있는지?
 const Content = () => {
   return (
     <div className="search-content">

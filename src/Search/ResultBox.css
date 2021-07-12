@@ -8,6 +8,10 @@
   justify-content: space-between;
   /* align-items: center; */
 }
+
+.result-box:hover {
+  border: 1px solid black;
+}
 .result-link {
   display: flex;
   flex-direction: row;
@@ -22,13 +26,34 @@ img {
   padding: 15px;
 }
 
-#like {
-  width: 30px;
-  height: 30px;
+#like-off {
+  background-color: #3772bf;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 32px;
+  height: 32px;
   padding: 0px;
   margin: 10px;
   text-align: center;
   align-self: baseline;
+  cursor: pointer;
+  color: white;
+}
+
+#like-on {
+  background-color: deepskyblue;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  padding: 0px;
+  margin: 10px;
+  text-align: center;
+  align-self: baseline;
+  cursor: pointer;
+  color: white;
 }
 
 p {
