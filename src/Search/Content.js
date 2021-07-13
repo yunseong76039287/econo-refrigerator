@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Content.css";
 import ResultBox from "./ResultBox";
 
 const Content = () => {
+  const [searchingResultRecipes, setSearchingResultRecipes] = useState([]);
+
+  useEffect(() => setSearchingResultRecipes(searchingResultRecipeListData), []);
+
+  // 서버로 부터 요청 by axios
+
   return (
     <div className="search-content">
       <div className="result-container">
         <h1 className="select-result-title">레시피 검색 결과</h1>
-        <ResultBox
-          name={"토마토 파스타"}
-          introduction={"간단하게 집에서 만들 수 있는 토마토 파스타"}
-          imageUrl={"/images/test_pasta.jpg"}
-          imageName={"pasta"}
-        />
+        {searchingResultRecipes.map((element) => {
+          return (
+            <ResultBox
+              name={element.name}
+              description={element.description}
+              imageUrl={element.imagePath}
+            />
+          );
+        })}
 
         {/* <div className="result-box">
           <img src={"/images/party_noodle.jpg"} alt="noodle" />
@@ -47,3 +56,24 @@ const Content = () => {
 };
 
 export default Content;
+
+const searchingResultRecipeListData = [
+  {
+    id: 1,
+    name: "토마토 파스타",
+    description: "토마토 베이스인 파스타",
+    imagePath: "/images/onion.jpg",
+  },
+  {
+    id: 2,
+    name: "해물 파스타",
+    description: null,
+    imagePath: "/images/1.jpg",
+  },
+  {
+    id: 3,
+    name: "그냥 파스타",
+    description: "그냥",
+    imagePath: "/images/party_noodle.jpg",
+  },
+];

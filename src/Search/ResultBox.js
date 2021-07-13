@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import "./ResultBox.css";
 import { Link } from "react-router-dom";
 import Toggle from "./Toggle";
-const ResultBox = ({ name, introduction, imageUrl, imageName }) => {
+const ResultBox = ({ name, description, imageUrl }) => {
   const [likeToggleOn, setLikeToggleOn] = useState(false);
 
   return (
     <div className="result-box">
       <Link exact to="/recipe" className="result-link">
-        <img src={imageUrl} alt={imageName} />
+        <img src={imageUrl} alt={imageUrl} />
         <div className="text-content">
           <h3>{name}</h3>
-          <p id="preview">{introduction}</p>
+          {checkNull(description)}
         </div>
       </Link>
       <Toggle likeToggleOn={likeToggleOn} setLikeToggleOn={setLikeToggleOn} />
@@ -19,4 +19,10 @@ const ResultBox = ({ name, introduction, imageUrl, imageName }) => {
   );
 };
 
+const checkNull = (element) => {
+  if (element === null) {
+    return <p id="preview">레시피의 설명이 없습니다.</p>;
+  }
+  return <p id="preview">{element}</p>;
+};
 export default ResultBox;
