@@ -28,3 +28,19 @@
   height: 300px;
   width: 300px;
 }
+
+.recipe-description {
+  border-bottom: 1px solid rgba(153, 150, 150, 0.555);
+  padding: 10px;
+}
+
+.comment-container {
+  margin-top: 20px;
+}
+.comment-header {
+  border-bottom: 1px solid rgba(153, 150, 150, 0.555);
+  padding-bottom: 20px;
+}
+
+.comment-box {
+}
