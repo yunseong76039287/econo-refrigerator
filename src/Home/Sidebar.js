@@ -53,7 +53,10 @@ const Sidebar = ({
             <li>
               <div className="ingredient-element">
                 {name}
-                <button onClick={() => deleteIngredient(this, selected)}>
+                <button
+                  type="button"
+                  onClick={() => deleteIngredient(this, selected)}
+                >
                   삭제
                 </button>
               </div>

@@ -32,6 +32,9 @@
   border-bottom: 1px solid #3772bf;
   color: white;
 }
+.ingredient-element:hover {
+  background-color: #3772bf;
+}
 
 .search-link {
   display: block;
