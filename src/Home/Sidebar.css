@@ -16,6 +16,11 @@
   padding-bottom: 20px;
 }
 
+.sidebar-content {
+  position: sticky;
+  top: 0;
+}
+
 .ingredient-list {
   font-family: "Noto Sans KR", sans-serif;
   list-style-type: none;
@@ -46,6 +51,7 @@
 .search-link:hover {
   background-color: #3772bf;
 }
+
 /*
   dodgerblue
 */

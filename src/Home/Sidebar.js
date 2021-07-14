@@ -46,27 +46,29 @@ const Sidebar = ({
   return (
     <div className="sidebar">
       <h1 className="sidebar-header">냉장고</h1>
-      <ul className="ingredient-list">
-        {refrigeratorIngredients.map((selected) => {
-          const name = ingredientData.getIngredientNameById(selected);
-          return (
-            <li>
-              <div className="ingredient-element">
-                {name}
-                <button
-                  type="button"
-                  onClick={() => deleteIngredient(this, selected)}
-                >
-                  삭제
-                </button>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-      <Link to="/search" className="search-link">
-        레시피 보러 가기
-      </Link>
+      <div className="sidebar-content">
+        <ul className="ingredient-list">
+          {refrigeratorIngredients.map((selected) => {
+            const name = ingredientData.getIngredientNameById(selected);
+            return (
+              <li>
+                <div className="ingredient-element">
+                  {name}
+                  <button
+                    type="button"
+                    onClick={() => deleteIngredient(this, selected)}
+                  >
+                    삭제
+                  </button>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+        <Link to="/search" className="search-link">
+          레시피 보러 가기
+        </Link>
+      </div>
     </div>
   );
 };
