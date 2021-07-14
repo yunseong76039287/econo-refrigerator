@@ -126,6 +126,88 @@ const ingredientDataArray = [
     name : "설탕",
     imageUrl : "/images/ingredientImgData/sugar.jpg"
   },
+  {
+    id : 106,
+    name : "소금",
+    imageUrl : "/images/ingredientImgData/salt.jpg"
+  },
+  {
+    id : 107,
+    name : "식용유",
+    imageUrl : "/images/ingredientImgData/oil.jpg"
+  },
+  {
+    id : 108,
+    name : "미원",
+    imageUrl : "/images/ingredientImgData/msg.jpg"
+  },
+  {
+    id : 109,
+    name : "식초",
+    imageUrl : "/images/ingredientImgData/vinegar.jpg"
+  },
+  {
+    id : 110,
+    name : "맛술",
+    imageUrl : "/images/ingredientImgData/ricewine.jpg"
+  },
+  {
+    id : 111,
+    name : "토마토케찹",
+    imageUrl : "/images/ingredientImgData/ketchup.jpg"
+  },
+  {
+    id : 112,
+    name : "마요네즈",
+    imageUrl : "/images/ingredientImgData/mayonnaise.jpg"
+  },
+  {
+    id : 113,
+    name : "참기름",
+    imageUrl : "/images/ingredientImgData/sesame_oil.jpg"
+  },
+  {
+    id : 114,
+    name : "고춧가루",
+    imageUrl : "/images/ingredientImgData/chilli_powder.jpg"
+  },
+  {
+    id : 115,
+    name : "멸치액젓",
+    imageUrl : "/images/ingredientImgData/anchovy_sauce.jpg"
+  },
+  {
+    id : 116,
+    name : "후추",
+    imageUrl : "/images/ingredientImgData/pepper.jpg"
+  },
+  {
+    id : 117,
+    name : "물엿",
+    imageUrl : "/images/ingredientImgData/corn_syrup.jpg"
+  },
+  {
+    id : 118,
+    name : "새우젓",
+    imageUrl : "/images/ingredientImgData/salted_shrimp.jpg"
+  },
+  {
+    id : 119,
+    name : "들깨가루",
+    imageUrl : "/images/ingredientImgData/perilla_powder.jpg"
+  },
+  {
+    id : 120,
+    name : "카레가루",
+    imageUrl : "/images/ingredientImgData/curry_powder.jpg"
+  },
+
+  {
+    id : 161,
+    name : "계란",
+    imageUrl : "/images/ingredientImgData/egg.jpg"
+  },
+  
 ];
 
 // 재료의 id 매개변수 받고, 그 id 의 재료 이름 반환하는 함수
