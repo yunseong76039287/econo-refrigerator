@@ -47,10 +47,22 @@ const Recipe = () => {
       <div className="comment-container">
         {recipeData.comments &&
           recipeData.comments.map((e) => {
-            return <div className="comment-box"></div>;
+            return (
+              <div className="comment-box">
+                <div className="comment-author">{e.author}</div>
+                <div className="comment-content">{e.content}</div>
+              </div>
+            );
           })}
       </div>
-
+      <div className="input-container">
+        <div className="user-infomation">
+          <input className="nickname" placeholder="닉네임"></input>
+          <input className="passwd" placeholder="비밀번호"></input>
+        </div>
+        <input className="comment-input" placeholder="댓글 입력"></input>
+        <button>submit</button>
+      </div>
       <Link to="/search">뒤로가기</Link>
     </div>
   );
@@ -89,8 +101,14 @@ const recipeListData = {
   comments: [
     {
       id: 1,
-      author: "guest01",
-      content: "좋아요",
+      author: "guedfsdfsfsdfsdfsdfsst01",
+      content: "맛있어요",
+      password: "1234",
+    },
+    {
+      id: 2,
+      author: "guest02",
+      content: "파스타 좋아하는데 좋은거 같아요",
       password: "1234",
     },
   ],

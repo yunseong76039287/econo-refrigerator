@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./IngredientSquare.css";
-
+import { Button } from "@material-ui/core";
 const IngredientSquare = ({ id, name, imageUrl, selectIngredient }) => {
   const [isOverlap, setIsOverlap] = useState(false);
 
@@ -15,7 +15,7 @@ const IngredientSquare = ({ id, name, imageUrl, selectIngredient }) => {
             setIsOverlap(true);
           }}
         >
-          추가
+          add
         </button>
       </div>
       <div>

@@ -2,7 +2,8 @@
 
 .recipe {
   font-family: "Notos Sans KR", sans-serif;
-  padding-left: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 .recipe-name {
   padding: 15px;
@@ -18,8 +19,8 @@
   font-size: 15px;
 }
 .like-button {
-  position: absolute;
-  right: 2%;
+  position: relative;
+  left: 85%;
 }
 
 .recipe-image {
@@ -35,12 +36,45 @@
 }
 
 .comment-container {
-  margin-top: 20px;
 }
 .comment-header {
   border-bottom: 1px solid rgba(153, 150, 150, 0.555);
+  padding-top: 20px;
   padding-bottom: 20px;
+  margin: 0px;
 }
 
 .comment-box {
+  border-bottom: 1px solid rgba(153, 150, 150, 0.555);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+}
+
+.comment-author {
+  width: 200px;
+  padding-right: 100px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100px;
+}
+.nickname {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.passwd {
+  margin-right: 10px;
+}
+.user-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-input {
+  height: 50px;
 }
