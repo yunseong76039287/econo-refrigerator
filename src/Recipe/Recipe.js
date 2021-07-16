@@ -75,6 +75,7 @@ const recipeListData = {
   name: "토마토 파스타",
   description: "토마토를 곁들인 매콤달콤 파스타",
   imageUrl: "/images/test_pasta.jpg",
+  likeCount: 0,
   ingredients: [
     {
       id: 1,
