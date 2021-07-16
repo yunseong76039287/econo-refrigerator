@@ -27,7 +27,6 @@ img {
 }
 
 #like-off {
-  background-color: #3772bf;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -42,7 +41,6 @@ img {
 }
 
 #like-on {
-  background-color: deepskyblue;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import Button from "@material-ui/core/Button";
 
 const Toggle = ({ likeToggleOn, setLikeToggleOn }) => {
   const handleClick = () => {
@@ -9,15 +12,15 @@ const Toggle = ({ likeToggleOn, setLikeToggleOn }) => {
   // 좋아요가 안눌렸을 때
   if (likeToggleOn === false) {
     return (
-      <button id="like-off" onClick={handleClick}>
-        like
-      </button>
+      <Button id="like-off" onClick={handleClick}>
+        <FavoriteBorderIcon></FavoriteBorderIcon>
+      </Button>
     );
   }
   return (
-    <button id="like-on" onClick={handleClick}>
-      like
-    </button>
+    <Button id="like-on" onClick={handleClick}>
+      <FavoriteIcon></FavoriteIcon>
+    </Button>
   );
 };
 

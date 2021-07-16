@@ -4,11 +4,11 @@
   display: grid;
   grid-template-rows: repeat(
     5,
-    minmax(200px, 200px)
+    minmax(210px, 210px)
   ); /* 열의 갯수, 그리고 길이 */
   grid-template-columns: repeat(
     auto-fill,
-    minmax(200px, 200px)
+    minmax(210px, 210px)
   ); /* 행의 갯수, 그리고 길이 */
   row-gap: 10px;
   column-gap: 10px;
