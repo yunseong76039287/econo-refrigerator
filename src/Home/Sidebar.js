@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import ingredientData from "../data/ingredientData";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
+import Button from "@material-ui/core/Button";
+import AddIcon from "@material-ui/icons/Add";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 const Sidebar = ({
   refrigeratorIngredients,
@@ -54,12 +57,18 @@ const Sidebar = ({
               <li>
                 <div className="ingredient-element">
                   {name}
-                  <button
-                    type="button"
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    size="small"
                     onClick={() => deleteIngredient(this, selected)}
+                    disable
                   >
-                    삭제
-                  </button>
+                    <DeleteIcon
+                      className="sidebar-delete-button"
+                      fontSize="medium"
+                    ></DeleteIcon>
+                  </Button>
                 </div>
               </li>
             );
