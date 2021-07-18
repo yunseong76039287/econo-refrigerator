@@ -2,19 +2,19 @@ import React, { useState, useEffect } from "react";
 import "./Recipe.css";
 import { Link } from "react-router-dom";
 import ingredientData from "../data/ingredientData";
+import Toggle from "../Search/Toggle";
+
 // description을 컴포넌트로 받아올 수 있나?
 
 const Recipe = () => {
   const [recipeData, setRecipeData] = useState({});
-
   useEffect(() => setRecipeData(recipeListData), []);
 
   return (
     <div className="recipe">
       <h1 className="recipe-name">{recipeData.name}</h1>
       <div className="like">
-        <p className="like-count">좋아요:</p>
-        <button className="like-button">Like</button>
+        <Toggle id={recipeData.id} likeCount={recipeData.likeCount} />
       </div>
       <img
         className="recipe-image"
@@ -56,12 +56,7 @@ const Recipe = () => {
           })}
       </div>
       <div className="input-container">
-        <div className="user-infomation">
-          <input className="nickname" placeholder="닉네임"></input>
-          <input className="passwd" placeholder="비밀번호"></input>
-        </div>
-        <input className="comment-input" placeholder="댓글 입력"></input>
-        <button>submit</button>
+        <div className="user-infomation"></div>
       </div>
       <Link to="/search">뒤로가기</Link>
     </div>

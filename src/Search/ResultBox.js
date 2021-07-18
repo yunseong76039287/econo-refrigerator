@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "./ResultBox.css";
 import { Link } from "react-router-dom";
 import Toggle from "./Toggle";
-const ResultBox = ({ name, description, imageUrl }) => {
-  const [likeToggleOn, setLikeToggleOn] = useState(false);
-
+const ResultBox = ({ id, name, description, imageUrl, likeCount }) => {
   return (
     <div className="result-box">
       <Link exact to="/recipe" className="result-link">
@@ -14,7 +12,7 @@ const ResultBox = ({ name, description, imageUrl }) => {
           {checkNull(description)}
         </div>
       </Link>
-      <Toggle likeToggleOn={likeToggleOn} setLikeToggleOn={setLikeToggleOn} />
+      <Toggle id={id} likeCount={likeCount} />
     </div>
   );
 };

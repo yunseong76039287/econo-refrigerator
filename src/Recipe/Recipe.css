@@ -13,14 +13,13 @@
 .like {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   padding-bottom: 7px;
 }
 .like-count {
   font-size: 15px;
 }
 .like-button {
-  position: relative;
-  left: 85%;
 }
 
 .recipe-image {
@@ -61,7 +60,7 @@
   flex-direction: row;
   padding-top: 30px;
   padding-bottom: 30px;
-  width: 100px;
+  width: 100%;
 }
 .nickname {
   margin-bottom: 10px;
