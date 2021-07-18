@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.css";
-import Router from "./Router.js";
 import ReactDOM from "react-dom";
 import InitialPageTemplate from "./InitialPageTemplate";
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import ingredientData from "../data/ingredientData";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
