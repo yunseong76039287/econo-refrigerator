@@ -10,11 +10,13 @@ const Recipe = () => {
   const [recipeData, setRecipeData] = useState({});
   useEffect(() => setRecipeData(recipeListData), []);
 
+  let likeCountProps = recipeData.likeCount;
+
   return (
     <div className="recipe">
       <h1 className="recipe-name">{recipeData.name}</h1>
       <div className="like">
-        <Toggle id={recipeData.id} likeCount={recipeData.likeCount} />
+        <Toggle id={recipeData.id} likeCount={likeCountProps} />
       </div>
       <img
         className="recipe-image"

@@ -38,7 +38,7 @@ const Toggle = ({ id, likeCount }) => {
 
   // 좋아요가 안눌렸을 때
   if (status === true) {
-    console.log("false입니다.");
+    console.log("true입니다.");
     return (
       <Button id="like-on" onClick={handleClick}>
         <span>{count}</span>
