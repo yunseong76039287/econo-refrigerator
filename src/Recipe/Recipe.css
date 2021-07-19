@@ -55,23 +55,12 @@
   padding-right: 100px;
 }
 
-.input-container {
-  display: flex;
-  flex-direction: row;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  width: 100%;
-}
 .nickname {
   margin-bottom: 10px;
   margin-right: 10px;
 }
 .passwd {
   margin-right: 10px;
-}
-.user-information {
-  display: flex;
-  flex-direction: column;
 }
 
 .comment-input {

@@ -3,6 +3,7 @@ import "./Recipe.css";
 import { Link } from "react-router-dom";
 import ingredientData from "../data/ingredientData";
 import Toggle from "../Search/Toggle";
+import Comment from "./Comment";
 
 // description을 컴포넌트로 받아올 수 있나?
 
@@ -11,6 +12,8 @@ const Recipe = () => {
   useEffect(() => setRecipeData(recipeListData), []);
 
   let likeCountProps = recipeData.likeCount;
+
+  const getInput = () => {};
 
   return (
     <div className="recipe">
@@ -57,9 +60,11 @@ const Recipe = () => {
             );
           })}
       </div>
-      <div className="input-container">
-        <div className="user-infomation"></div>
-      </div>
+      <Comment
+        getInput={getInput}
+        recipeData={recipeData}
+        setRecipeData={setRecipeData}
+      />
       <Link to="/search">뒤로가기</Link>
     </div>
   );

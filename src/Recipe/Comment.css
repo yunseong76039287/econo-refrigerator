@@ -1,0 +1,12 @@
+.input-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.user-information {
+  display: flex;
+  flex-direction: column;
+}
