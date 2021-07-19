@@ -21,6 +21,7 @@ const Comment = ({ getInput, recipeData, setRecipeData }) => {
   };
 
   const handleInput = () => {
+    let copyRecipeData = recipeData;
     let existComments = recipeData.comments;
     let countComment = recipeData.comments.length;
     let newComment;
@@ -38,8 +39,13 @@ const Comment = ({ getInput, recipeData, setRecipeData }) => {
       password: tempPassword,
     };
     existComments.push(newComment);
+
+    copyRecipeData.comments = existComments;
+    setRecipeData(copyRecipeData);
     console.log("새로운 댓글을 포함한 결과");
     console.log(existComments);
+    console.log("recipeData update 상태");
+    console.log(recipeData.comments);
     console.log("call handleInput.");
     //hook에 넣어줘야 함.
   };
@@ -59,14 +65,14 @@ const Comment = ({ getInput, recipeData, setRecipeData }) => {
           placeholder="비밀번호"
           onChange={getTargetPassword}
         ></input>
-        <input
-          className="comment-contents"
-          type="text"
-          placeholder="댓글을 이곳에 작성해주세요 ..."
-          onChange={getTargetContents}
-        ></input>
-        <button onClick={handleInput}>작성 작성</button>
       </div>
+      <input
+        className="comment-contents"
+        type="text"
+        placeholder="댓글을 이곳에 작성해주세요 ..."
+        onChange={getTargetContents}
+      ></input>
+      <button onClick={handleInput}>작성 작성</button>
     </div>
   );
 };

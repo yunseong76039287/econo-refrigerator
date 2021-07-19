@@ -1,6 +1,6 @@
 .input-container {
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
+
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
