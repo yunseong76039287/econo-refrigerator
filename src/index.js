@@ -1,12 +1,11 @@
 import React from "react";
 import "./index.css";
 import ReactDOM from "react-dom";
-import InitialPageTemplate from "./InitialPageTemplate";
+import Router from "./Router.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Router /> */}
-    <InitialPageTemplate />
+    <Router />
   </React.StrictMode>,
   document.getElementById("root")
 );

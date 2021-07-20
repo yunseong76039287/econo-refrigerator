@@ -1,7 +1,7 @@
 import React from "react";
 import "./Comment.css";
 
-const Comment = ({ getInput, recipeData, setRecipeData }) => {
+const Comment = ({ recipeData, setRecipeData }) => {
   let tempName;
   let tempPassword;
   let tempContents;
