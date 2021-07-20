@@ -10,15 +10,6 @@ const IngredientSquare = ({ id, name, imageUrl, selectIngredient }) => {
     <div className="ingredient-container-item">
       <div className="ingredient-header">
         <span className="ingredient-name">{name}</span>
-        {/* <button
-          className="ingredient-add-button"
-          onClick={() => {
-            selectIngredient(this, id);
-            setIsOverlap(true);
-          }}
-        >
-          add
-        </button> */}
         <Button
           className="ingredient-add-button"
           variant="outlined"
