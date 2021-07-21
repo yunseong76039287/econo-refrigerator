@@ -34,17 +34,17 @@ const ingredientDataArray = [
   {
     id: 6,
     name: "가래떡",
-    imageUrl: "",
+    imageUrl: "/images/ingredientImgData/rice_cake.jpg",
   },
   {
     id: 7,
     name: "빵가루",
-    imageUrl: "",
+    imageUrl: "/images/ingredientImgData/bread_powder.jpg",
   },
   {
     id: 8,
     name: "전분",
-    imageUrl: "",
+    imageUrl: "/images/ingredientImgData/starch.jpg",
   },
   {
     id: 9,
@@ -54,23 +54,27 @@ const ingredientDataArray = [
   {
     id: 10,
     name: "밀가루(강력)",
-    imageUrl: "",
+    imageUrl: "/images/ingredientImgData/bread_flour.jpg",
   },
   {
     id: 11,
     name: "밀가루(중력)",
-    imageUrl: "",
+    imageUrl: "/images/ingredientImgData/plain_flour.jpg",
   },
   {
     id: 12,
     name: "밀가루(박력)",
-    imageUrl: "",
+    imageUrl: "/images/ingredientImgData/soft_flour.jpg",
   },
-
+  {
+    id: 12,
+    name: "밀가루(박력)",
+    imageUrl: "/images/ingredientImgData/soft_flour.jpg",
+  },
   {
     id: 31,
-    name: "대파",
-    imageUrl: "/images/ingredientImgData/greenonion.jpg",
+    name: "칼국수면",
+    imageUrl: "/images/ingredientImgData/kalguksu.jpg",
   },
   {
     id: 32,
@@ -85,7 +89,7 @@ const ingredientDataArray = [
   {
     id: 34,
     name: "다진마늘",
-    imageUrl: "",
+    imageUrl: "/images/ingredientImgData/chopped_garlic.jpg",
   },
   {
     id: 35,
@@ -101,6 +105,51 @@ const ingredientDataArray = [
     id: 37,
     name: "부추",
     imageUrl: "/images/ingredientImgData/chives.jpg",
+  },
+  {
+    id: 38,
+    name: "배추",
+    imageUrl: "/images/ingredientImgData/kimchi_cabbage.jpg",
+  },
+  {
+    id: 39,
+    name: "양배추",
+    imageUrl: "/images/ingredientImgData/cabbage.jpg",
+  },
+  {
+    id: 40,
+    name: "적상추",
+    imageUrl: "/images/ingredientImgData/red_lettuce.jpg",
+  },
+  {
+    id: 41,
+    name: "깻잎",
+    imageUrl: "/images/ingredientImgData/perilla_leaf.jpg",
+  },
+  {
+    id: 42,
+    name: "무",
+    imageUrl: "/images/ingredientImgData/radish.jpg",
+  }, 
+  {
+    id: 43,
+    name: "청양고추",
+    imageUrl: "/images/ingredientImgData/cheongyang_pepper.jpg",
+  },
+  {
+    id: 44,
+    name: "홍고추",
+    imageUrl: "/images/ingredientImgData/red_pepper.jpg",
+  },  
+  {
+    id: 45,
+    name: "생강",
+    imageUrl: "/images/ingredientImgData/ginger.jpg",
+  },
+  {
+    id: 46,
+    name: "당근",
+    imageUrl: "/images/ingredientImgData/carrot.jpg",
   },
 
   {
