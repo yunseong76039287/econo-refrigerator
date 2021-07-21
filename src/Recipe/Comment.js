@@ -25,7 +25,7 @@ const Comment = ({ recipeData, setRecipeData }) => {
     let existComments = recipeData.comments;
     let countComment = recipeData.comments.length;
     let newComment;
-    // console.log(typeof existComments);
+
     console.log("현재 존재하는 댓글");
     console.log(existComments);
     console.log("댓글의 개수");
@@ -47,7 +47,6 @@ const Comment = ({ recipeData, setRecipeData }) => {
     console.log("recipeData update 상태");
     console.log(recipeData.comments);
     console.log("call handleInput.");
-    //hook에 넣어줘야 함.
   };
 
   return (

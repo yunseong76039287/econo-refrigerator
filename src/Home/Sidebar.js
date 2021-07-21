@@ -40,8 +40,6 @@ const Sidebar = ({
       "refrigerator",
       JSON.stringify(newRefrigeratorIngredients)
     );
-    // isOverlap의 상태를 변경해야 함.
-
     return 0;
   };
 
