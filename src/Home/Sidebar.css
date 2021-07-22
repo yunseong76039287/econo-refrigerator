@@ -16,8 +16,9 @@
   padding-left: 40px;
   /* border-bottom: 10px solid #ffffff; */
   border-width: 3px;
-  padding: 20px;
-  margin-bottom: 0;
+
+  padding: 30px 20px;
+  margin: 0;
 }
 
 .sidebar-content {

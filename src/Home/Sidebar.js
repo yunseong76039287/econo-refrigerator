@@ -56,7 +56,7 @@ const Sidebar = () => {
         </div>
         <Link to="/search" className="search-link">
           <Search />
-          <div className="search-link-text">레시피 보러 가기</div>
+          <div className="search-link-text">레시피 추천 받기</div>
         </Link>
       </div>
     </div>

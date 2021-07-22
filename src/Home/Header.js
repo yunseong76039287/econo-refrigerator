@@ -5,7 +5,15 @@ const Header = () => {
   return (
     <div className="header">
       <Link exact to="/">
-        <span className="title">econo 냉장고</span>
+        <span className="title">econo refrigerator</span>
+      </Link>
+
+      <Link exact to="/">
+        <span className="menu">recommendation</span>
+      </Link>
+
+      <Link exact to="/">
+        <span className="menu">exploration</span>
       </Link>
     </div>
   );
