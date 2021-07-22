@@ -1,16 +1,13 @@
-import React from "react";
 import "./Home.css";
+import React from "react";
 import Searchbar from "./Searchbar.js";
 import IngredientGrid from "./IngredientGrid.js";
 
-const Home = ({ refrigeratorIngredients, selectIngredient }) => {
+const Home = () => {
   return (
     <div className="home">
       <Searchbar />
-      <IngredientGrid
-        refrigeratorIngredients={refrigeratorIngredients}
-        selectIngredient={selectIngredient}
-      />
+      <IngredientGrid />
     </div>
   );
 };

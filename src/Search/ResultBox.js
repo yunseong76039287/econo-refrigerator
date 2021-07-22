@@ -1,12 +1,12 @@
-import React, { useState } from "react";
 import "./ResultBox.css";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Toggle from "./Toggle";
 const ResultBox = ({ id, name, description, imageUrl, likeCount }) => {
   return (
     <div className="result-box">
       <Link exact to="/recipe" className="result-link">
-        <img src={imageUrl} alt={imageUrl} />
+        <img className="result-img" src={imageUrl} alt={imageUrl} />
         <div className="text-content">
           <h3>{name}</h3>
           {checkNull(description)}

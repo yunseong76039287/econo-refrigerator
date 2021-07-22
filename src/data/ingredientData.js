@@ -67,11 +67,6 @@ const ingredientDataArray = [
     imageUrl: "/images/ingredientImgData/soft_flour.jpg",
   },
   {
-    id: 12,
-    name: "밀가루(박력)",
-    imageUrl: "/images/ingredientImgData/soft_flour.jpg",
-  },
-  {
     id: 31,
     name: "칼국수면",
     imageUrl: "/images/ingredientImgData/kalguksu.jpg",
@@ -130,7 +125,7 @@ const ingredientDataArray = [
     id: 42,
     name: "무",
     imageUrl: "/images/ingredientImgData/radish.jpg",
-  }, 
+  },
   {
     id: 43,
     name: "청양고추",
@@ -140,7 +135,7 @@ const ingredientDataArray = [
     id: 44,
     name: "홍고추",
     imageUrl: "/images/ingredientImgData/red_pepper.jpg",
-  },  
+  },
   {
     id: 45,
     name: "생강",

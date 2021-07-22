@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
 import "./Content.css";
+import React, { useState, useEffect } from "react";
 import ResultBox from "./ResultBox";
 
 const Content = () => {

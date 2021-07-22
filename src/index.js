@@ -1,12 +1,14 @@
-import React from "react";
 import "./index.css";
+import React from "react";
 import ReactDOM from "react-dom";
 import Router from "./Router.js";
+import { IngredientProvider } from "./IngredientContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <title>econo 냉장고</title>
-    <Router />
+    <IngredientProvider>
+      <Router />
+    </IngredientProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
