@@ -8,11 +8,13 @@ import Search from "./Search/Search";
 import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
 
 const Router = ({ Page }) => {
-  const [refrigeratorIngredients, setRefrigeratorIngredients] = useState([]);
+  const [refrigeratorIngredientsId, setRefrigeratorIngredientsId] = useState(
+    []
+  );
 
   // 재료를 선택할 때 중복을 검사하는 함수
   const selectIngredient = (event, id) => {
-    const searchIngredient = refrigeratorIngredients.find((element) => {
+    const searchIngredient = refrigeratorIngredientsId.find((element) => {
       if (element === id) return true;
       return false;
     });
@@ -27,17 +29,37 @@ const Router = ({ Page }) => {
   const appendIngredientHooks = (event, id) => {
     let newSelectedIngredients = [];
 
-    refrigeratorIngredients.forEach((ingredientId) => {
+    refrigeratorIngredientsId.forEach((ingredientId) => {
       newSelectedIngredients.push(ingredientId);
     });
 
     newSelectedIngredients.push(id);
-    setRefrigeratorIngredients(newSelectedIngredients);
+    setRefrigeratorIngredientsId(newSelectedIngredients);
 
     localStorage.setItem(
       "refrigerator",
       JSON.stringify(newSelectedIngredients)
     );
+  };
+
+  const deleteIngredient = (event, id) => {
+    const removeTarget = refrigeratorIngredientsId.find((element) => {
+      if (element === id) return true;
+      return false;
+    });
+    console.log(removeTarget);
+    // removeTarget을 찾았으니 hook의 state를 변화시키자. (filter 사용)
+    const newRefrigeratorIngredients = refrigeratorIngredientsId.filter(
+      (element) => element !== removeTarget
+    );
+    console.log(newRefrigeratorIngredients);
+    setRefrigeratorIngredientsId(newRefrigeratorIngredients);
+    // localStorage 갱신.
+    window.localStorage.setItem(
+      "refrigerator",
+      JSON.stringify(newRefrigeratorIngredients)
+    );
+    return 0;
   };
 
   return (
@@ -63,9 +85,9 @@ const Router = ({ Page }) => {
               return (
                 <div className="contentsbody">
                   <Sidebar
-                    refrigeratorIngredients={refrigeratorIngredients}
+                    refrigeratorIngredientsId={refrigeratorIngredientsId}
                     selectIngredient={selectIngredient}
-                    setRefrigeratorIngredients={setRefrigeratorIngredients}
+                    setRefrigeratorIngredientsId={setRefrigeratorIngredientsId}
                   />
                   <Search />
                 </div>
@@ -79,13 +101,15 @@ const Router = ({ Page }) => {
               return (
                 <div className="contentsbody">
                   <Sidebar
-                    refrigeratorIngredients={refrigeratorIngredients}
+                    refrigeratorIngredientsId={refrigeratorIngredientsId}
                     selectIngredient={selectIngredient}
-                    setRefrigeratorIngredients={setRefrigeratorIngredients}
+                    setRefrigeratorIngredientsId={setRefrigeratorIngredientsId}
+                    deleteIngredient={deleteIngredient}
                   />
                   <Home
-                    refrigeratorIngredients={refrigeratorIngredients}
+                    refrigeratorIngredientsId={refrigeratorIngredientsId}
                     selectIngredient={selectIngredient}
+                    deleteIngredient={deleteIngredient}
                   />
                 </div>
               );

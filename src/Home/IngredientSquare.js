@@ -1,29 +1,54 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./IngredientSquare.css";
-import Button from "@material-ui/core/Button";
-import AddIcon from "@material-ui/icons/Add";
+import IconButton from "@material-ui/core/IconButton";
+import AddIcon from "@material-ui/icons/Check";
 
-const IngredientSquare = ({ id, name, imageUrl, selectIngredient }) => {
+const IngredientSquare = ({
+  id,
+  name,
+  imageUrl,
+  selectIngredient,
+  deleteIngredient,
+}) => {
   const [isOverlap, setIsOverlap] = useState(false);
+  const [isButtonHover, setIsButtonHover] = useState(false);
+
+  useEffect(() => {
+    console.log(id);
+  }, []);
+
+  useEffect(() => {
+    console.log("over" + isOverlap);
+  }, [isOverlap]);
 
   return (
     <div className="ingredient-container-item">
       <div className="ingredient-header">
-        <span className="ingredient-name">{name}</span>
-        <Button
-          className="ingredient-add-button"
-          variant="outlined"
-          size="small"
+        <IconButton
           onClick={() => {
-            selectIngredient(this, id);
-            setIsOverlap(true);
+            if (isOverlap) {
+              setIsOverlap(false);
+              deleteIngredient(this, id);
+            } else {
+              setIsOverlap(true);
+              selectIngredient(this, id);
+            }
           }}
+          style={{
+            padding: "5px",
+            backgroundColor:
+              isOverlap === isButtonHover ? "#F3F3F3" : "#152f57",
+          }}
+          onMouseEnter={() => setIsButtonHover(true)}
+          onMouseLeave={() => setIsButtonHover(false)}
         >
-          <AddIcon fontSize="small"></AddIcon>
-        </Button>
+          <AddIcon fontSize="small" style={{ color: "#F7D556" }} />
+        </IconButton>
       </div>
-      <div>
-        <img src={imageUrl}></img>
+      <img src={imageUrl}></img>
+      <div className="ingredient-footer">
+        <span className="ingredient-name">{name}</span>
+        <div className="ingredient-type">탄수화물</div>
       </div>
     </div>
   );
