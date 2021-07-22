@@ -4,23 +4,12 @@ import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import Button from "@material-ui/core/Button";
 import DeleteIcon from "@material-ui/icons/Delete";
+import { useIngredientsId, useUnselectIngredient } from "../IngredientContext";
 
-const Sidebar = ({
-  refrigeratorIngredientsId,
-  selectIngredient,
-  setRefrigeratorIngredientsId,
-  deleteIngredient,
-}) => {
-  // localStorage 초기화
-  let firstCheck = [];
-  firstCheck = window.localStorage.getItem("refrigerator");
-  if (firstCheck === null) {
-    window.localStorage.setItem(
-      "refrigerator",
-      JSON.stringify(refrigeratorIngredientsId)
-    );
-  }
-  //localstorage에서 받은 값을 selectedIngredient에 저장하는법?
+const Sidebar = () => {
+  const refrigeratorIngredientsId = useIngredientsId();
+  const unselectIngredient = useUnselectIngredient();
+
   console.log("임시 저장소 : " + refrigeratorIngredientsId);
   console.log("selected에 저장된 값 : " + refrigeratorIngredientsId);
 
@@ -39,7 +28,7 @@ const Sidebar = ({
                     variant="outlined"
                     color="primary"
                     size="small"
-                    onClick={() => deleteIngredient(ingredientId)}
+                    onClick={() => unselectIngredient(ingredientId)}
                   >
                     <DeleteIcon
                       className="sidebar-delete-button"

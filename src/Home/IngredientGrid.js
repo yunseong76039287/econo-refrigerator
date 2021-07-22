@@ -1,30 +1,31 @@
-import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
-import ingredientData from "../data/ingredientData";
 import "./IngredientGrid.css";
+import React, { useEffect, useState } from "react";
+import ingredientData from "../data/ingredientData";
+import { useLoadIngredientsId } from "../IngredientContext";
 import IngredientSquare from "./IngredientSquare";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
-const IngredientGrid = React.memo(function component({
-  refrigeratorIngredientsId,
-  selectIngredient,
-  deleteIngredient,
-}) {
-  useEffect(() => console.log("grid init"), []);
+const IngredientGrid = () => {
+  const loadRefrigeratorIngredientsId = useLoadIngredientsId();
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    loadRefrigeratorIngredientsId();
+    setIsLoaded(true);
+  }, []);
 
   return (
     <div className="ingredient-container">
-      {ingredientData.ingredientDataArray.map(({ id, name, imageUrl }) => (
-        <IngredientSquare
-          key={id}
-          id={id}
-          name={name}
-          imageUrl={imageUrl}
-          selectIngredient={selectIngredient}
-          deleteIngredient={deleteIngredient}
-        />
-      ))}
+      {isLoaded ? (
+        ingredientData.ingredientDataArray.map(({ id, name, imageUrl }) => (
+          <IngredientSquare key={id} id={id} name={name} imageUrl={imageUrl} />
+        ))
+      ) : (
+        <CircularProgress />
+      )}
     </div>
   );
-});
+};
 
 export default IngredientGrid;

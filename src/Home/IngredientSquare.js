@@ -1,43 +1,37 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./IngredientSquare.css";
 import IconButton from "@material-ui/core/IconButton";
 import AddIcon from "@material-ui/icons/Check";
+import {
+  useSelectIngredient,
+  useUnselectIngredient,
+  useIsSelectedIngredient,
+} from "../IngredientContext";
 
-const IngredientSquare = ({
-  id,
-  name,
-  imageUrl,
-  selectIngredient,
-  deleteIngredient,
-}) => {
-  const [isOverlap, setIsOverlap] = useState(false);
+const IngredientSquare = ({ id, name, imageUrl }) => {
+  const selectIngredient = useSelectIngredient();
+  const unselectIngredient = useUnselectIngredient();
+  const isSelectedIngredient = useIsSelectedIngredient();
+
   const [isButtonHover, setIsButtonHover] = useState(false);
-
-  useEffect(() => {
-    console.log(id);
-  }, []);
-
-  useEffect(() => {
-    console.log("over" + isOverlap);
-  }, [isOverlap]);
 
   return (
     <div className="ingredient-container-item">
       <div className="ingredient-header">
         <IconButton
           onClick={() => {
-            if (isOverlap) {
-              setIsOverlap(false);
-              deleteIngredient(id);
+            if (isSelectedIngredient(id)) {
+              unselectIngredient(id);
             } else {
-              setIsOverlap(true);
               selectIngredient(id);
             }
           }}
           style={{
             padding: "5px",
             backgroundColor:
-              isOverlap === isButtonHover ? "#F3F3F3" : "#152f57",
+              isSelectedIngredient(id) === isButtonHover
+                ? "#F3F3F3"
+                : "#152f57",
           }}
           onMouseEnter={() => setIsButtonHover(true)}
           onMouseLeave={() => setIsButtonHover(false)}
