@@ -1,10 +1,12 @@
 import React from "react";
 import "./Comment.css";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
 
 const Comment = ({ recipeData, setRecipeData }) => {
-  let tempName;
-  let tempPassword;
-  let tempContents;
+  let tempName = "";
+  let tempPassword = "";
+  let tempContents = "";
   const getTargetName = (event) => {
     tempName = event.target.value;
     console.log("name :" + tempName);
@@ -21,6 +23,19 @@ const Comment = ({ recipeData, setRecipeData }) => {
   };
 
   const handleInput = () => {
+    if (tempName === "") {
+      alert("이름을 다시 한번 확인해주세요.");
+      return 0;
+    }
+    if (tempPassword === "") {
+      alert("비밀번호를 다시 한번 확인해주세요.");
+      return 0;
+    }
+    if (tempContents === "") {
+      alert("내용을 입력하세요.");
+      return 0;
+    }
+
     let copyRecipeData = recipeData;
     let existComments = recipeData.comments;
     let countComment = recipeData.comments.length;
@@ -51,7 +66,7 @@ const Comment = ({ recipeData, setRecipeData }) => {
 
   return (
     <div className="input-container">
-      <div className="user-infomation">
+      <div className="user-information">
         <input
           className="nickname"
           type="text"
@@ -71,7 +86,9 @@ const Comment = ({ recipeData, setRecipeData }) => {
         placeholder="댓글을 이곳에 작성해주세요 ..."
         onChange={getTargetContents}
       ></input>
-      <button onClick={handleInput}>작성 작성</button>
+      <Button variant="outlined" className="submitbtn" onClick={handleInput}>
+        Submit
+      </Button>
     </div>
   );
 };

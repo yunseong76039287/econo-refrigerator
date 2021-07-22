@@ -56,3 +56,7 @@
   width: 200px;
   padding-right: 100px;
 }
+
+.comment-delete-button {
+  position: relative;
+}
