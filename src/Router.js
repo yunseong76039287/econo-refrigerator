@@ -1,7 +1,7 @@
+import "./Router.css";
 import React, { useState, useEffect } from "react";
 import Header from "./Home/Header";
 import Sidebar from "./Home/Sidebar";
-import "./Router.css";
 import Home from "./Home/Home";
 import Recipe from "./Recipe/Recipe.js";
 import Search from "./Search/Search";

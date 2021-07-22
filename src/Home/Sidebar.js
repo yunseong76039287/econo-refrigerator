@@ -1,7 +1,7 @@
+import "./Sidebar.css";
 import React from "react";
 import ingredientData from "../data/ingredientData";
 import { Link } from "react-router-dom";
-import "./Sidebar.css";
 import Button from "@material-ui/core/Button";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { useIngredientsId, useUnselectIngredient } from "../IngredientContext";

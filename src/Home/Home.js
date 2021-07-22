@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
 import "./Home.css";
+import React from "react";
 import Searchbar from "./Searchbar.js";
 import IngredientGrid from "./IngredientGrid.js";
 

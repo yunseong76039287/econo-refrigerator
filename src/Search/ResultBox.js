@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import "./ResultBox.css";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Toggle from "./Toggle";
 const ResultBox = ({ id, name, description, imageUrl, likeCount }) => {

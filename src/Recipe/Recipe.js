@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
 import "./Recipe.css";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ingredientData from "../data/ingredientData";
 import Toggle from "../Search/Toggle";

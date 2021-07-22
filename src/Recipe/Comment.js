@@ -1,5 +1,5 @@
-import React from "react";
 import "./Comment.css";
+import React from "react";
 
 const Comment = ({ recipeData, setRecipeData }) => {
   let tempName;
