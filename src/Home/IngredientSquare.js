@@ -28,10 +28,10 @@ const IngredientSquare = ({
           onClick={() => {
             if (isOverlap) {
               setIsOverlap(false);
-              deleteIngredient(this, id);
+              deleteIngredient(id);
             } else {
               setIsOverlap(true);
-              selectIngredient(this, id);
+              selectIngredient(id);
             }
           }}
           style={{

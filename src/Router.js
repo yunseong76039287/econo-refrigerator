@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Home/Header";
 import Sidebar from "./Home/Sidebar";
 import "./Router.css";
@@ -12,37 +12,19 @@ const Router = ({ Page }) => {
     []
   );
 
-  // 재료를 선택할 때 중복을 검사하는 함수
-  const selectIngredient = (event, id) => {
-    const searchIngredient = refrigeratorIngredientsId.find((element) => {
-      if (element === id) return true;
-      return false;
-    });
-    console.log("찾은 id" + searchIngredient);
-    // 중복 없음
-    if (searchIngredient === undefined) {
-      return appendIngredientHooks(this, id);
-    }
-  };
-
-  // 재료 추가 함수
-  const appendIngredientHooks = (event, id) => {
-    let newSelectedIngredients = [];
-
-    refrigeratorIngredientsId.forEach((ingredientId) => {
-      newSelectedIngredients.push(ingredientId);
-    });
-
-    newSelectedIngredients.push(id);
-    setRefrigeratorIngredientsId(newSelectedIngredients);
-
+  useEffect(() => {
     localStorage.setItem(
       "refrigerator",
-      JSON.stringify(newSelectedIngredients)
+      JSON.stringify(refrigeratorIngredientsId)
     );
+  }, [refrigeratorIngredientsId]);
+
+  // 재료 추가 함수
+  const selectIngredient = (id) => {
+    setRefrigeratorIngredientsId([...refrigeratorIngredientsId, id]);
   };
 
-  const deleteIngredient = (event, id) => {
+  const deleteIngredient = (id) => {
     const removeTarget = refrigeratorIngredientsId.find((element) => {
       if (element === id) return true;
       return false;
@@ -54,12 +36,6 @@ const Router = ({ Page }) => {
     );
     console.log(newRefrigeratorIngredients);
     setRefrigeratorIngredientsId(newRefrigeratorIngredients);
-    // localStorage 갱신.
-    window.localStorage.setItem(
-      "refrigerator",
-      JSON.stringify(newRefrigeratorIngredients)
-    );
-    return 0;
   };
 
   return (

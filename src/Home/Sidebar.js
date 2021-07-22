@@ -39,7 +39,7 @@ const Sidebar = ({
                     variant="outlined"
                     color="primary"
                     size="small"
-                    onClick={() => deleteIngredient(this, ingredientId)}
+                    onClick={() => deleteIngredient(ingredientId)}
                   >
                     <DeleteIcon
                       className="sidebar-delete-button"
