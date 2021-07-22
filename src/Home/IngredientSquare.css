@@ -1,26 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
 
-.ingredient-header {
-  font-family: "Noto sans KR", sans-serif;
-  padding-top: 3px;
+.ingredient-container-item {
+  background-color: white;
+  border-radius: 15px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7px;
+}
+
+.ingredient-container-item:hover {
+  border: 1px solid black;
+}
+
+.ingredient-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ingredient-footer {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .ingredient-name {
-  margin-top: 7px;
-  margin-left: 12px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-left: 5px;
+  font-size: 18px;
 }
 
-.ingredient-add-button {
-  margin-top: 7px;
-  margin-right: 12px;
-}
-
-.ingredient-container-item {
-  border: 1px solid rgba(153, 150, 150, 0.555);
-}
-.ingredient-container-item:hover {
-  border: 1px solid black;
+.ingredient-type {
+  margin-left: 7px;
+  padding: 5px 7px;
+  border-radius: 9px;
+  background-color: rgb(212, 229, 255);
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
+  /* opacity: 0.5; */
 }

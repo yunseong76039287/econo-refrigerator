@@ -1,11 +1,29 @@
 .input-container {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
 }
-
 .user-information {
   display: flex;
   flex-direction: column;
+}
+.nickname {
+  padding: 5px;
+  margin: 10px;
+}
+
+.password {
+  padding: 5px;
+  margin: 10px;
+}
+
+.comment-contents {
+  width: 600px;
+  height: 70px;
+  margin: 10px;
+}
+
+.submitbtn {
 }

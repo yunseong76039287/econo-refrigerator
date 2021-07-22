@@ -1,65 +1,34 @@
+import "./Sidebar.css";
 import React from "react";
 import ingredientData from "../data/ingredientData";
 import { Link } from "react-router-dom";
-import "./Sidebar.css";
 import Button from "@material-ui/core/Button";
 import DeleteIcon from "@material-ui/icons/Delete";
+import { useIngredientsId, useUnselectIngredient } from "../IngredientContext";
 
-const Sidebar = ({
-  refrigeratorIngredients,
-  selectIngredient,
-  setRefrigeratorIngredients,
-}) => {
-  // localStorage 초기화
-  let firstCheck = [];
-  firstCheck = window.localStorage.getItem("refrigerator");
-  if (firstCheck === null) {
-    window.localStorage.setItem(
-      "refrigerator",
-      JSON.stringify(refrigeratorIngredients)
-    );
-  }
-  //localstorage에서 받은 값을 selectedIngredient에 저장하는법?
-  console.log("임시 저장소 : " + refrigeratorIngredients);
-  console.log("selected에 저장된 값 : " + refrigeratorIngredients);
+const Sidebar = () => {
+  const refrigeratorIngredientsId = useIngredientsId();
+  const unselectIngredient = useUnselectIngredient();
 
-  const deleteIngredient = (event, id) => {
-    const removeTarget = refrigeratorIngredients.find((element) => {
-      if (element === id) return true;
-      return false;
-    });
-    console.log(removeTarget);
-    // removeTarget을 찾았으니 hook의 state를 변화시키자. (filter 사용)
-    const newRefrigeratorIngredients = refrigeratorIngredients.filter(
-      (element) => element !== removeTarget
-    );
-    console.log(newRefrigeratorIngredients);
-    setRefrigeratorIngredients(newRefrigeratorIngredients);
-    // localStorage 갱신.
-    window.localStorage.setItem(
-      "refrigerator",
-      JSON.stringify(newRefrigeratorIngredients)
-    );
-    return 0;
-  };
+  console.log("임시 저장소 : " + refrigeratorIngredientsId);
+  console.log("selected에 저장된 값 : " + refrigeratorIngredientsId);
 
   return (
     <div className="sidebar">
       <h1 className="sidebar-header">냉장고</h1>
       <div className="sidebar-content">
         <ul className="ingredient-list">
-          {refrigeratorIngredients.map((selected) => {
-            const name = ingredientData.getIngredientNameById(selected);
+          {refrigeratorIngredientsId.map((ingredientId) => {
+            const name = ingredientData.getIngredientNameById(ingredientId);
             return (
-              <li>
+              <li key={ingredientId}>
                 <div className="ingredient-element">
                   {name}
                   <Button
                     variant="outlined"
                     color="primary"
                     size="small"
-                    onClick={() => deleteIngredient(this, selected)}
-                    disable
+                    onClick={() => unselectIngredient(ingredientId)}
                   >
                     <DeleteIcon
                       className="sidebar-delete-button"

@@ -4,13 +4,12 @@
   display: grid;
   grid-template-rows: repeat(
     5,
-    minmax(210px, 210px)
+    minmax(230px, 230px)
   ); /* 열의 갯수, 그리고 길이 */
   grid-template-columns: repeat(
     auto-fill,
-    minmax(210px, 210px)
+    minmax(250px, 250px)
   ); /* 행의 갯수, 그리고 길이 */
-  row-gap: 10px;
-  column-gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
 }
