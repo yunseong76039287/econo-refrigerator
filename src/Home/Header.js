@@ -8,11 +8,11 @@ const Header = () => {
         <span className="title">econo refrigerator</span>
       </Link>
 
-      <Link exact to="/">
+      <Link exact to="/recommendation">
         <span className="menu">recommendation</span>
       </Link>
 
-      <Link exact to="/">
+      <Link exact to="/exploration">
         <span className="menu">exploration</span>
       </Link>
     </div>

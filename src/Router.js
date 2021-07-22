@@ -38,7 +38,7 @@ const Router = ({ Page }) => {
           ></Route>
           <Route
             exact={true}
-            path="/"
+            path="/recommendation"
             component={() => {
               return (
                 <div className="contentsbody">
@@ -48,7 +48,7 @@ const Router = ({ Page }) => {
               );
             }}
           ></Route>
-          <Redirect to="/" />
+          <Redirect to="/recommendation" />
         </Switch>
       </div>
     </BrowserRouter>
