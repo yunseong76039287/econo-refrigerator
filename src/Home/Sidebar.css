@@ -2,6 +2,7 @@
 
 .sidebar {
   width: 25%;
+  max-width: 400px;
   background-color: #2a63ae;
   display: inline-block;
   border-right: 1px solid #3772bf;
