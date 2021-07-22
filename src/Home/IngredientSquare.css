@@ -8,10 +8,13 @@
   justify-content: flex-start;
   align-items: center;
   padding: 7px;
+  transition: all 0.35s ease;
 }
 
 .ingredient-container-item:hover {
-  border: 1px solid black;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .ingredient-header {
