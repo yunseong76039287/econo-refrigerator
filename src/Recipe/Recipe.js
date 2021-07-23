@@ -4,12 +4,21 @@ import { Link } from "react-router-dom";
 import ingredientData from "../data/ingredientData";
 import Toggle from "../Search/Toggle";
 import Comment from "./Comment";
+import Button from "@material-ui/core/Button";
+import ClearIcon from "@material-ui/icons/Clear";
 
 const Recipe = () => {
   const [recipeData, setRecipeData] = useState({});
   useEffect(() => setRecipeData(recipeListData), []);
 
   let likeCountProps = recipeData.likeCount;
+
+  // 비밀번호 입력을 받아옵니다.
+  const deleteComment = (commentId) => {
+    let password = prompt("비밀번호를 입력해주세요.");
+    console.log("비밀번호 확인" + password);
+    console.log("해당 댓글 id" + commentId);
+  };
 
   return (
     <div className="recipe">
@@ -51,6 +60,14 @@ const Recipe = () => {
             <div className="comment-box" key={e.id}>
               <div className="comment-author">{e.author}</div>
               <div className="comment-content">{e.content}</div>
+              <Button
+                className="comment-delete-button"
+                onClick={() => {
+                  deleteComment(e.id);
+                }}
+              >
+                <ClearIcon></ClearIcon>
+              </Button>
             </div>
           ))}
       </div>

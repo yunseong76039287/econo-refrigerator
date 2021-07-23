@@ -18,9 +18,17 @@ const IngredientGrid = () => {
   return (
     <div className="ingredient-container">
       {isLoaded ? (
-        ingredientData.ingredientDataArray.map(({ id, name, imageUrl }) => (
-          <IngredientSquare key={id} id={id} name={name} imageUrl={imageUrl} />
-        ))
+        ingredientData.ingredientDataArray.map(
+          ({ id, name, imageUrl, type }) => (
+            <IngredientSquare
+              key={id}
+              id={id}
+              name={name}
+              imageUrl={imageUrl}
+              type={type}
+            />
+          )
+        )
       ) : (
         <CircularProgress />
       )}
