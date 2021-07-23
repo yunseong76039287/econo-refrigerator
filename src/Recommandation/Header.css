@@ -20,4 +20,15 @@
   font-family: NotoSans;
   margin-left: 25px;
   font-size: 15px;
+
+  padding: 5px 10px;
+  border-radius: 11px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.menu:hover {
+  padding: 5px 10px;
+  border-radius: 11px;
+  background-color: #e0e0e0;
 }

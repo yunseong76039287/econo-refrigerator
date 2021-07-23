@@ -6,4 +6,11 @@
   height: 220px;
   width: auto;
   border-radius: 5px;
+  transition: all 0.35s ease;
+}
+
+.square-img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
