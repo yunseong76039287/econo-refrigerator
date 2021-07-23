@@ -31,7 +31,8 @@
 
 .home-header-over-title {
   padding: 10px 0px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: NotoSans;
+  font-weight: 400;
   font-size: 30px;
   color: white;
   border-bottom: 1px solid white;
@@ -53,20 +54,22 @@
 }
 
 .home-list-title {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: NotoSans;
+  font-weight: 500;
   font-size: 23px;
-  font-weight: 600;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .home-list-subtitle {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: NotoSans;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .home-list-mapping {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 25px;
+  margin-top: 18px;
   width: 100%;
 }

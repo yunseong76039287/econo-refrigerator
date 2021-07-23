@@ -10,14 +10,14 @@
 }
 
 .title {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: NotoSans;
   margin-left: 50px;
   font-size: 25px;
   font-weight: 600;
 }
 
 .menu {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: NotoSans;
   margin-left: 25px;
   font-size: 15px;
 }

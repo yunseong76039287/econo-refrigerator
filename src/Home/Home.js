@@ -24,6 +24,7 @@ const Home = () => {
           <div className="home-list-title">오늘은 이런 레시피가 어때요?</div>
           <div className="home-list-subtitle">Recipe</div>
         </div>
+
         <div className="home-recipe-list-mapping home-list-mapping">
           <HomeListSquare imageUrl={"/images/test/recipe1.jpg"} />
           <HomeListSquare imageUrl={"/images/test/recipe2.jpg"} />
@@ -35,9 +36,13 @@ const Home = () => {
         </div>
       </div>
       <div className="home-ingredient-list home-list">
-        <div className="home-ingredient-list-title home-list-title">
-          이런 재료들은 가지고 있나요?
+        <div className="home-list-titles">
+          <div className="home-ingredient-list-title home-list-title">
+            이런 재료들은 가지고 있나요?
+          </div>
+          <div className="home-list-subtitle">Ingredient</div>
         </div>
+
         <div className="home-ingredient-list-mapping home-list-mapping">
           {ingredientData.ingredientDataArray.map(({ imageUrl }, index) => {
             if (index > 10) return;

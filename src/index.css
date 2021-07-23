@@ -1,3 +1,34 @@
+@font-face {
+  font-family: "NotoSans";
+  src: local("/font/NotoSans-Black.otf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: local("/font/NotoSans-Bols.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: local("/font/NotoSans-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: local("/font/NotoSans-Regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: local("/font/NotoSans-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: local("/font/NotoSans-Thin.otf");
+  font-weight: 100;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
