@@ -2,11 +2,6 @@
 
 const ingredientDataArray = [
   {
-    id: "test",
-    name: "Testname",
-    imageUrl: "/images/ingredientImgData",
-  },
-  {
     id: 1,
     name: "밥",
     imageUrl: "/images/ingredientImgData/rice.jpg",
@@ -54,7 +49,7 @@ const ingredientDataArray = [
   {
     id: 10,
     name: "밀가루(강력)",
-    imageUrl: "/images/ingredientImgData/bread_flour.jpg",
+    imageUrl: "/images/ingredientImgData/bread_powder.jpg",
   },
   {
     id: 11,
