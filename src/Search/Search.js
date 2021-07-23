@@ -3,7 +3,7 @@ import React from "react";
 import Content from "./Content";
 const Search = () => {
   return (
-    <div className="Search-recommandation">
+    <div className="search">
       <Content />
     </div>
   );
