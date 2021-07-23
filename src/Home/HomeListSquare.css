@@ -1,0 +1,9 @@
+.square {
+  margin-right: 20px;
+}
+
+.square-img {
+  height: 220px;
+  width: auto;
+  border-radius: 5px;
+}

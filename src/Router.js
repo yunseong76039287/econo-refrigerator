@@ -1,11 +1,12 @@
 import "./Router.css";
 import React, { useState, useEffect } from "react";
-import Header from "./Home/Header";
-import Sidebar from "./Home/Sidebar";
-import Home from "./Home/Home";
+import Header from "./Recommandation/Header";
+import Sidebar from "./Recommandation/Sidebar";
+import Recommandation from "./Recommandation/Recommandation";
 import Recipe from "./Recipe/Recipe.js";
 import Search from "./Search/Search";
 import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
+import Home from "./Home/Home";
 
 const Router = ({ Page }) => {
   return (
@@ -37,18 +38,28 @@ const Router = ({ Page }) => {
             }}
           ></Route>
           <Route
-            exact={true}
             path="/recommendation"
             component={() => {
               return (
                 <div className="contentsbody">
                   <Sidebar />
+                  <Recommandation />
+                </div>
+              );
+            }}
+          ></Route>
+          <Route
+            exact
+            path="/"
+            component={() => {
+              return (
+                <div className="contentsbody">
                   <Home />
                 </div>
               );
             }}
           ></Route>
-          <Redirect to="/recommendation" />
+          <Redirect to="/" />
         </Switch>
       </div>
     </BrowserRouter>
