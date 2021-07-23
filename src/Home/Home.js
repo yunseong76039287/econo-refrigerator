@@ -38,7 +38,7 @@ const Home = () => {
       <div className="home-ingredient-list home-list">
         <div className="home-list-titles">
           <div className="home-ingredient-list-title home-list-title">
-            이런 재료들은 가지고 있나요?
+            이 재료들로 만든 레시피는 어떤가요?
           </div>
           <div className="home-list-subtitle">Ingredient</div>
         </div>
