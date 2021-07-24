@@ -176,8 +176,8 @@ let fishCakeRamen = {
       ingredient: "마라소스",
     },
     {
-      ingredient:"다시마",
-    }
+      ingredient: "다시마",
+    },
   ],
   steps: [
     {
@@ -191,7 +191,8 @@ let fishCakeRamen = {
       imagePath: "",
     },
     {
-      description: "3. 청양고추(2개), 대파(1/4대)는 두께 0.3cm로 송송 썰어 준비한다.",
+      description:
+        "3. 청양고추(2개), 대파(1/4대)는 두께 0.3cm로 송송 썰어 준비한다.",
       imagePath: "",
     },
     {
@@ -265,11 +266,13 @@ let porkKimchiJjim = {
       imagePath: "",
     },
     {
-      description: "3. 청양고추(3개)는 두껍게 썰고 고기(1kg)는 주먹 크기로 자른다.",
+      description:
+        "3. 청양고추(3개)는 두껍게 썰고 고기(1kg)는 주먹 크기로 자른다.",
       imagePath: "",
     },
     {
-      description: "4. 냄비에 김치(1.3kg)를 깔고 고기를 올린 후 다시 김치로 덮어준다.",
+      description:
+        "4. 냄비에 김치(1.3kg)를 깔고 고기를 올린 후 다시 김치로 덮어준다.",
       imagePath: "",
     },
     {
@@ -301,7 +304,8 @@ let porkKimchiJjim = {
 
 let tunaRice = {
   name: "참치덮밥",
-  description: "혼밥족을 위한 1인분 레시피, 쉽고 간단해 누구나 맛을 낼 수 있는 레시피. 출처 : https://www.10000recipe.com/recipe/6860493",
+  description:
+    "혼밥족을 위한 1인분 레시피, 쉽고 간단해 누구나 맛을 낼 수 있는 레시피. 출처 : https://www.10000recipe.com/recipe/6860493",
   imageUrl: "",
   likeCount: 0,
   ingredients: [
@@ -353,7 +357,8 @@ let tunaRice = {
       imagePath: "",
     },
     {
-      description: "3. 마늘향이 퍼지고 마늘이 노릇해지기 시작하면 양파와 당근 , 소금을 한두꼬집 넣고 볶는다.	",
+      description:
+        "3. 마늘향이 퍼지고 마늘이 노릇해지기 시작하면 양파와 당근 , 소금을 한두꼬집 넣고 볶는다.	",
       imagePath: "",
     },
     {
@@ -365,11 +370,13 @@ let tunaRice = {
       imagePath: "",
     },
     {
-      description: "6. 물 1/2컵과 고추장 1스푼 , 고춧가루 1스푼 , 설탕 1/2스푼 , 물엿 1/2스푼을 넣고	",
+      description:
+        "6. 물 1/2컵과 고추장 1스푼 , 고춧가루 1스푼 , 설탕 1/2스푼 , 물엿 1/2스푼을 넣고	",
       imagePath: "",
     },
     {
-      description: "7. 썰어둔 청양고추나 파 등을 넣고 취향에 맞는 농도로 졸인다.(물이 끓기 시작하면 간을 보고 입맛에 따라 물과 소금으로 맞춰준다.)",
+      description:
+        "7. 썰어둔 청양고추나 파 등을 넣고 취향에 맞는 농도로 졸인다.(물이 끓기 시작하면 간을 보고 입맛에 따라 물과 소금으로 맞춰준다.)",
       imagePath: "",
     },
     {
@@ -383,6 +390,7 @@ let tunaRice = {
 };
 
 let lettuceGeotjeorl = {
+  id: 10,
   name: "상추겉절이",
   description: "봄철 입맛 돌게 만드는 상추겉절이~ 밥에도 안성맞춤!!",
   imageUrl: "/images/lettuceGeotjeorl/main.jpg",
@@ -415,26 +423,29 @@ let lettuceGeotjeorl = {
   ],
   steps: [
     {
+      description: "1. 상추(20장)를 썰거나 손으로 뜯어주세요.",
+      imagePath: "",
+    },
+    {
       description:
-        "1. 상추(20장)를 썰거나 손으로 뜯어주세요.",
+        "2. 큰 볼에 고춧가루(2큰술), 다진마늘(1큰술), 간장(1큰술), 설탕(1큰술), 식초(2큰술), 참기름(1큰술), 통깨(1큰술)을 넣고 섞어주세요.",
       imagePath: "",
     },
     {
-      description: "2. 큰 볼에 고춧가루(2큰술), 다진마늘(1큰술), 간장(1큰술), 설탕(1큰술), 식초(2큰술), 참기름(1큰술), 통깨(1큰술)을 넣고 섞어주세요.",
+      description:
+        "3. 상추를 한쪽에 몰아준 다음 상추를 조금씩 잡아서 양념장을 조금씩 무침 반복! 그래야만 간 조절에 실패 없음!",
       imagePath: "",
     },
     {
-      description: "3. 상추를 한쪽에 몰아준 다음 상추를 조금씩 잡아서 양념장을 조금씩 무침 반복! 그래야만 간 조절에 실패 없음!",
+      description:
+        "4. 통깨 팍팍! 손목에 힘을 빼고 아주 살살살 버무려 주면 완성!",
       imagePath: "",
     },
     {
-      description: "4. 통깨 팍팍! 손목에 힘을 빼고 아주 살살살 버무려 주면 완성!",
+      description:
+        "5. 샐러드처럼 드셔도 좋고, 밥 넣고 상추 넣고 참기름 쪼르륵해서 비빔밥해서 드시면 이 또한 별미 중의 별미!",
       imagePath: "",
     },
-    {
-      description: "5. 샐러드처럼 드셔도 좋고, 밥 넣고 상추 넣고 참기름 쪼르륵해서 비빔밥해서 드시면 이 또한 별미 중의 별미!",
-      imagePath: "",
-    }
   ],
 
   likeCount: 0,
@@ -442,8 +453,10 @@ let lettuceGeotjeorl = {
 };
 
 let asparagusBeef = {
+  id: 20,
   name: "아스파라거스 소고기말이",
-  description: "아스파라거스는 섬유질이 풍부해 칼로리가 매우 낮지만 영양분은 풍부하게 들어 있어 체중 감량에 좋은 식재료입니다.",
+  description:
+    "아스파라거스는 섬유질이 풍부해 칼로리가 매우 낮지만 영양분은 풍부하게 들어 있어 체중 감량에 좋은 식재료입니다.",
   imageUrl: "/images/asparagusBeef/main.jpg",
   likeCount: 0,
   ingredients: [
@@ -479,7 +492,8 @@ let asparagusBeef = {
       imagePath: "",
     },
     {
-      description: "2. 아스파라거스(12개)는 질깃한 겉 껍질을 제거하고, 질긴 아랫부분도 손 한마디 정도 잘라서 준비합니다.",
+      description:
+        "2. 아스파라거스(12개)는 질깃한 겉 껍질을 제거하고, 질긴 아랫부분도 손 한마디 정도 잘라서 준비합니다.",
       imagePath: "",
     },
     {
@@ -487,23 +501,28 @@ let asparagusBeef = {
       imagePath: "",
     },
     {
-      description: "4. 달궈진 팬에 버터를 적당히 바르고, 아스파라거스 소고기 말이를 이음새가 바닥을 보도록 올립니다.",
+      description:
+        "4. 달궈진 팬에 버터를 적당히 바르고, 아스파라거스 소고기 말이를 이음새가 바닥을 보도록 올립니다.",
       imagePath: "",
     },
     {
-      description: "5. 불은 중불에 놓고, 아랫부분에서 부터 고기의 붉은색이 2/3까지 갈색으로 구워지면, 뒤집어서 구워줍니다.",
+      description:
+        "5. 불은 중불에 놓고, 아랫부분에서 부터 고기의 붉은색이 2/3까지 갈색으로 구워지면, 뒤집어서 구워줍니다.",
       imagePath: "",
     },
     {
-      description: "고기가 구워지는 동안, 발사믹식초 1/2컵, 꿀 1큰술, 레드와인 2큰술을 넣고 바글바글 끓여줍니다.(5~10분)",
+      description:
+        "고기가 구워지는 동안, 발사믹식초 1/2컵, 꿀 1큰술, 레드와인 2큰술을 넣고 바글바글 끓여줍니다.(5~10분)",
       imagePath: "",
     },
     {
-      description: "소스 묽기는 쪼로로 ~ 흐르는 정도가 좋습니다. 너무 많이 조려지면 소스가 딱딱해질 수 있으니 주의해 주세요.",
+      description:
+        "소스 묽기는 쪼로로 ~ 흐르는 정도가 좋습니다. 너무 많이 조려지면 소스가 딱딱해질 수 있으니 주의해 주세요.",
       imagePath: "",
     },
     {
-      description:"구워진 아스파라거스 소고기 말이에 허니 발사믹 글레이즈를 적당히 끼얹어줍니다.",
+      description:
+        "구워진 아스파라거스 소고기 말이에 허니 발사믹 글레이즈를 적당히 끼얹어줍니다.",
       imagePath: "",
     },
   ],
@@ -513,8 +532,10 @@ let asparagusBeef = {
 };
 
 let friedEggplant = {
+  id: 30,
   name: "백종원 가지볶음",
-  description: "좋은 먹거리 가지로 간단하지만 정말 맛있는 가지볶음을 해 보아요:D",
+  description:
+    "좋은 먹거리 가지로 간단하지만 정말 맛있는 가지볶음을 해 보아요:D",
   imageUrl: "/images/friedEggplant/main.jpg",
   likeCount: 0,
   ingredients: [
@@ -554,20 +575,22 @@ let friedEggplant = {
   ],
   steps: [
     {
+      description: "1. 가지 2개를 먹기좋게 썰어주세요.",
+      imagePath: "",
+    },
+    {
       description:
-        "1. 가지 2개를 먹기좋게 썰어주세요.",
+        "2. 양파(1/4개)는 채썰고, 파(1대)와 고추(1개)는 너무 얇지않게 쫑쫑 썰어주세요.",
       imagePath: "",
     },
     {
-      description: "2. 양파(1/4개)는 채썰고, 파(1대)와 고추(1개)는 너무 얇지않게 쫑쫑 썰어주세요.",
+      description:
+        "3. 양념장을 만들어 주세요. (간장 2큰술, 굴소스 1큰술, 설탕 1큰술, 다진마늘 0.5큰술, 고추가루0.5큰술",
       imagePath: "",
     },
     {
-      description: "3. 양념장을 만들어 주세요. (간장 2큰술, 굴소스 1큰술, 설탕 1큰술, 다진마늘 0.5큰술, 고추가루0.5큰술",
-      imagePath: "",
-    },
-    {
-      description: "4. 넉넉하게 기름을 두른 팬에 파를 먼저 넣고 볶아서 파향을 내어 주면 볶음의 풍미가 훨씬 좋아진답니다.",
+      description:
+        "4. 넉넉하게 기름을 두른 팬에 파를 먼저 넣고 볶아서 파향을 내어 주면 볶음의 풍미가 훨씬 좋아진답니다.",
       imagePath: "",
     },
     {
@@ -575,15 +598,17 @@ let friedEggplant = {
       imagePath: "",
     },
     {
-      description: "6. 가지가 어느정도 익으면 양념장을 넣고 양념이 잘 베이도록 볶아줍니다.",
+      description:
+        "6. 가지가 어느정도 익으면 양념장을 넣고 양념이 잘 베이도록 볶아줍니다.",
       imagePath: "",
     },
     {
-      description: "7. 완성무렵에 참기름 1큰술 휘리릭~ 둘러주고요, 고추도 넣어줍니다. 지금 고추를 넣으면 씹히는 맛이 있어 좋더라구요.",
+      description:
+        "7. 완성무렵에 참기름 1큰술 휘리릭~ 둘러주고요, 고추도 넣어줍니다. 지금 고추를 넣으면 씹히는 맛이 있어 좋더라구요.",
       imagePath: "",
     },
     {
-      description:"8. 마지막으로 통깨 0.5큰술 톡톡톡~ 완성입니다 : )",
+      description: "8. 마지막으로 통깨 0.5큰술 톡톡톡~ 완성입니다 : )",
       imagePath: "",
     },
   ],
@@ -591,3 +616,7 @@ let friedEggplant = {
   likeCount: 0,
   comments: [],
 };
+
+let testRecipeList = [asparagusBeef, lettuceGeotjeorl, friedEggplant];
+
+export default { testRecipeList };
