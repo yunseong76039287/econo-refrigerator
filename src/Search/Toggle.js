@@ -4,29 +4,38 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import Button from "@material-ui/core/Button";
 
 const Toggle = ({ id, likeCount }) => {
-  let [count, setCount] = useState(likeCount);
-  let [status, setStatus] = useState(localStorage.getItem(id));
+  let [status, setStatus] = useState(false);
+  let [count, setCount] = useState(0);
+  useEffect(() => {
+    setCount(likeCount);
+    if (
+      JSON.parse(localStorage.getItem(id)) === null ||
+      JSON.parse(localStorage.getItem(id)) === undefined
+    ) {
+      localStorage.setItem(id, JSON.stringify(false));
+      setStatus(false);
+    } else {
+      setStatus(JSON.parse(localStorage.getItem(id)));
+    }
+  }, [likeCount]);
 
-  console.log(
-    "likeCount 의 자료형 " + typeof likeCount + "likeCount :" + likeCount
-  );
-  console.log("status id: " + id + "," + status);
-
+  console.log("id값 : " + id);
+  console.log("id type : " + typeof id);
+  console.log("likeCount값 : " + count);
+  console.log("likeCount type : " + typeof count);
+  console.log("localstorage에 저장된 값 : " + status);
+  console.log("---------- ");
   // 아직 서버와 연동이 안되서 like Count를 서버에 동기화 하지 못함.
   const handleClick = (event) => {
-    console.log("status type" + typeof status);
-
     if (status === true) {
       setCount(count - 1);
-      setStatus(!status);
       window.localStorage.setItem(id, !status);
     }
     if (status === false) {
       setCount(count + 1);
-      setStatus(!status);
       window.localStorage.setItem(id, !status);
     }
-    return;
+    return setStatus(!status);
   };
 
   const changeIcon = (s) => {
@@ -35,10 +44,14 @@ const Toggle = ({ id, likeCount }) => {
     else return <FavoriteBorderIcon></FavoriteBorderIcon>;
   };
 
+  const shownLikeCount = (cnt) => {
+    return <span>{cnt}</span>;
+  };
+
   // 좋아요가 안눌렸을 때
   return (
     <Button id="like" onClick={handleClick}>
-      <span>{count}</span>
+      {shownLikeCount(count)}
       {changeIcon(status)}
     </Button>
   );

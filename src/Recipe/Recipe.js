@@ -12,6 +12,8 @@ const Recipe = () => {
   useEffect(() => setRecipeData(recipeListData), []);
 
   let likeCountProps = recipeData.likeCount;
+  console.log("likeCountProps : " + recipeData.likeCount);
+  console.log("likeCountProps 의 타입 : " + typeof recipeData.likeCount);
 
   // 비밀번호 입력을 받아옵니다.
   const deleteComment = (commentId) => {
@@ -37,7 +39,11 @@ const Recipe = () => {
       <div className="recipe-ingredient">
         {recipeData.ingredients &&
           recipeData.ingredients.map((e) => {
-            return <span>{ingredientData.getIngredientNameById(e.id)}</span>;
+            return (
+              <span key={e.id}>
+                {ingredientData.getIngredientNameById(e.id)}
+              </span>
+            );
           })}
       </div>
       <h2>레시피 설명</h2>
@@ -45,7 +51,7 @@ const Recipe = () => {
         {recipeData.steps &&
           recipeData.steps.map((e) => {
             return (
-              <div>
+              <div key={e.id}>
                 <img src={e.imagePath}></img>
                 <div>{e.description}</div>
               </div>
@@ -80,7 +86,7 @@ const Recipe = () => {
 export default Recipe;
 
 const recipeListData = {
-  id: 1,
+  id: 10,
   name: "토마토 파스타",
   description: "토마토를 곁들인 매콤달콤 파스타",
   imageUrl: "/images/test_pasta.jpg",
