@@ -4,17 +4,16 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import Button from "@material-ui/core/Button";
 
 const Toggle = ({ id, likeCount }) => {
-  console.log(
-    "likeCount 의 자료형 " + typeof likeCount + "likeCount :" + likeCount
-  );
   let [count, setCount] = useState(likeCount);
   let [status, setStatus] = useState(localStorage.getItem(id));
 
-  useEffect(() => {}, []);
+  console.log(
+    "likeCount 의 자료형 " + typeof likeCount + "likeCount :" + likeCount
+  );
   console.log("status id: " + id + "," + status);
 
   // 아직 서버와 연동이 안되서 like Count를 서버에 동기화 하지 못함.
-  const handleClick = () => {
+  const handleClick = (event) => {
     console.log("status type" + typeof status);
 
     if (status === true) {
@@ -27,8 +26,7 @@ const Toggle = ({ id, likeCount }) => {
       setStatus(!status);
       window.localStorage.setItem(id, !status);
     }
-
-    return setStatus(!status);
+    return;
   };
 
   const changeIcon = (s) => {
@@ -39,7 +37,7 @@ const Toggle = ({ id, likeCount }) => {
 
   // 좋아요가 안눌렸을 때
   return (
-    <Button id="like-on" onClick={handleClick}>
+    <Button id="like" onClick={handleClick}>
       <span>{count}</span>
       {changeIcon(status)}
     </Button>
