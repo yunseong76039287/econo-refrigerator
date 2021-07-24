@@ -17,20 +17,18 @@ const Content = () => {
 
   return (
     <div className="search-content">
-      <div className="result-container">
-        <h1 className="select-result-title">레시피 검색 결과</h1>
-        {searchingResultRecipes.map((element) => {
-          return (
-            <ResultBox
-              id={element.id}
-              name={element.name}
-              description={element.description}
-              imageUrl={element.imagePath}
-              likeCount={element.likeCount}
-            />
-          );
-        })}
-      </div>
+      <h1 className="select-result-title">우리가 추천하는 레시피는...</h1>
+      {searchingResultRecipes.map((element) => {
+        return (
+          <ResultBox
+            id={element.id}
+            name={element.name}
+            description={element.description}
+            imageUrl={element.imagePath}
+            likeCount={element.likeCount}
+          />
+        );
+      })}
     </div>
   );
 };

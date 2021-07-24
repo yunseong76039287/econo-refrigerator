@@ -1,0 +1,15 @@
+/* 이미지 사이즈에 맞추어 추후에 행열 길이 변경 */
+
+.ingredient-container {
+  display: grid;
+  grid-template-rows: repeat(
+    5,
+    minmax(230px, 230px)
+  ); /* 열의 갯수, 그리고 길이 */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 250px)
+  ); /* 행의 갯수, 그리고 길이 */
+  gap: 20px;
+  flex-wrap: wrap;
+}

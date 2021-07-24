@@ -2,12 +2,6 @@
 
 const ingredientDataArray = [
   {
-    id: "test",
-    name: "Testname",
-    imageUrl: "/images/ingredientImgData",
-    type: "탄수화물",
-  },
-  {
     id: 1,
     name: "밥",
     imageUrl: "/images/ingredientImgData/rice.jpg",

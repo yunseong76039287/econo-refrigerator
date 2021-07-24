@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 82px;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.title {
+  font-family: NotoSans;
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.menu {
+  font-family: NotoSans;
+  margin-left: 25px;
+  font-size: 15px;
+
+  padding: 5px 10px;
+  border-radius: 11px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.menu:hover {
+  padding: 5px 10px;
+  border-radius: 11px;
+  background-color: #e0e0e0;
+}

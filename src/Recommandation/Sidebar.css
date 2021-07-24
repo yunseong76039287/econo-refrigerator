@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap");
+
+.sidebar {
+  width: 25%;
+  max-width: 400px;
+  background-color: #2a63ae;
+  /* background-color: #1b4172; */
+  display: inline-block;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 15px;
+}
+
+.sidebar-header {
+  font-weight: 700;
+  color: white;
+  padding-left: 40px;
+  /* border-bottom: 10px solid #ffffff; */
+  border-width: 3px;
+
+  padding: 30px 20px;
+  margin: 0;
+}
+
+.sidebar-content {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ingredient-list {
+  font-family: NotoSans;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2em;
+  font-size: x-large;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.ingredient-element {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  background-color: white;
+  border-radius: 15px;
+  border-bottom: 1px solid #3772bf;
+  padding: 10px 0;
+  padding-left: 15px;
+  margin-bottom: 15px;
+
+  font-size: 20px;
+}
+
+.ingredient-element-outer {
+  position: relative;
+  width: 85%;
+  /* height: 100px; */
+  padding: 1px 0px;
+  background-color: white;
+  border-radius: 15px;
+  /* border-bottom: 1px solid #3772bf; */
+  margin-bottom: 15px;
+}
+
+.ingredient-element-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px;
+  /* border-bottom: 1px solid #3772bf; */
+  padding: 10px 0;
+  padding-left: 15px;
+
+  font-size: 20px;
+}
+
+.ingredient-element:hover {
+  background-color: #f0efef;
+}
+
+.ingredient-pin {
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 35px;
+  height: 35px;
+}
+
+.search-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  border-radius: 15px;
+  background-color: #152f57;
+  padding: 15px 30px;
+  margin-top: 20px;
+
+  color: #f7d556;
+}
+
+.search-link-text {
+  color: #f7d556;
+  text-align: center;
+  font-weight: 800;
+
+  margin-left: 5px;
+}
