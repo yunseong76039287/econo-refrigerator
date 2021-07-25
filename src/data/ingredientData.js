@@ -169,6 +169,12 @@ const ingredientDataArray = [
     imageUrl: "/images/ingredientImgData/carrot.jpg",
     type: "농산물",
   },
+  {
+    id: 56,
+    name: "아스파라거스",
+    imageUrl: "",
+    type: "농산물",
+  },
 
   {
     id: 101,
@@ -290,7 +296,24 @@ const ingredientDataArray = [
     imageUrl: "/images/ingredientImgData/curry_powder.jpg",
     type: "소스&장류",
   },
-
+  {
+    id: 124,
+    name: "꿀",
+    imageUrl: "",
+    type: "소스&장류",
+  },
+  {
+    id: 125,
+    name: "레드와인",
+    imageUrl: "",
+    type: "소스&장류",
+  },
+  {
+    id: 126,
+    name: "발사믹식초",
+    imageUrl: "",
+    type: "소스&장류",
+  },
   {
     id: 161,
     name: "계란",
@@ -331,6 +354,12 @@ const ingredientDataArray = [
     id: 201,
     name: "돼지목살",
     imageUrl: "/images/ingredientImgData/pork_neck.jpg",
+    type: "육류",
+  },
+  {
+    id: 221,
+    name: "샤브샤브용 소고기",
+    imageUrl: "",
     type: "육류",
   },
 ];

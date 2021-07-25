@@ -1,6 +1,7 @@
 import "./Content.css";
 import React, { useState, useEffect } from "react";
 import ResultBox from "./ResultBox";
+import recipeData from "../data/recipeData";
 
 const Content = () => {
   const [searchingResultRecipes, setSearchingResultRecipes] = useState([]);
@@ -9,7 +10,13 @@ const Content = () => {
     setSearchingResultRecipes(sufficientSearchResultRecipesData);
     searchingResultRecipes.map((element) => {
       const Id = element.id;
-      window.localStorage.setItem(Id, false);
+      console.log("처음에만 실행되나요?");
+      if (
+        localStorage.getItem(Id) === null ||
+        localStorage.getItem(Id) === undefined
+      ) {
+        window.localStorage.setItem(Id, false);
+      }
     });
   }, []);
 
