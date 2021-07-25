@@ -39,7 +39,9 @@ const IngredientSquare = ({ id, name, imageUrl, type }) => {
           <AddIcon fontSize="small" style={{ color: "#F7D556" }} />
         </IconButton>
       </div>
-      <img src={imageUrl}></img>
+      <div className="ingredient-thumbnail">
+        <img className="ingredient-thumbnail-img" src={imageUrl} />
+      </div>
       <div className="ingredient-footer">
         <span className="ingredient-name">{name}</span>
         <div className="ingredient-type">{type}</div>
