@@ -784,6 +784,241 @@ let marbledSoybeanPasteStew = {
   comments: [],
 };
 
+let bokchoyChivesShrimpRice = {
+  name: "청경채부추새우덮밥",
+  description:
+    "새우를 좋아하는 남편을 위한 건강식 청경채새우덮밥! 중국집보다 더 맛있게 냠냠 완성!",
+  imageUrl: "/images/bokchoyChivesShrimpRice/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "밥",
+    },
+    {
+      ingredient: "청경채",
+    },
+    {
+      ingredient: "부추",
+    },
+    {
+      ingredient: "새우",
+    },
+    {
+      ingredient: "새송이버섯",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+    {
+      ingredient: "청양고추",
+    },
+    {
+      ingredient: "식용유",
+    },
+    {
+      ingredient: "굴소스",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "참기름",
+    },
+    {
+      ingredient: "소금",
+    },
+    {
+      ingredient: "후추",
+    },
+    {
+      ingredient: "전분",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 요리를 시작하기전에 먼저 냉동새우(12마리)는 해동을 위해 한번씻어서 채에 받쳐두고 후추를 조금 뿌려줘요!",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 물 250ml(한컵)에 전분가루(1T)녹말물도 먼저 만들어요!",
+      imagePath: "",
+    },
+    {
+      description: "3. 팬에 식용유를 두르고 다진마늘 (1큰술)과 양파 (1/2개)를 볶아요!",
+      imagePath: "",
+    },
+    {
+      description:
+        "4. 양파가 조금 흐물해졌다 싶을때 해동시킨 새우를 넣어요!",
+      imagePath: "",
+    },
+    {
+      description:
+        "5. 새우가 맛있게 붉으스름해질때까지 볶아줘요.",
+      imagePath: "",
+    },
+    {
+      description: "6. 새우가 어느정도 익어갈때쯤 씻어놓은 청경채(4뿌리)를 넣어줘요!",
+      imagePath: "",
+    },
+    {
+      description: "7. 청경채에 숨이 죽을때까지 20초정도 볶아주다가	",
+      imagePath: "",
+    },
+    {
+      description:
+        "8. 숨이 어느정도 죽으면 버섯과 굴소스 1T 간장1T를 넣고 휘리릭 볶아줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "9. 준비했던 녹말물을 다시 잘 풀어주고 넣어주세요!",
+      imagePath: "",
+    },
+    {
+      description:
+        "10. 센불로 촤르르 볶은후 불을끄고 부추한줌과 참기름을 넣고 뒤적여주세요! 기호에따라 청양고추를 썰어주셔도 좋아요!",
+      imagePath: "",
+    },
+    {
+      description:
+        "11. 밥위에 부어주면 완성!",
+      imagePath: "",
+    },
+  ],
+  likeCount: 0,
+  comments: [],
+};
+
+let asparagusGarlicFried = {
+  name: "아스파라거스 마늘볶음",
+  description:
+    "맛남의 광장에서 나온 아스파라거스요리! 입에 감기는 맛이지만, 쉬운 요리법에 술안주, 밥반찬으로 추천!",
+  imageUrl: "/images/asparagusGarlicFried/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "아스파라거스",
+    },
+    {
+      ingredient: "마늘",
+    },
+    {
+      ingredient: "홍고추",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "굴소스",
+    },
+    {
+      ingredient: "식용유",
+    },
+
+  ],
+  steps: [
+    {
+      description:
+        "1. 아스파라거스(9줄)는 4~5cm 길이로 자른다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 마늘(3개)은 굵게 다지고 홍고추(1개)는 송송 썬다.",
+      imagePath: "",
+    },
+    {
+      description: "3. 달군 팬에 기름을 두르고 마늘을 볶아 마늘기름을 낸다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "4. 아스파라거스를 넣고 볶다가 간장(1스푼), 굴소스(1/2스푼)를 넣어 잘 섞으며 볶는다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "5. 홍고추를 넣고 가볍게 볶아 완성한다.",
+      imagePath: "",
+    },
+   
+  ],
+  likeCount: 0,
+  comments: [],
+};
+
+let squashRamen = {
+  name: "애호박국수",
+  description:
+    "호로록 간단하게 국수를 먹고 싶을 땐? 수미네반찬 애호박국수!!",
+  imageUrl: "/images/squashRamen/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "애호박",
+    },
+    {
+      ingredient: "소면",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "들기름",
+    },
+    {
+      ingredient: "소금",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+    {
+      ingredient: "고춧가루",
+    },
+    {
+      ingredient: "참기름",
+    },
+    {
+      ingredient: "깨",
+    },
+
+  ],
+  steps: [
+    {
+      description:
+        "1. 애호박(1과 1/2개)은 어슷 썰어준 뒤 채 썰고 대파(1/4대)도 어슷하게 채 썬다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 팬에 들기름(약간)을 두르고 애호박을 볶다가 대파를 넣고 볶는다.",
+      imagePath: "",
+    },
+    {
+      description: "3. 소금 (1/2스푼), 다진 마늘(1/3스푼), 고춧가루(1티스푼), 참기름(1스푼), 깨(1스푼) 를 넣고 볶는다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "4. 끓는 물에 소금을 넣고 소면을 삶아내어 찬물에 헹군다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "5. 그릇에 소면을 담고 애호박볶음을 올려 완성한다.",
+      imagePath: "",
+    },
+   
+  ],
+  likeCount: 0,
+  comments: [],
+};
 let testRecipeList = [asparagusBeef, lettuceGeotjeorl, friedEggplant];
 let testRecipe = asparagusBeef;
 
