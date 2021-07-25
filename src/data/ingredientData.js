@@ -170,9 +170,33 @@ const ingredientDataArray = [
     type: "농산물",
   },
   {
+    id: 47,
+    name: "표고버섯",
+    imageUrl: "/images/ingredientImgData/shiitake_mushroom.jpg",
+    type: "농산물",
+  },
+  {
+    id: 48,
+    name: "새송이버섯",
+    imageUrl: "/images/ingredientImgData/oyster_mushroom.jpg",
+    type: "농산물",
+  },
+  {
+    id: 49,
+    name: "콩나물",
+    imageUrl: "/images/ingredientImgData/bean_sprouts.jpg",
+    type: "농산물",
+  },
+  {
+    id: 50,
+    name: "깨",
+    imageUrl: "/images/ingredientImgData/sesame.jpg",
+    type: "농산물",
+  }, 
+  {
     id: 56,
     name: "아스파라거스",
-    imageUrl: "",
+    imageUrl: "/images/ingredientImgData/asparagus.jpg",
     type: "농산물",
   },
 
