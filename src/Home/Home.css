@@ -31,7 +31,6 @@
 
 .home-header-over-title {
   padding: 10px 0px;
-  font-family: NotoSans;
   font-weight: 400;
   font-size: 30px;
   color: white;
@@ -61,14 +60,12 @@
 }
 
 .home-list-title {
-  font-family: NotoSans;
   font-weight: 500;
   font-size: 23px;
   margin-right: 12px;
 }
 
 .home-list-subtitle {
-  font-family: NotoSans;
   font-weight: 300;
   font-size: 18px;
 }

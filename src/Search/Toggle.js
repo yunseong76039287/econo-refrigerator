@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
 
 const Toggle = ({ id, likeCount }) => {
   let [status, setStatus] = useState(false);
@@ -44,16 +44,14 @@ const Toggle = ({ id, likeCount }) => {
     else return <FavoriteBorderIcon></FavoriteBorderIcon>;
   };
 
-  const shownLikeCount = (cnt) => {
-    return <span>{cnt}</span>;
-  };
-
   // 좋아요가 안눌렸을 때
   return (
-    <Button id="like" onClick={handleClick}>
-      {shownLikeCount(count)}
-      {changeIcon(status)}
-    </Button>
+    <div className="like-button like-button-holder">
+      <div className="like-button">{count}</div>
+      <IconButton id="like-on" onClick={handleClick}>
+        {changeIcon(status)}
+      </IconButton>
+    </div>
   );
 };
 
