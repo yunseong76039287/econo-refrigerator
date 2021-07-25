@@ -461,27 +461,35 @@ let asparagusBeef = {
   likeCount: 0,
   ingredients: [
     {
+      id: 56,
       ingredient: "아스파라거스",
     },
     {
+      id: 221,
       ingredient: "샤브샤브용 소고기",
     },
     {
+      id: 106,
       ingredient: "소금",
     },
     {
+      id: 116,
       ingredient: "후추",
     },
     {
+      id: 163,
       ingredient: "버터",
     },
     {
+      id: 126,
       ingredient: "발사믹식초",
     },
     {
+      id: 124,
       ingredient: "꿀",
     },
     {
+      id: 125,
       ingredient: "레드와인",
     },
   ],
@@ -512,17 +520,17 @@ let asparagusBeef = {
     },
     {
       description:
-        "고기가 구워지는 동안, 발사믹식초 1/2컵, 꿀 1큰술, 레드와인 2큰술을 넣고 바글바글 끓여줍니다.(5~10분)",
+        "6. 고기가 구워지는 동안, 발사믹식초 1/2컵, 꿀 1큰술, 레드와인 2큰술을 넣고 바글바글 끓여줍니다.(5~10분)",
       imagePath: "",
     },
     {
       description:
-        "소스 묽기는 쪼로로 ~ 흐르는 정도가 좋습니다. 너무 많이 조려지면 소스가 딱딱해질 수 있으니 주의해 주세요.",
+        "7. 소스 묽기는 쪼로로 ~ 흐르는 정도가 좋습니다. 너무 많이 조려지면 소스가 딱딱해질 수 있으니 주의해 주세요.",
       imagePath: "",
     },
     {
       description:
-        "구워진 아스파라거스 소고기 말이에 허니 발사믹 글레이즈를 적당히 끼얹어줍니다.",
+        "8. 구워진 아스파라거스 소고기 말이에 허니 발사믹 글레이즈를 적당히 끼얹어줍니다.",
       imagePath: "",
     },
   ],
@@ -648,12 +656,11 @@ let eggJangjorim = {
     {
       ingredient: "설탕",
     },
-
-
   ],
   steps: [
     {
-      description: "1. 냄비에 계란이 잠길정도로 물을 붓고 소금 (1스푼), 식초 (1스푼)을 넣어 계란을 삶아줍니다.(반숙, 완숙은 선택)",
+      description:
+        "1. 냄비에 계란이 잠길정도로 물을 붓고 소금 (1스푼), 식초 (1스푼)을 넣어 계란을 삶아줍니다.(반숙, 완숙은 선택)",
       imagePath: "",
     },
     {
@@ -667,26 +674,26 @@ let eggJangjorim = {
       imagePath: "",
     },
     {
-      description:
-        "4. 간장양념이 끓으면 삶은 계란을 넣어주고,",
+      description: "4. 간장양념이 끓으면 삶은 계란을 넣어주고,",
       imagePath: "",
     },
     {
-      description: "5. 계란의 겉면이 색이 입혀질때쯤 청양고추도 듬성듬성 썰어 넣어 중불에서 뭉근하게 끓여줍니다.",
+      description:
+        "5. 계란의 겉면이 색이 입혀질때쯤 청양고추도 듬성듬성 썰어 넣어 중불에서 뭉근하게 끓여줍니다.",
       imagePath: "",
     },
     {
       description:
         "6. 국물이 거의 줄어들고 달걀에 양념이 잘 베어 거뭇해지면 계란외에 건더기는 건져주시면 끝!!",
       imagePath: "",
-    }
+    },
   ],
 
   likeCount: 0,
   comments: [],
 };
 
-let  marbledSoybeanPasteStew = {
+let marbledSoybeanPasteStew = {
   name: "차돌박이 된장찌개",
   description:
     "오늘은 누가 만들어도 실패하지 않는 된장찌개 황금레시피를 준비해보았어요.",
@@ -735,7 +742,8 @@ let  marbledSoybeanPasteStew = {
   ],
   steps: [
     {
-      description: "1. 애호박 1/2개와 양파 1개, 감자(小) 1개, 두부 1/2 모를 큼직하게 썰어요. *야채는 취향껏 준비해주셔도 좋아요 :)",
+      description:
+        "1. 애호박 1/2개와 양파 1개, 감자(小) 1개, 두부 1/2 모를 큼직하게 썰어요. *야채는 취향껏 준비해주셔도 좋아요 :)",
       imagePath: "",
     },
     {
@@ -744,8 +752,7 @@ let  marbledSoybeanPasteStew = {
       imagePath: "",
     },
     {
-      description:
-        "3. 표고버섯(2개)은 적당한 두께로 ~",
+      description: "3. 표고버섯(2개)은 적당한 두께로 ~",
       imagePath: "",
     },
     {
@@ -754,25 +761,23 @@ let  marbledSoybeanPasteStew = {
       imagePath: "",
     },
     {
-      description: 
-      "5. 쌀뜨물 800ml를 넣고 끓어오르면 된장 3 큰술과 고추장 1.5 큰술, 다진 마늘 1 큰술, 설탕 1/3 큰술을 넣어요. 쌀뜨물 대신 멸치다시마 육수 또는 생수를 넣으셔도 돼요 :)",
+      description:
+        "5. 쌀뜨물 800ml를 넣고 끓어오르면 된장 3 큰술과 고추장 1.5 큰술, 다진 마늘 1 큰술, 설탕 1/3 큰술을 넣어요. 쌀뜨물 대신 멸치다시마 육수 또는 생수를 넣으셔도 돼요 :)",
       imagePath: "",
     },
     {
-      description:
-        "6. 끓어오르면서 나오는 거품은 가볍게 제거해주고요.",
+      description: "6. 끓어오르면서 나오는 거품은 가볍게 제거해주고요.",
       imagePath: "",
     },
     {
-      description:
-        "7. 애호박과 양파, 표고버섯을 넣고 야채의 숨이 살짝 죽으면,",
+      description: "7. 애호박과 양파, 표고버섯을 넣고 야채의 숨이 살짝 죽으면,",
       imagePath: "",
     },
     {
       description:
         "8. 두부와 대파, 청양고추, 홍고추를 넣고 한소끔 끓여 마무리해요.",
       imagePath: "",
-    }
+    },
   ],
 
   likeCount: 0,
@@ -780,5 +785,6 @@ let  marbledSoybeanPasteStew = {
 };
 
 let testRecipeList = [asparagusBeef, lettuceGeotjeorl, friedEggplant];
+let testRecipe = asparagusBeef;
 
-export default { testRecipeList };
+export default { testRecipeList, asparagusBeef };
