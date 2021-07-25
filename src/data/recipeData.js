@@ -617,6 +617,168 @@ let friedEggplant = {
   comments: [],
 };
 
+let eggJangjorim = {
+  name: "계란장조림",
+  description:
+    "한번 만들어두면 2~3일은 든든한 계란장조림 황금레시피! 고소한 계란에 짭쪼름한 간장양념을 더해 밥도둑 반찬 중 하나죠!",
+  imageUrl: "/images/eggJangjorim/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "계란",
+    },
+    {
+      ingredient: "식초",
+    },
+    {
+      ingredient: "마늘",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "물엿",
+    },
+    {
+      ingredient: "소금",
+    },
+    {
+      ingredient: "청양고추",
+    },
+    {
+      ingredient: "설탕",
+    },
+
+
+  ],
+  steps: [
+    {
+      description: "1. 냄비에 계란이 잠길정도로 물을 붓고 소금 (1스푼), 식초 (1스푼)을 넣어 계란을 삶아줍니다.(반숙, 완숙은 선택)",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 다 삶아지면 빠르게 찬물로 이동해 담궈주고 껍질을 까서 준비해줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "3. 진간장 4스푼 / 국간장 2스푼 설탕 2스푼 / 올리고당 1스푼 / 물 1컵반 + 통마늘(1줌)도 함께 냄비에 분량의 양념과 통마늘을 넣고 바글바글 끓여줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "4. 간장양념이 끓으면 삶은 계란을 넣어주고,",
+      imagePath: "",
+    },
+    {
+      description: "5. 계란의 겉면이 색이 입혀질때쯤 청양고추도 듬성듬성 썰어 넣어 중불에서 뭉근하게 끓여줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "6. 국물이 거의 줄어들고 달걀에 양념이 잘 베어 거뭇해지면 계란외에 건더기는 건져주시면 끝!!",
+      imagePath: "",
+    }
+  ],
+
+  likeCount: 0,
+  comments: [],
+};
+
+let  marbledSoybeanPasteStew = {
+  name: "차돌박이 된장찌개",
+  description:
+    "오늘은 누가 만들어도 실패하지 않는 된장찌개 황금레시피를 준비해보았어요.",
+  imageUrl: "/images/marbledSoybeanPasteStew/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "차돌박이",
+    },
+    {
+      ingredient: "감자",
+    },
+    {
+      ingredient: "애호박",
+    },
+    {
+      ingredient: "표고버섯",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "두부",
+    },
+    {
+      ingredient: "청양고추",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "홍고추",
+    },
+    {
+      ingredient: "된장",
+    },
+    {
+      ingredient: "고추장",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+    {
+      ingredient: "설탕",
+    },
+  ],
+  steps: [
+    {
+      description: "1. 애호박 1/2개와 양파 1개, 감자(小) 1개, 두부 1/2 모를 큼직하게 썰어요. *야채는 취향껏 준비해주셔도 좋아요 :)",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 대파 1/2대와 청양고추 1개, 홍고추 1개를 어슷 썰어요. 좀 더 칼칼하게 드시고 싶은 분들은 청양고추를 더 넣어주세요 :)",
+      imagePath: "",
+    },
+    {
+      description:
+        "3. 표고버섯(2개)은 적당한 두께로 ~",
+      imagePath: "",
+    },
+    {
+      description:
+        "4. 중불로 예열한 팬에 차돌박이를 넣고 달달 볶아요. 겉면이 어느 정도 익으면 감자를 넣고 2 ~ 3분 정도 볶아주시고요.",
+      imagePath: "",
+    },
+    {
+      description: 
+      "5. 쌀뜨물 800ml를 넣고 끓어오르면 된장 3 큰술과 고추장 1.5 큰술, 다진 마늘 1 큰술, 설탕 1/3 큰술을 넣어요. 쌀뜨물 대신 멸치다시마 육수 또는 생수를 넣으셔도 돼요 :)",
+      imagePath: "",
+    },
+    {
+      description:
+        "6. 끓어오르면서 나오는 거품은 가볍게 제거해주고요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "7. 애호박과 양파, 표고버섯을 넣고 야채의 숨이 살짝 죽으면,",
+      imagePath: "",
+    },
+    {
+      description:
+        "8. 두부와 대파, 청양고추, 홍고추를 넣고 한소끔 끓여 마무리해요.",
+      imagePath: "",
+    }
+  ],
+
+  likeCount: 0,
+  comments: [],
+};
+
 let testRecipeList = [asparagusBeef, lettuceGeotjeorl, friedEggplant];
 
 export default { testRecipeList };

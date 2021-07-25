@@ -30,7 +30,7 @@ const Home = () => {
           <HomeListSquare imageUrl={"/images/asparagusBeef/main.jpg"} />
           <HomeListSquare imageUrl={"/images/friedEggplant/main.jpg"} />
           <HomeListSquare imageUrl={"/images/lettuceGeotjeorl/main.jpg"} />
-          <HomeListSquare imageUrl={"/images/test/recipe4.jpg"} />
+          <HomeListSquare imageUrl={"/images/eggJangjorim/main.jpg"} />
           <HomeListSquare imageUrl={"/images/test/recipe5.jpg"} />
           <HomeListSquare imageUrl={"/images/test/recipe6.jpg"} />
           <HomeListSquare imageUrl={"/images/test/recipe7.jpg"} />
