@@ -74,10 +74,22 @@ const ingredientDataArray = [
     type: "탄수화물",
   },
   {
-    id: 31,
+    id: 13,
     name: "칼국수면",
     imageUrl: "/images/ingredientImgData/kalguksu.jpg",
     type: "탄수화물",
+  },
+  {
+    id: 14,
+    name: "소면",
+    imageUrl: "/images/ingredientImgData/somen.jpg",
+    type: "탄수화물",
+  },
+  {
+    id: 31,
+    name: "대파",
+    imageUrl: "/images/ingredientImgData/green_onion.jpg",
+    type: "농산물",
   },
   {
     id: 32,
@@ -397,6 +409,12 @@ const ingredientDataArray = [
     id: 126,
     name: "발사믹식초",
     imageUrl: "/images/ingredientImgData/balsamic_vinegar.jpg",
+    type: "소스&장류",
+  },
+  {
+    id: 127,
+    name: "굴소스",
+    imageUrl: "/images/ingredientImgData/oyster_sauce.jpg",
     type: "소스&장류",
   },
   {
