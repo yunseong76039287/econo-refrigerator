@@ -204,7 +204,7 @@ const ingredientDataArray = [
     name: "깨",
     imageUrl: "/images/ingredientImgData/sesame.jpg",
     type: "농산물",
-  }, 
+  },
   {
     id: 51,
     name: "애호박",
@@ -702,7 +702,7 @@ const ingredientDataArray = [
   {
     id: 273,
     name: "게",
-    imageUrl: "/images/ingredientImgData/crap.jpg",
+    imageUrl: "/images/ingredientImgData/crab.jpg",
     type: "어패류",
   },
   {
@@ -741,7 +741,6 @@ const ingredientDataArray = [
     imageUrl: "/images/ingredientImgData/salmon.jpg",
     type: "어패류",
   },
-
 ];
 
 // 재료의 id 매개변수 받고, 그 id 의 재료 이름 반환하는 함수

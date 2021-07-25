@@ -34,8 +34,11 @@ const Home = () => {
           <HomeListSquare
             imageUrl={"/images/marbledSoybeanPasteStew/main.jpg"}
           />
-          <HomeListSquare imageUrl={"/images/test/recipe6.jpg"} />
-          <HomeListSquare imageUrl={"/images/test/recipe7.jpg"} />
+          <HomeListSquare imageUrl={"/images/asparagusGarlicFried/main.jpeg"} />
+          <HomeListSquare imageUrl={"/images/squashRamen/main.jpeg"} />
+          <HomeListSquare
+            imageUrl={"/images/bokchoyChivesShrimpRice/main.jpg"}
+          />
         </div>
       </div>
       <div className="home-ingredient-list home-list">
