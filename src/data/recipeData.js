@@ -59,8 +59,6 @@ let soyEggFriedRice = {
       imagePath: "",
     },
   ],
-
-  likeCount: 0,
   comments: [],
 };
 
@@ -142,8 +140,6 @@ let perillaKalguksu = {
       imagePath: "",
     },
   ],
-
-  likeCount: 0,
   comments: [],
 };
 
@@ -210,8 +206,6 @@ let fishCakeRamen = {
       imagePath: "",
     },
   ],
-
-  likeCount: 0,
   comments: [],
 };
 
@@ -297,8 +291,6 @@ let porkKimchiJjim = {
       imagePath: "",
     },
   ],
-
-  likeCount: 0,
   comments: [],
 };
 
@@ -384,8 +376,6 @@ let tunaRice = {
       imagePath: "",
     },
   ],
-
-  likeCount: 0,
   comments: [],
 };
 
@@ -448,7 +438,6 @@ let lettuceGeotjeorl = {
     },
   ],
 
-  likeCount: 0,
   comments: [],
 };
 
@@ -534,8 +523,6 @@ let asparagusBeef = {
       imagePath: "",
     },
   ],
-
-  likeCount: 0,
   comments: [],
 };
 
@@ -620,8 +607,6 @@ let friedEggplant = {
       imagePath: "",
     },
   ],
-
-  likeCount: 0,
   comments: [],
 };
 
@@ -688,8 +673,6 @@ let eggJangjorim = {
       imagePath: "",
     },
   ],
-
-  likeCount: 0,
   comments: [],
 };
 
@@ -779,8 +762,6 @@ let marbledSoybeanPasteStew = {
       imagePath: "",
     },
   ],
-
-  likeCount: 0,
   comments: [],
 };
 
@@ -891,7 +872,6 @@ let bokchoyChivesShrimpRice = {
       imagePath: "",
     },
   ],
-  likeCount: 0,
   comments: [],
 };
 
@@ -949,7 +929,6 @@ let asparagusGarlicFried = {
     },
    
   ],
-  likeCount: 0,
   comments: [],
 };
 
@@ -1016,7 +995,6 @@ let squashRamen = {
     },
    
   ],
-  likeCount: 0,
   comments: [],
 };
 
@@ -1079,7 +1057,6 @@ let beefSeaweedStew = {
     },
    
   ],
-  likeCount: 0,
   comments: [],
 };
 
@@ -1182,7 +1159,6 @@ let partyNoodle = {
     },
 
   ],
-  likeCount: 0,
   comments: [],
 };
 
@@ -1246,7 +1222,6 @@ let butadong = {
       imagePath: "",
     },
   ],
-  likeCount: 0,
   comments: [],
 };
 
@@ -1313,7 +1288,6 @@ let gochujangMushroom = {
       imagePath: "",
     },
   ],
-  likeCount: 0,
   comments: [],
 };
 
@@ -1353,7 +1327,6 @@ let eggJjim = {
       imagePath: "",
     },
   ],
-  likeCount: 0,
   comments: [],
 };
 
@@ -1453,10 +1426,402 @@ let budaeJjigae = {
     },
 
   ],
-  likeCount: 0,
+
   comments: [],
 };
 
+let spinachOnionEggFried= {
+  name: "시금치양파계란볶음",
+  description:
+    "​겨울철 노지시금치와 양파에 계란을 넣어서 후다닥볶아보세요! 쉽고간단하지만 영양반찬이자 다이어트식에도 좋은 레시피이네요.",
+  imageUrl: "/images/spinachOnionEggFried/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "시금치",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "계란",
+    },
+    {
+      ingredient: "소금",
+    },
+    {
+      ingredient: "식용유",
+    },
+    {
+      ingredient: "깨",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 시금치 한줌을 작은크기로 잘라주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 양파 반개를 작게 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 계란 3개를 깨서 잘섞어두세요.",
+      imagePath: "",
+    },
+    {
+      description: "4. 팬에 올리브유2큰술을 넣어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "5. 시금치자른것과 양파자른것을 중불에서 볶아주세요",
+      imagePath: "",
+    },
+    {
+      description: "6. 양파가 투명해지면 풀어둔 계란물을 가운데쪽으로 부어주시고 소금 1작은술을 고루 뿌려주시고 살살 섞어가면서 볶아주세요.",
+      imagePath: "",
+    },
+    {
+      description: "7. 계란물이 익을정도로만 휘리릭 볶아주시고 통깨를 뿌려주시면 완성이네요.",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+
+let vegetableTunaFried= {
+  name: "야채 참치 볶음",
+  description:
+    "​제가 어렸을 적 엄마가 자주 해 주신 도시락 반찬이에요. 그냥 참치만 드시는 것보다 훨씬 맛도 좋고, 채소와 함께 영양도 챙길수 있는 반찬입니다. 참치의 단백함과 소스의 짭조름한 맛이 아주 맛있답니다. ^_^",
+  imageUrl: "/images/vegetableTunaFried/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "참치통조림",
+    },
+    {
+      ingredient: "당근",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "설탕",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+    {
+      ingredient: "고춧가루",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 당근(한줌)은 다져 주시고, 양파(반 개)와 대파(한줌)는 작은 크기로 송송 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 프라이팬에 기름을 제거하지 않은 참치 통조리 2개 분량을 넣고, 조금 전 썰어놓은 야채를 전부 넣어주세요.(150g X 2)",
+      imagePath: "",
+    },
+    {
+      description: "3. 진간장 2 스푼, 설탕 1스푼, 다진 마늘 반스푼, 고추가루 1 스푼 반을 넣어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "4. 강불에서 약 1분간 볶아주시고, 중불에서 약 2~3분간 졸이듯 더 볶아 줍니다.",
+      imagePath: "",
+    },
+    {
+      description: "5. 마무리로 통깨 솔솔 뿌려주시면 맛있는 반찬이 완성 된답니다.^_^",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+
+let jobchae= {
+  name: "잡채",
+  description:
+    "​손이 많이 가는 잡채이지만 간단한 방법으로 느끼함을 줄이고 달달함을 올린 먹음직스러운 잡채를 만들어 보세요.",
+  imageUrl: "/images/jobchae/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "당면",
+    },
+    {
+      ingredient: "당근",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "표고버섯",
+    },
+    {
+      ingredient: "부추",
+    },
+    {
+      ingredient: "어묵",
+    },
+    {
+      ingredient: "깨",
+    },
+    {
+      ingredient: "참기름",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "물엿",
+    },
+    {
+      ingredient: "식용유",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 당면(4인분)을 끓는 물에 11분간 끓여주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 삶아진 당면을 찬물로 헹군 뒤 체에 받쳐 물기를 빼주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 당근(1개), 양파(1개), 어묵(2장), 표고버섯(6개), 부추(1줌)는 채 썬 후 식용유를 두른 후 각각 후라이팬에 소금을 넣고볶아주세요.",
+      imagePath: "",
+    },
+    {
+      description: "4. 당면 소스인 간장, 올리고당, 식용유를 넣고 물기가 빠진 당면을 넣고 잘 섞어주세요.(간장 5T, 올리고당 5T, 식용유 2T)",
+      imagePath: "",
+    },
+    {
+      description: "5. 센불로 2분을 볶은 후 불을 줄여 3분간 더 볶아주세요. 그리고 소스가 없어질때까지 졸여주세요.",
+      imagePath: "",
+    },
+    {
+      description: "6. 당면이 완성되었다면 불을 끄고 볶아놓은 재료들을 모두 넣어 잘 섞어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "7. 참기름과 참깨까지 솔솔 뿌려주면 완성이예요.",
+      imagePath: "",
+    },
+
+  ],
+
+  comments: [],
+};
+
+let butterPotato= {
+  name: "버터구이감자",
+  description:
+    "​휴게소에만 가면 놓치지 않고 챙겨먹는 휴게소감자 버터구이감자입니다 ㅋㅋ",
+  imageUrl: "/images/butterPotato/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "감자",
+    },
+    {
+      ingredient: "설탕",
+    },
+    {
+      ingredient: "후추",
+    },
+    {
+      ingredient: "버터",
+    },
+    {
+      ingredient: "소금",
+    },
+ 
+  ],
+  steps: [
+    {
+      description:
+        "1. 감자(4~6개)는 깨끗하게 닦아서 먹기좋은 크기로 잘라, 물기를 빼줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 후라이팬에 버터(2T)를 두른 후 감자를 넣어준 후 소금 반숟가락 정도를 넣고, 통 후추를 기호에 맞게 살짝 뿌려주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 노릇노릇하게 감자를 익혀주다가 버터가 자작해지고 감자가 잘익었을때 (젓가락으로 찔러서 푹 들어가면 익은거예요) 설탕을 두스푼정도(기호에 맞게 가감하면 됩니다) 넣어줍니다.",
+      imagePath: "",
+    },
+    {
+      description: "4. 감자 겉면이 달콤하고 바삭하고 속은 부드러운 버터구이 감자 완성!",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+
+let grilledMackerelTeriyaki= {
+  name: "버터구이감자",
+  description:
+    "​달콤짭짤한 고등어 데리야끼구이입니다.",
+  imageUrl: "/images/grilledMackerelTeriyaki/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "고등어",
+    },
+    {
+      ingredient: "전분",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "맛술",
+    },
+    {
+      ingredient: "마늘",
+    },
+    {
+      ingredient: "파",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "설탕",
+    },
+    {
+      ingredient: "소금",
+    },
+    {
+      ingredient: "후추",
+    },
+    {
+      ingredient: "물엿",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 고등어등쪽에 칼집을 내고 먹기좋은 크기로 자르고 일회용 비닐 팩에 녹말 2큰술을 넣고 공기를 넣고 흔들어서 골고루 녹말가루를 무쳐주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 간장 4큰술, 미림이나 청주 4큰술, 마늘 3톨, 파 조금, 양파 1/4개, 설탕 1큰술, 물 2/3컵, 소금, 후추 약간, 물엿 1큰술을 넣고 윤기나게 졸여서 건더기는 건져주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 고등어 앞뒤로 구워주세요. 기름기를 빼고 양념장을 조금씩 넣어서 윤기있게 졸여주시면 됩니다.",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+
+let sauryKimchiJjigae= {
+  name: "꽁치김치찌개",
+  description:
+    "​백종원의 황금레시피 꽁치김치찌개!!",
+  imageUrl: "/images/sauryKimchiJjigae/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "꽁치",
+    },
+    {
+      ingredient: "김치",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "고춧가루",
+    },
+    {
+      ingredient: "된장",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+    {
+      ingredient: "설탕",
+    },
+    {
+      ingredient: "참기름",
+    },
+
+  ],
+  steps: [
+    {
+      description:
+        "1. 김치는 1/4포기를 준비해 먹기 좋게 썰어주고",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 대파는 송송 썰고, 양파는 채 썰어주세요. 매콤하게 드시려면 청양고추를 함께 넣어도 된답니다.",
+      imagePath: "",
+    },
+    {
+      description: "3. 팬에 참기름 1T을 두르고 썰어 놓은 김치를 넣고달달 볶아주세요.",
+      imagePath: "",
+    },
+    {
+      description: "4. 김치가 숨이 죽고 익기 시작하면 꽁치통조림 1캔을 모두 넣어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "5. 이때 국물까지 모조리 넣어주는 게 나름 비법이랍니다. 국물 때문인지 간도 좋고 감칠맛도 생기더라고요.",
+      imagePath: "",
+    },
+    {
+      description: "6. 그러고 나서 통조림 캔들 이용해 1캔 물을 계량해 넣어주세요. 김치 염도에 따라 물의 양이 달라질 수 있으니 참고하시고, 저는 1캔만 부어주었답니다.",
+      imagePath: "",
+    },
+    {
+      description: "7. 그리고 설탕 1,다진 마늘 0.5, 된장 0.3을 넣어 주세요. 설탕은 김치 신맛을 줄여주는 역할을 하니 김치 익힘에 따라 조절해주시고 된장은 비린 맛을 잡아 주는 담당을 한답니다. 된장도 염도가 있으니 간에 따라 양을 조절해 주신 센스!",
+      imagePath: "",
+    },
+    {
+      description: "8. 보글보글 찌개가 끓기 시작하면 미리 썰어둔 양피를 모두 넣어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "9. 그리고 고춧가루 2를 넣어 줍니다.",
+      imagePath: "",
+    },
+    {
+      description: "10. 마지막에 대파를 넣어 한소끔 더 끓여 마무리해주세요.",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
 let testRecipeList = [asparagusBeef, lettuceGeotjeorl, friedEggplant];
 let testRecipe = asparagusBeef;
 

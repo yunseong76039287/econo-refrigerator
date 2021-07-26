@@ -254,7 +254,36 @@ const ingredientDataArray = [
     imageUrl: "/images/ingredientImgData/tofu.jpg",
     type: "농산물",
   },
-
+  {
+    id: 59,
+    name: "호박",
+    imageUrl: "/images/ingredientImgData/pumpkin.jpg",
+    type: "농산물",
+  },
+  {
+    id: 60,
+    name: "숙주나물",
+    imageUrl: "/images/ingredientImgData/mung_bean_sprouts.jpg",
+    type: "농산물",
+  },
+  {
+    id: 61,
+    name: "시금치",
+    imageUrl: "/images/ingredientImgData/spinach.jpg",
+    type: "농산물",
+  },
+  {
+    id: 62,
+    name: "피망",
+    imageUrl: "/images/ingredientImgData/pimento.jpg",
+    type: "농산물",
+  },
+  {
+    id: 63,
+    name: "쪽파",
+    imageUrl: "/images/ingredientImgData/tofu.jpg",
+    type: "농산물",
+  },
   {
     id: 101,
     name: "고추장",
