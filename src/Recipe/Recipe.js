@@ -1,6 +1,5 @@
 import "./Recipe.css";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import ingredientData from "../data/ingredientData";
 import Toggle from "../Search/Toggle";
 import Comment from "./Comment";
@@ -85,7 +84,6 @@ const Recipe = () => {
         recipeData={recipeTestContent}
         setRecipeData={setRecipeTestContent}
       />
-      <Link to="/search">뒤로가기</Link>
     </div>
   );
 };

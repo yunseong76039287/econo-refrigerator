@@ -844,26 +844,25 @@ let bokchoyChivesShrimpRice = {
       imagePath: "",
     },
     {
-      description:
-        "2. 물 250ml(한컵)에 전분가루(1T)녹말물도 먼저 만들어요!",
-      imagePath: "",
-    },
-    {
-      description: "3. 팬에 식용유를 두르고 다진마늘 (1큰술)과 양파 (1/2개)를 볶아요!",
+      description: "2. 물 250ml(한컵)에 전분가루(1T)녹말물도 먼저 만들어요!",
       imagePath: "",
     },
     {
       description:
-        "4. 양파가 조금 흐물해졌다 싶을때 해동시킨 새우를 넣어요!",
+        "3. 팬에 식용유를 두르고 다진마늘 (1큰술)과 양파 (1/2개)를 볶아요!",
+      imagePath: "",
+    },
+    {
+      description: "4. 양파가 조금 흐물해졌다 싶을때 해동시킨 새우를 넣어요!",
+      imagePath: "",
+    },
+    {
+      description: "5. 새우가 맛있게 붉으스름해질때까지 볶아줘요.",
       imagePath: "",
     },
     {
       description:
-        "5. 새우가 맛있게 붉으스름해질때까지 볶아줘요.",
-      imagePath: "",
-    },
-    {
-      description: "6. 새우가 어느정도 익어갈때쯤 씻어놓은 청경채(4뿌리)를 넣어줘요!",
+        "6. 새우가 어느정도 익어갈때쯤 씻어놓은 청경채(4뿌리)를 넣어줘요!",
       imagePath: "",
     },
     {
@@ -876,8 +875,7 @@ let bokchoyChivesShrimpRice = {
       imagePath: "",
     },
     {
-      description:
-        "9. 준비했던 녹말물을 다시 잘 풀어주고 넣어주세요!",
+      description: "9. 준비했던 녹말물을 다시 잘 풀어주고 넣어주세요!",
       imagePath: "",
     },
     {
@@ -886,8 +884,7 @@ let bokchoyChivesShrimpRice = {
       imagePath: "",
     },
     {
-      description:
-        "11. 밥위에 부어주면 완성!",
+      description: "11. 밥위에 부어주면 완성!",
       imagePath: "",
     },
   ],
@@ -920,17 +917,14 @@ let asparagusGarlicFried = {
     {
       ingredient: "식용유",
     },
-
   ],
   steps: [
     {
-      description:
-        "1. 아스파라거스(9줄)는 4~5cm 길이로 자른다.",
+      description: "1. 아스파라거스(9줄)는 4~5cm 길이로 자른다.",
       imagePath: "",
     },
     {
-      description:
-        "2. 마늘(3개)은 굵게 다지고 홍고추(1개)는 송송 썬다.",
+      description: "2. 마늘(3개)은 굵게 다지고 홍고추(1개)는 송송 썬다.",
       imagePath: "",
     },
     {
@@ -943,11 +937,9 @@ let asparagusGarlicFried = {
       imagePath: "",
     },
     {
-      description:
-        "5. 홍고추를 넣고 가볍게 볶아 완성한다.",
+      description: "5. 홍고추를 넣고 가볍게 볶아 완성한다.",
       imagePath: "",
     },
-   
   ],
   likeCount: 0,
   comments: [],
@@ -955,8 +947,7 @@ let asparagusGarlicFried = {
 
 let squashRamen = {
   name: "애호박국수",
-  description:
-    "호로록 간단하게 국수를 먹고 싶을 땐? 수미네반찬 애호박국수!!",
+  description: "호로록 간단하게 국수를 먹고 싶을 땐? 수미네반찬 애호박국수!!",
   imageUrl: "/images/squashRamen/main.jpg",
   likeCount: 0,
   ingredients: [
@@ -987,7 +978,6 @@ let squashRamen = {
     {
       ingredient: "깨",
     },
-
   ],
   steps: [
     {
@@ -1001,20 +991,18 @@ let squashRamen = {
       imagePath: "",
     },
     {
-      description: "3. 소금 (1/2스푼), 다진 마늘(1/3스푼), 고춧가루(1티스푼), 참기름(1스푼), 깨(1스푼) 를 넣고 볶는다.",
+      description:
+        "3. 소금 (1/2스푼), 다진 마늘(1/3스푼), 고춧가루(1티스푼), 참기름(1스푼), 깨(1스푼) 를 넣고 볶는다.",
       imagePath: "",
     },
     {
-      description:
-        "4. 끓는 물에 소금을 넣고 소면을 삶아내어 찬물에 헹군다.",
+      description: "4. 끓는 물에 소금을 넣고 소면을 삶아내어 찬물에 헹군다.",
       imagePath: "",
     },
     {
-      description:
-        "5. 그릇에 소면을 담고 애호박볶음을 올려 완성한다.",
+      description: "5. 그릇에 소면을 담고 애호박볶음을 올려 완성한다.",
       imagePath: "",
     },
-   
   ],
   likeCount: 0,
   comments: [],

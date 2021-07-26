@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Comment.css";
 import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
 
 const Comment = ({ recipeData, setRecipeData }) => {
+  const [isNameErr, setIsNameErr] = useState(false);
+  const [isPasswordErr, setIsPasswordErr] = useState(false);
+  const [isContentsErr, setIsContentsErr] = useState(false);
+
   let tempName = "";
   let tempPassword = "";
   let tempContents = "";
@@ -24,17 +28,20 @@ const Comment = ({ recipeData, setRecipeData }) => {
 
   const handleInput = () => {
     if (tempName === "") {
-      alert("이름을 다시 한번 확인해주세요.");
-      return 0;
+      setIsNameErr(true);
+      return;
     }
     if (tempPassword === "") {
-      alert("비밀번호를 다시 한번 확인해주세요.");
-      return 0;
+      setIsPasswordErr(true);
+      return;
     }
     if (tempContents === "") {
-      alert("내용을 입력하세요.");
-      return 0;
+      setIsContentsErr(true);
+      return;
     }
+    setIsNameErr(false);
+    setIsPasswordErr(false);
+    setIsContentsErr(false);
 
     let copyRecipeData = recipeData;
     let existComments = recipeData.comments;
@@ -70,34 +77,48 @@ const Comment = ({ recipeData, setRecipeData }) => {
   return (
     <div className="input-container">
       <div className="input-user-information">
-        <input
+        <TextField
+          label="Outlined"
+          variant="outlined"
           className="nickname"
+          label="닉네임"
           type="text"
-          placeholder="닉네임"
+          required
+          error={isNameErr}
+          helperText={isNameErr ? "닉네임을 입력해주세요." : ""}
           onChange={getTargetName}
-        ></input>
-        <input
+        />
+        <TextField
+          label="Outlined"
+          variant="outlined"
           className="password"
+          label="비밀번호"
           type="password"
-          placeholder="비밀번호"
+          required
+          error={isPasswordErr}
+          helperText={isPasswordErr ? "올바르지 않은 비밀번호입니다." : ""}
           onChange={getTargetPassword}
-        ></input>
+        />
       </div>
       <div className="input-contents-box">
-        <input
+        <TextField
+          label="Multiline"
+          variant="outlined"
+          multiline
+          rows={4}
           className="input-contents"
+          label="댓글"
           type="text"
-          placeholder="댓글을 이곳에 작성해주세요 ..."
+          required
+          error={isContentsErr}
+          helperText={isPasswordErr ? "댓글을 입력해주세요." : ""}
           onChange={getTargetContents}
-        ></input>
+        />
         <Button
           variant="outlined"
+          color="primary"
           className="submit-button"
           onClick={handleInput}
-          style={{
-            height: "75px",
-            margin: "10px",
-          }}
         >
           Submit
         </Button>
