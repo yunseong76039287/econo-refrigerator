@@ -6,12 +6,15 @@ import Toggle from "../Search/Toggle";
 import Comment from "./Comment";
 import Button from "@material-ui/core/Button";
 import ClearIcon from "@material-ui/icons/Clear";
+import recipeData from "../data/recipeData";
 
 const Recipe = () => {
-  const [recipeData, setRecipeData] = useState({});
-  useEffect(() => setRecipeData(recipeListData), []);
+  const [recipeTestContent, setRecipeTestContent] = useState({});
+  useEffect(() => setRecipeTestContent(recipeData.asparagusBeef), []);
 
-  let likeCountProps = recipeData.likeCount;
+  let likeCountProps = recipeTestContent.likeCount;
+  console.log("likeCountProps : " + recipeTestContent.likeCount);
+  console.log("likeCountProps 의 타입 : " + typeof recipeTestContent.likeCount);
 
   // 비밀번호 입력을 받아옵니다.
   const deleteComment = (commentId) => {
@@ -22,30 +25,34 @@ const Recipe = () => {
 
   return (
     <div className="recipe">
-      <h1 className="recipe-name">{recipeData.name}</h1>
+      <h1 className="recipe-name">{recipeTestContent.name}</h1>
       <div className="like">
-        <Toggle id={recipeData.id} likeCount={likeCountProps} />
+        <Toggle id={recipeTestContent.id} likeCount={likeCountProps} />
       </div>
       <img
-        className="recipe-image"
-        src={recipeData.imageUrl}
+        className="recipe-image recipe-thumbnail"
+        src={recipeTestContent.imageUrl}
         alt="대체 텍스트가 들어갈 곳"
       ></img>
       <h2>레시피 소개</h2>
-      <div>{recipeData.description}</div>
+      <div>{recipeTestContent.description}</div>
       <h2>필요한 재료!</h2>
       <div className="recipe-ingredient">
-        {recipeData.ingredients &&
-          recipeData.ingredients.map((e) => {
-            return <span>{ingredientData.getIngredientNameById(e.id)}</span>;
+        {recipeTestContent.ingredients &&
+          recipeTestContent.ingredients.map((e) => {
+            return (
+              <span key={e.id}>
+                {ingredientData.getIngredientNameById(e.id)},{" "}
+              </span>
+            );
           })}
       </div>
       <h2>레시피 설명</h2>
       <div className="recipe-description">
-        {recipeData.steps &&
-          recipeData.steps.map((e) => {
+        {recipeTestContent.steps &&
+          recipeTestContent.steps.map((e) => {
             return (
-              <div>
+              <div key={e.id}>
                 <img src={e.imagePath}></img>
                 <div>{e.description}</div>
               </div>
@@ -55,8 +62,8 @@ const Recipe = () => {
 
       <h3 className="comment-header">Comment</h3>
       <div className="comment-container">
-        {recipeData.comments &&
-          recipeData.comments.map((e) => (
+        {recipeTestContent.comments &&
+          recipeTestContent.comments.map((e) => (
             <div className="comment-box" key={e.id}>
               <div className="comment-author">{e.author}</div>
               <div className="comment-content">{e.content}</div>
@@ -71,7 +78,10 @@ const Recipe = () => {
             </div>
           ))}
       </div>
-      <Comment recipeData={recipeData} setRecipeData={setRecipeData} />
+      <Comment
+        recipeData={recipeTestContent}
+        setRecipeData={setRecipeTestContent}
+      />
       <Link to="/search">뒤로가기</Link>
     </div>
   );
@@ -80,7 +90,7 @@ const Recipe = () => {
 export default Recipe;
 
 const recipeListData = {
-  id: 1,
+  id: 10,
   name: "토마토 파스타",
   description: "토마토를 곁들인 매콤달콤 파스타",
   imageUrl: "/images/test_pasta.jpg",

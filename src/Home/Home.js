@@ -2,6 +2,7 @@ import "./Home.css";
 import React from "react";
 import HomeListSquare from "./HomeListSquare";
 import ingredientData from "../data/ingredientData";
+import recipeData from "../data/recipeData";
 
 const Home = () => {
   return (
@@ -26,13 +27,18 @@ const Home = () => {
         </div>
 
         <div className="home-recipe-list-mapping home-list-mapping">
-          <HomeListSquare imageUrl={"/images/test/recipe1.jpg"} />
-          <HomeListSquare imageUrl={"/images/test/recipe2.jpg"} />
-          <HomeListSquare imageUrl={"/images/test/recipe3.jpg"} />
-          <HomeListSquare imageUrl={"/images/test/recipe4.jpg"} />
-          <HomeListSquare imageUrl={"/images/test/recipe5.jpg"} />
-          <HomeListSquare imageUrl={"/images/test/recipe6.jpg"} />
-          <HomeListSquare imageUrl={"/images/test/recipe7.jpg"} />
+          <HomeListSquare imageUrl={"/images/asparagusBeef/main.jpg"} />
+          <HomeListSquare imageUrl={"/images/friedEggplant/main.jpg"} />
+          <HomeListSquare imageUrl={"/images/lettuceGeotjeorl/main.jpg"} />
+          <HomeListSquare imageUrl={"/images/eggJangjorim/main.jpg"} />
+          <HomeListSquare
+            imageUrl={"/images/marbledSoybeanPasteStew/main.jpg"}
+          />
+          <HomeListSquare imageUrl={"/images/asparagusGarlicFried/main.jpeg"} />
+          <HomeListSquare imageUrl={"/images/squashRamen/main.jpeg"} />
+          <HomeListSquare
+            imageUrl={"/images/bokchoyChivesShrimpRice/main.jpg"}
+          />
         </div>
       </div>
       <div className="home-ingredient-list home-list">
