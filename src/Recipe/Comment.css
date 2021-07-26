@@ -8,6 +8,7 @@
 .user-information {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 .nickname {
   padding: 5px;
@@ -19,11 +20,14 @@
   margin: 10px;
 }
 
-.comment-contents {
+.input-contents {
   width: 600px;
   height: 70px;
   margin: 10px;
 }
 
-.submitbtn {
+.input-contents-box {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
 }

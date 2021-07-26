@@ -9,8 +9,11 @@ import ClearIcon from "@material-ui/icons/Clear";
 import recipeData from "../data/recipeData";
 
 const Recipe = () => {
-  const [recipeTestContent, setRecipeTestContent] = useState({});
-  useEffect(() => setRecipeTestContent(recipeData.asparagusBeef), []);
+  let [recipeTestContent, setRecipeTestContent] = useState({});
+
+  useEffect(() => {
+    setRecipeTestContent(recipeData.asparagusBeef);
+  }, []);
 
   let likeCountProps = recipeTestContent.likeCount;
   console.log("likeCountProps : " + recipeTestContent.likeCount);
@@ -26,7 +29,7 @@ const Recipe = () => {
   return (
     <div className="recipe">
       <h1 className="recipe-name">{recipeTestContent.name}</h1>
-      <div className="like">
+      <div className="like recipe-like-button">
         <Toggle id={recipeTestContent.id} likeCount={likeCountProps} />
       </div>
       <img
@@ -37,7 +40,7 @@ const Recipe = () => {
       <h2>레시피 소개</h2>
       <div>{recipeTestContent.description}</div>
       <h2>필요한 재료!</h2>
-      <div className="recipe-ingredient">
+      <div className="recipe-ingredient recipe-ingredient-mapping">
         {recipeTestContent.ingredients &&
           recipeTestContent.ingredients.map((e) => {
             return (
@@ -48,7 +51,7 @@ const Recipe = () => {
           })}
       </div>
       <h2>레시피 설명</h2>
-      <div className="recipe-description">
+      <div className="recipe-description recipe-step">
         {recipeTestContent.steps &&
           recipeTestContent.steps.map((e) => {
             return (
@@ -64,7 +67,7 @@ const Recipe = () => {
       <div className="comment-container">
         {recipeTestContent.comments &&
           recipeTestContent.comments.map((e) => (
-            <div className="comment-box" key={e.id}>
+            <div className="comment-box comment-mapping" key={e.id}>
               <div className="comment-author">{e.author}</div>
               <div className="comment-content">{e.content}</div>
               <Button
