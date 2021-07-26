@@ -1019,6 +1019,444 @@ let squashRamen = {
   likeCount: 0,
   comments: [],
 };
+
+let beefSeaweedStew = {
+  name: "소고기미역국",
+  description:
+    "산후조리하실때나 생일상에는 두말하면 잔소리고, 회복식이나 건강식으로도 참 좋은 미역국!",
+  imageUrl: "/images/beefSeaweedStew/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "목심(국거리)",
+    },
+    {
+      ingredient: "미역",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "들기름",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "멸치액젓",
+    },
+    {
+      ingredient: "후추",
+    },
+    {
+      ingredient: "소금",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 미역(20g)은 20분간 불린후 물기를 꼬옥 짜놔주시고요, 소고기(100g)는 국간장(0.5스푼)과 후춧가루(0.1스푼)를 넣어 살짝 밑간을 해놔주세요~",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 미역에 들기름(1스푼)를 넣고 미역의 진액이 나올때까지 (약3~5분정도) 빨래빨듯 빡빡 주물러주세요~",
+      imagePath: "",
+    },
+    {
+      description: "3. 이제 냄비에 들기름(1스푼)을 두르고 준비한 미역을 넣고 약불에서 볶아주세요, 밑간을해둔 고기도 같이 볶아주세요",
+      imagePath: "",
+    },
+    {
+      description:
+        "4. 고기 겉면의 색깔이 익은것처럼 변하면 물(6컵)을 넣고 뚜껑을 열고 쎈불에서 20분간 끓여주세요",
+      imagePath: "",
+    },
+    {
+      description:
+        "5. 이제 국간장(1스푼), 멸치or 까나리액젓(1스푼), 다진마늘(0.5~1스푼), 후춧가루(0.2스푼), 소금(간보시고 기호대로 가감)을 넣고 한소끔만 더 끓여주세요~",
+      imagePath: "",
+    },
+   
+  ],
+  likeCount: 0,
+  comments: [],
+};
+
+let partyNoodle = {
+  name: "잔치국수",
+  description:
+    "따스한 육수에 호로록 말아먹은 잔치국수 황금레시피 알려드릴게요. 물론 더 맛있게 만들어주는 양념장까지요 ^^",
+  imageUrl: "/images/partyNoodle/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "소면",
+    },
+    {
+      ingredient: "애호박",
+    },
+    {
+      ingredient: "당근",
+    },
+    {
+      ingredient: "계란",
+    },
+    {
+      ingredient: "김치",
+    },
+    {
+      ingredient: "말린멸치",
+    },
+    {
+      ingredient: "무",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "다시마",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "고춧가루",
+    },
+    {
+      ingredient: "매실액",
+    },
+    {
+      ingredient: "참기름",
+    },
+    {
+      ingredient: "깨",
+    },
+    {
+      ingredient: "청양고추",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 멸치 한줌과 다시마 5센티정도로 두장 , 양파 반개 , 대파 두조각 , 무우 반조각을 함께 넣어 우려줬어요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 센불에 물이 끓어오르면 다시마를 꺼내주신 다음 15분~20분간 중불로 더 끓여주세요. 그리고 국간장 1스푼넣어 간을 해주세요. 1400ml 넣었을때 딱 1스푼이 딱이더라구요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 당근과 , 호박을 채썰어 후라이팬에 살짝 볶아주세요. 전 살짝 소금간도 해줬네요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "4. 계란 1개를 골고루 풀어 약불로 후라이팬에서 익혀주세요. 흰자 , 노른자 따로 해주셔도 상관없으세요. 전 섞어서 길게 지단을 준비해주었어요. 취향에 맞춰 만들어주시면 되세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "5. 양념장을 만들어주세요. 간장 4스푼 , 고추가루 1스푼 , 다진고추 1스푼 , 다진마늘 0.5스푼 , 다진대파 1스푼 , 매실액 1스푼 , 참기름 1스푼 , 깨 1스푼을 넣어 만들었어요",
+      imagePath: "",
+    },
+    {
+      description: "6. 끓는 물에 국수를 삶아 주세요. 500원 동전만한 양이 1인분이라니 분량에 맞춰 주시면 되세요.",
+      imagePath: "",
+    },
+    {
+      description: "7. 끓어오를때 넘치는데요 그럴때 찬물을 조금씩 넣어주면서 삶으시면 면이 쫄깃해져요. 넘쳐흐르지도 않고 딱 좋죠. 보통 국수봉지엔 4분 삶으라고 나와있던데요. 요렇게 찬물을 조금씩 부어주면서 삶다보면 6분정도가 딱 잘맞게 익는 것 같아요.",
+      imagePath: "",
+    },
+    {
+      description: "8. 삶은 국수는 찬물에 헤우거주세요. 면발이 더욱 더 쫄깃 탱탱해지도록 말이에요. 체에 받쳐 물기도 좀 빼주구요.",
+      imagePath: "",
+    },
+    {
+      description: "9. 면을 제일 먼저 담고 고명을 올려준 다음 육수를 담아주시면 완성이에요.",
+      imagePath: "",
+    },
+
+  ],
+  likeCount: 0,
+  comments: [],
+};
+
+let butadong = {
+  name: "부타동",
+  description:
+    "부타동은 일본식 돼지고기 덮밥으로 부타는 일본어로 돼지를 뜻하고, 동은 밥을 뜻합니다.일본식 소스로 돼지고기를 조려서 밥위에 올린 덮밥식 음식인데요.. 부타동은 주로 목살 부위를 사용하지만 저는 대패삼겹살을 이용해서 만들었습니다.",
+  imageUrl: "/images/butadong/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "대패삼겹살",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "계란",
+    },
+    {
+      ingredient: "설탕",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "맛술",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 먼저 양파는 1/2개만 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 그 다음 양념장을 만들어줍니다. 간장 1.5큰술, 맛술 1큰술, 설탕 1큰술, 다진마늘 1작은술을 넣고 잘 섞어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 그 다음 후라이팬에 대패삼겹살 200g을 넣고, 설탕 1큰술 넣고 볶아줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "4. 설탕이 다 녹으면 양파를 넣어주시구요. 그리고 소스도 같이 넣어줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "5. 고기가 다 익으면 밥위에 먹음직스럽게 고기를 올려주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "6. 그리고 마지막으로 가운데에 달걀 노른자 1개를 올려줍니다. 달걀의 비린맛 때문에 날달걀을 못드시는 분이라면후라이 1개 해서 올려주시구요.",
+      imagePath: "",
+    },
+  ],
+  likeCount: 0,
+  comments: [],
+};
+
+let gochujangMushroom = {
+  name: "새송이버섯 고추장구이",
+  description:
+    "오늘은 향긋한 새송이버섯을 이용해 간단한 밑반찬 하나를 만들어보았어요. 바로 쫄깃쫄깃 매콤한 새송이버섯 고추장구이되시겠슴당 :)",
+  imageUrl: "/images/gochujangMushroom/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "새송이버섯",
+    },
+    {
+      ingredient: "쪽파",
+    },
+    {
+      ingredient: "깨",
+    },
+    {
+      ingredient: "고추장",
+    },
+    {
+      ingredient: "고춧가루",
+    },
+    {
+      ingredient: "물엿",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+    {
+      ingredient: "참기름",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 새송이버섯(3개)은 0.5cm 두께로 잘라주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 쪽파(적당히) 는 송송 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 고추장 2.5T, 고춧가루 1/2T, 진간장 1T, 올리고당 1T, 다진 마늘 1/3T, 물 3T, 참기름 1T을 넣고 잘 섞어 양념장을 만들어요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "4. 예열한 팬에 새송이버섯을 앞뒤로 가볍게 구워줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "5. 구운 버섯에 양념장을 골고루 발라준 뒤 약불에서 졸이듯 구워주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "6. 완성된 새송이버섯 고추장구이를 접시에 담고 통깨를 샤샥 ~ 송송 썬 쪽파도 적당량 올려 마무리합니다.",
+      imagePath: "",
+    },
+  ],
+  likeCount: 0,
+  comments: [],
+};
+
+let eggJjim = {
+  name: "계란찜",
+  description:
+    "폭탄계란찜~ 오늘은 폭탄 맞은 것처럼 부풀어 올랐다는 일명 폭탄 계란찜을 만들어봤어요!",
+  imageUrl: "/images/eggJjim/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "계란",
+    },
+    {
+      ingredient: "맛술",
+    },
+    {
+      ingredient: "파",
+    },
+    {
+      ingredient: "소금",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 믹서기에 달걀(4개), 소금(약간), 맛술(1큰술)을 넣고 곱게 풀어주고 물과 다진파(약간)를 준비합니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 뚝배기에 물을 넣고 보글보글 끓으면 달걀물을 넣고 나무주걱으로 잘 저어주는데 이때 불은 강에서 중불로 맞추고 몽글몽글 해질때까지 저어줍니다",
+      imagePath: "",
+    },
+    {
+      description: "3. 약불로 줄인 후 파를 조금 뿌리고 밥그릇을 덮은 후 김이 나고 뚜껑이 들썩거리면서 부풀어 오르면 불을 끄고 1분 정도 뜸을 들여줍니다",
+      imagePath: "",
+    },
+  ],
+  likeCount: 0,
+  comments: [],
+};
+
+
+let budaeJjigae = {
+  name: "부대찌개",
+  description:
+    "​밖에서 파는 맛처럼 맛있는 부대찌개 양념 만드는 법! 고추장을 넣으면 텁텁해지면서 고추장 맛이 나고 별로인 분들에게 알려드리고 싶은 팁이에요!",
+  imageUrl: "/images/budaeJjigae/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "김치",
+    },
+    {
+      ingredient: "소세지",
+    },
+    {
+      ingredient: "스팸",
+    },
+    {
+      ingredient: "두부",
+    },
+    {
+      ingredient: "떡",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "홍고추",
+    },
+    {
+      ingredient: "청양고추",
+    },
+    {
+      ingredient: "사골육수",
+    },
+    {
+      ingredient: "된장",
+    },
+    {
+      ingredient: "고춧가루",
+    },
+    {
+      ingredient: "마늘",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "설탕",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 고추는 어슷썰고 두부는 한입크기로 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 스팸은 반드시 얇게 잘라주세요. 두꺼우면 국물 맛이 제대로 안 배고 맛이 따로 놀아요. 비엔나는 사선으로 잘라주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 떡은 너무 많이 넣으면 국물이 텁텁해지므로 반드시 1줌만 넣어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "4. 김치도 많이 넣으면 김치맛이 많이 나요. 적당한 밸런스가 중요한데요. 밥공기 1/4 넣어주세요.	",
+      imagePath: "",
+    },
+    {
+      description: "5. 된장반큰술,고추가루 4큰술(듬뿍), 마늘2큰술, 국간장2큰술, 설탕반큰술, 물 소주컵 반컵을 섞어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "6. 두부, 햄, 떡을 테두리에 두르고 김치는 가운데 넣어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "7. 양념장 올리고 육수 붓고, 물 보충을 해주세요.(기호에 맞게)",
+      imagePath: "",
+    },
+    {
+      description: "8. 대파와 청양고추 홍고추 모두 올려주세요. 이제 팔팔 끓입니다. 청양고추와 대파가 어우러져 매콤한 향이 올라와요. 냄새부터 다르답니다.",
+      imagePath: "",
+    },
+    {
+      description: "9. 라면은 먹다가 나중에 추가해서 먹어도 되구요~ 저는 팔팔 끓인 후 바로 넣어줬어요. ",
+      imagePath: "",
+    },
+    {
+      description: "10. 라면을 끓이려면 국물이 여유가 있어야 해요. 라면 넣기 전 육수가 너무 졸았다면 물 보충을 해주고 끓이세요.",
+      imagePath: "",
+    },
+
+  ],
+  likeCount: 0,
+  comments: [],
+};
+
 let testRecipeList = [asparagusBeef, lettuceGeotjeorl, friedEggplant];
 let testRecipe = asparagusBeef;
 
