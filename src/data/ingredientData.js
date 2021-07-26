@@ -418,6 +418,12 @@ const ingredientDataArray = [
     type: "소스&장류",
   },
   {
+    id: 128,
+    name: "매실액",
+    imageUrl: "/images/ingredientImgData/plum_juice.jpg",
+    type: "소스&장류",
+  },
+  {
     id: 161,
     name: "계란",
     imageUrl: "/images/ingredientImgData/egg.jpg",
@@ -595,6 +601,18 @@ const ingredientDataArray = [
     id: 224,
     name: "치마살",
     imageUrl: "/images/ingredientImgData/flank.jpg",
+    type: "육류",
+  },
+  {
+    id: 225,
+    name: "스팸",
+    imageUrl: "/images/ingredientImgData/spam.jpg",
+    type: "육류",
+  },
+  {
+    id: 226,
+    name: "사골육수",
+    imageUrl: "/images/ingredientImgData/gravy.jpg",
     type: "육류",
   },
   {
