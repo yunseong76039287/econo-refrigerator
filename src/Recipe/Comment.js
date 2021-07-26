@@ -62,11 +62,14 @@ const Comment = ({ recipeData, setRecipeData }) => {
     console.log("recipeData update 상태");
     console.log(recipeData.comments);
     console.log("call handleInput.");
+    tempName = "";
+    tempPassword = "";
+    tempContents = "";
   };
 
   return (
     <div className="input-container">
-      <div className="user-information">
+      <div className="input-user-information">
         <input
           className="nickname"
           type="text"
@@ -80,15 +83,25 @@ const Comment = ({ recipeData, setRecipeData }) => {
           onChange={getTargetPassword}
         ></input>
       </div>
-      <input
-        className="comment-contents"
-        type="text"
-        placeholder="댓글을 이곳에 작성해주세요 ..."
-        onChange={getTargetContents}
-      ></input>
-      <Button variant="outlined" className="submitbtn" onClick={handleInput}>
-        Submit
-      </Button>
+      <div className="input-contents-box">
+        <input
+          className="input-contents"
+          type="text"
+          placeholder="댓글을 이곳에 작성해주세요 ..."
+          onChange={getTargetContents}
+        ></input>
+        <Button
+          variant="outlined"
+          className="submit-button"
+          onClick={handleInput}
+          style={{
+            height: "75px",
+            margin: "10px",
+          }}
+        >
+          Submit
+        </Button>
+      </div>
     </div>
   );
 };
