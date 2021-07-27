@@ -2186,7 +2186,7 @@ let kimchiSausageRice= {
       imagePath: "",
     },
     {
-      description: "3. 팬에 들기름을 넣고 묵은지를 볶다가 양파를 넣어 양파가 하얗게 될때까지 볶아주세요. 그리고 설탕(1t)을 넣어 볶아줍니다.",
+      description: "3. 팬에 들기름(1t)을 넣고 묵은지를 볶다가 양파를 넣어 양파가 하얗게 될때까지 볶아주세요. 그리고 설탕(1t)을 넣어 볶아줍니다.",
       imagePath: "",
     },
     {
@@ -2194,13 +2194,70 @@ let kimchiSausageRice= {
       imagePath: "",
     },
     {
-      description: "5. 밥위에 완성된 소시지김치볶음을 올리면 완성입니다.",
+      description: "5. 밥(1공기)위에 완성된 소시지김치볶음을 올리면 완성입니다.",
       imagePath: "",
     },
   ],
 
   comments: [],
 };
+let ricecakeBaconSoysauceJorim = {
+  name: "떡베이컨간장조림",
+  description:
+    "간단하니 맛있는 반찬! 아주 쉬워요 : )",
+  imageUrl: "/images/ricecakeBaconSoysauceJorim/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "베이컨",
+    },
+    {
+      ingredient: "떡",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "참기름",
+    },
+    {
+      ingredient: "물엿",
+    },
+    {
+      ingredient: "식용유",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 대파에 떡국떡 (가래떡, 떡볶이떡) 베이컨",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 기름두르고 볶듯구워요.(튀기듯하면 더 맛있습니다)",
+      imagePath: "",
+    },
+    {
+      description: "3. 간장.물엿.참기름을 넣어 볶아요. 간장 한스푼, 물엿 넉넉히, 참기름한스푼(이런 느낌 비율로.)",
+      imagePath: "",
+    },
+    {
+      description: "4. 볶아주며 졸입니다.",
+      imagePath: "",
+    },
+    {
+      description: "5. 국물없게끔 졸여야 맛있어용: ) 깨도 뿌리고 한번 볶아준 후 끝.",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+
 let testRecipeList = [asparagusBeef, lettuceGeotjeorl, friedEggplant];
 let testRecipe = asparagusBeef;
 
