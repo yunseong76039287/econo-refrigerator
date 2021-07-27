@@ -1822,6 +1822,385 @@ let sauryKimchiJjigae= {
 
   comments: [],
 };
+
+let oiSobagi= {
+  name: "오이소박이",
+  description:
+    "아삭한 오이소박이 하나 있음 밥 한공기 뚝딱 하게 되는데요! 요리초보도 실패없는 백주부님 오이소박이 소개할께요.",
+  imageUrl: "/images/oiSobagi/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "오이",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "당근",
+    },
+    {
+      ingredient: "부추",
+    },
+    {
+      ingredient: "소금",
+    },
+    {
+      ingredient: "멸치액젓",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+    {
+      ingredient: "설탕",
+    },
+    {
+      ingredient: "고춧가루",
+    },
+    {
+      ingredient: "새우젓",
+    },
+
+  ],
+  steps: [
+    {
+      description:
+        "1. 먼저 굵은 소금으로 깨끗이 씻은 오이는 한개당 4등분으로 잘라 주세요. 오이 아래쪽에 약 1cm정도 여유를 두고 십자 모양으로 잘라줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 물 800ml에 굵은 소금4스푼을 넣고 센불에서 팔팔 끓여 줍니다. 백주부님의 아삭한 오이소박이 비법은 바로 이 뜨거운 소금물을 사용하는 거랍니다.",
+      imagePath: "",
+    },
+    {
+      description: "3. 오이에 팔팔 끓은 소금물을 부어 약 30분 정도 절여 주세요. 이렇게 뜨거운 물을 부어주면 오이가 아삭하답니다.절이면서 한두번 뒤적뒤적 해주세요.",
+      imagePath: "",
+    },
+    {
+      description: "4. 오이가 절여지는 동안 부추,양파,당근을 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "5. 멸치액젓2스푼,새우젓1/3스푼,고추가루4스푼,다진마늘1스푼,설탕1스푼을 섞어 양념장을 만들어 주시구요. 손질한 부추,양파,당근을 넣고 가볍게 버무려 줍니다.",
+      imagePath: "",
+    },
+    {
+      description: "6. 절여진 오이는 체에 받쳐 물기를 제거해 준 뒤 방금 만든 양념장을 오이속으로 적당히 넣어주시면 끝입니다.",
+      imagePath: "",
+    },
+    {
+      description: "7. 요리초보도 실패없는 아삭한 백주부님 오이소박이 완성입니다.",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+
+let onionEggRice= {
+  name: "양파계란덮밥",
+  description:
+    "초스피드로 해먹을 수있는 양파계란덮밥입니다^^",
+  imageUrl: "/images/onionEggRice/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "계란",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "밥",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "맛술",
+    },
+    {
+      ingredient: "설탕",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 대파를 쫑쫑 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 메인 재료 양파 반개를 얇게 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 간장(2t)과 설탕(1/2t) 맛술(2t)을 섞어 소스를 만들어주세요. 사진은 물 넣기 전입니다.",
+      imagePath: "",
+    },
+    {
+      description: "4. 간장 소스와 양파, 대파를 약불에서 살짝 조리듯 끓여줍니다. 양파를 함께 넣고 끓여주시면 양파와 대파가 적당히 잘 익어요.",
+      imagePath: "",
+    },
+    {
+      description: "5. 미리 풀어둔 계란 두개를 설렁하게 불 위에 올려줍니다.",
+      imagePath: "",
+    },
+    {
+      description: "6. 밥(1공기) 위에 올려주시면 완성입니다.",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+
+let bokchoyDoenjangMucim= {
+  name: "청경채된장무침",
+  description:
+    "청경채도 무침으로 먹으면 맛있을것 같아서 만들었어요~",
+  imageUrl: "/images/bokchoyDoenjangMucim/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "청경채",
+    },
+    {
+      ingredient: "된장",
+    },
+    {
+      ingredient: "참기름",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+    {
+      ingredient: "깨",
+    },
+    {
+      ingredient: "소금",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 청경채(7개)를 준비해주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 청경채 꼭다리를 잘른뒤 씻어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 청경채를 1분간 데쳐주세요.",
+      imagePath: "",
+    },
+    {
+      description: "4. 데친 청경채는 바로 찬물에 행군뒤 물기를 꼭 짜주세요.",
+      imagePath: "",
+    },
+    {
+      description: "5. 양념(된장 1/2숟갈, 참기름 1/2숟갈, 다진마늘 1/2숟갈, 깨 1/2숟갈, 소금 2꼬집)에 무쳐주세요.",
+      imagePath: "",
+    },
+    {
+      description: "6. 짠!! 완성입니다~",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+
+let spamDonburi= {
+  name: "스팸돈부리덮밥",
+  description:
+    "지속된 한파에 야채값들이 상승을 했나 봅니다. 그리하여 오늘도 냉장고파먹기로 스팸돈부리덮밥으로 한그릇음식을 만들어봤어요.",
+  imageUrl: "/images/spamDonburi/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "스팸",
+    },
+    {
+      ingredient: "계란",
+    },
+    {
+      ingredient: "간장",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "대파",
+    },
+    {
+      ingredient: "설탕",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 스팸은 큰 거 한통에서 1/2만 썼어요. 길게 썰어서 뜨거운 물에 살짝 데쳐주세요. 불순물과 짠맛을 걸러주는 단계랍니다. 데친 스팸은 프라이팬에 앞뒤로 구워줍니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 밥숟가락 계량으로 간장 4, 설탕 2, 물 12를 넣고 양념장을 만들고 설탕이 녹을 때까지 저어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 양파 1개는 채 썰어서 팬에 볶아주는데 뻣뻣함이 사라질 정도로 볶은 후에 양파 위로 부어줍니다.",
+      imagePath: "",
+    },
+    {
+      description: "4. 스팸을 양파 위에 올려줍니다.",
+      imagePath: "",
+    },
+    {
+      description: "5. 계란을 2개를 풀었고요. 흰자와 노른자가 다 섞이지 않고 살짝만 섞이게 해주세요. 완전 섞이면 흰자가 안 보이면 재미가 없으니까요.",
+      imagePath: "",
+    },
+    {
+      description: "6. 초록 초록이 보이게 위에 파를 썰어서 올려줍니다.",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+let onionGeotjeorl= {
+  name: "양파겉절이",
+  description:
+    "오늘은 느끼한 음식 먹을 때 곁들임 반찬으로 좋은 양파 겉절이 담그는 법을 소개해 드리려고 해요.",
+  imageUrl: "/images/onionGeotjeorl/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "깨",
+    },
+    {
+      ingredient: "소금",
+    },
+    {
+      ingredient: "멸치액젓",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "고춧가루",
+    },
+    {
+      ingredient: "설탕",
+    },
+    {
+      ingredient: "다진마늘",
+    },
+    {
+      ingredient: "매실액",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 양파 2개는 껍질을 벗기고 2등분하여 두툼하게 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 썰은 양파는 소금 1작은술과 양파가 잠기도록 생수를 부어 10분 정도 담궈 두세요.",
+      imagePath: "",
+    },
+    {
+      description: "3. 옅은 소금물에 담궈두었던 양파는 체에 받치어 물기를 빼주세요.",
+      imagePath: "",
+    },
+    {
+      description: "4. 물기를 뺸 양파에 멸치액젓 4큰술을 넣고 골고루 버무려 주세요. 버무린뒤 10분 정도 재워둡니다.",
+      imagePath: "",
+    },
+    {
+      description: "5. 10분정도 지나 양파는 다른 접시에 잠시 옮겨두세요. 양파 밑으로 양파에서 나온 수분과 액젓이 남아 있을거에요. 요건 버리지 마시고 양념을 분량대로 넣어 섞어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "6. 양파 절인물과 양념을 골고루 섞어 잠시 고춧가루를 불린뒤에 양파에 버무리시면 되요, 마무리로 깨 조금 뿌려주시고요. 혹시 싱거우시면, 소금으로 간을 맞춰주세요.",
+      imagePath: "",
+    },
+    {
+      description: "7. 첫맛은 강하게 느껴질지 몰라도 반나절 정도 냉장보관후 드셔보시면, 양파 겉절이의 매력이 푸욱~ 빠지실 거에요.",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
+
+let kimchiSausageRice= {
+  name: "김치소세지덮밥",
+  description:
+    "간단하게 휘리릭 한끼 해결하기 좋은 김치소시지덮밥입니다.",
+  imageUrl: "/images/kimchiSausageRice/main.jpg",
+  likeCount: 0,
+  ingredients: [
+    {
+      ingredient: "소세지",
+    },
+    {
+      ingredient: "밥",
+    },
+    {
+      ingredient: "신김치",
+    },
+    {
+      ingredient: "들기름",
+    },
+    {
+      ingredient: "양파",
+    },
+    {
+      ingredient: "설탕",
+    },
+    {
+      ingredient: "깨",
+    },
+    {
+      ingredient: "소금",
+    },
+  ],
+  steps: [
+    {
+      description:
+        "1. 묵은지(100g)는 잘라서 준비합니다.",
+      imagePath: "",
+    },
+    {
+      description:
+        "2. 소시지(7개)는 슬라이스하고 양파(30g)는 적당히 썰어줍니다.",
+      imagePath: "",
+    },
+    {
+      description: "3. 팬에 들기름을 넣고 묵은지를 볶다가 양파를 넣어 양파가 하얗게 될때까지 볶아주세요. 그리고 설탕(1t)을 넣어 볶아줍니다.",
+      imagePath: "",
+    },
+    {
+      description: "4. 소시지를 넣어 섞어주시고 물기가 없을때까지 볶아주세요.",
+      imagePath: "",
+    },
+    {
+      description: "5. 밥위에 완성된 소시지김치볶음을 올리면 완성입니다.",
+      imagePath: "",
+    },
+  ],
+
+  comments: [],
+};
 let testRecipeList = [asparagusBeef, lettuceGeotjeorl, friedEggplant];
 let testRecipe = asparagusBeef;
 
