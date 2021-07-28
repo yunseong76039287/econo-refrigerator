@@ -82,7 +82,7 @@ const Search = () => {
   return (
     <div className="search-content">
       <div className="search-result-holder">
-        <h1 className="search-result-title">우리가 추천하는 레시피는...</h1>
+        <h1 className="search-result-title">👨‍🍳 우리가 추천하는 레시피는</h1>
         {sufficientRecipes ? (
           sufficientRecipes.length === 0 ? (
             "일치하는 레시피가 없어요 😭"

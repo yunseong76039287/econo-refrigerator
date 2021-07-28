@@ -16,6 +16,22 @@ async function getRecipeById(id) {
   return result;
 }
 
+async function get10RecipeWithOffset(offset) {
+  const url = process.env.REACT_APP_API_URL + "recipe/list/" + offset;
+
+  const result = await axios
+    .get(url)
+    .then(function (response) {
+      return response.data;
+    })
+    .catch(function (error) {
+      console.log(error);
+      return [];
+    });
+
+  return result;
+}
+
 async function get10RandomRecipes() {
   const url = process.env.REACT_APP_API_URL + "recipe/randomList";
 
@@ -88,6 +104,7 @@ async function unlikeRecipe(id) {
 
 export default {
   getRecipeById,
+  get10RecipeWithOffset,
   get10RandomRecipes,
   searchSufficientRecipes,
   searchInsufficientRecipes,
