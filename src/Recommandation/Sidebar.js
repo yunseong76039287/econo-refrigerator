@@ -8,14 +8,6 @@ import Search from "@material-ui/icons/Search";
 import { useIngredientsId, useUnselectIngredient } from "../IngredientContext";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles((theme) => ({
-  myClassName: {
-    marginRight: "10px",
-    "&:hover": {
-      backgroundColor: "rgba(225, 49, 90, 0.1)",
-    },
-  },
-}));
 const Sidebar = () => {
   const refrigeratorIngredientsId = useIngredientsId();
   const unselectIngredient = useUnselectIngredient();
@@ -24,6 +16,10 @@ const Sidebar = () => {
 
   console.log("임시 저장소 : " + refrigeratorIngredientsId);
   console.log("selected에 저장된 값 : " + refrigeratorIngredientsId);
+
+  const generateIngredientParam = () => {
+    return refrigeratorIngredientsId.join(",");
+  };
 
   return (
     <div className="sidebar">
@@ -54,7 +50,10 @@ const Sidebar = () => {
             );
           })}
         </div>
-        <Link to="/search" className="search-link">
+        <Link
+          to={"/search?ingredients=" + generateIngredientParam()}
+          className="search-link"
+        >
           <Search />
           <div className="search-link-text">레시피 추천 받기</div>
         </Link>
@@ -64,3 +63,12 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+const useStyles = makeStyles((theme) => ({
+  myClassName: {
+    marginRight: "10px",
+    "&:hover": {
+      backgroundColor: "rgba(225, 49, 90, 0.1)",
+    },
+  },
+}));

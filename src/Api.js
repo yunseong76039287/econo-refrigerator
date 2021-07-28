@@ -19,7 +19,7 @@ async function get10RandomRecipes() {
 async function searchSufficientRecipes(ingredientsParam) {
   const url =
     process.env.REACT_APP_API_URL +
-    "recipe/sufficientSearch?" +
+    "recipe/sufficientSearch" +
     ingredientsParam;
 
   const result = await axios
@@ -35,16 +35,14 @@ async function searchSufficientRecipes(ingredientsParam) {
   return result;
 }
 
-async function searchInsufficientRecipes(ingredientsDataFormat) {
-  const url = process.env.REACT_APP_API_URL + "/api/recipe/insufficientSearch";
+async function searchInsufficientRecipes(ingredientsParam) {
+  const url =
+    process.env.REACT_APP_API_URL +
+    "recipe/insufficientSearch" +
+    ingredientsParam;
 
   const result = await axios
-    .get(url, {
-      headers: { "Access-Control-Allow-Origin": true },
-      data: {
-        recipeIngredientDtos: ingredientsDataFormat,
-      },
-    })
+    .get(url)
     .then(function (response) {
       return response.data;
     })
