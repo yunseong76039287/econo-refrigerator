@@ -1,10 +1,19 @@
 import "./Home.css";
-import React from "react";
+import React, { useEffect } from "react";
 import HomeListSquare from "./HomeListSquare";
 import ingredientData from "../data/ingredientData";
 import recipeData from "../data/recipeData";
+import Api from "../Api";
 
 const Home = () => {
+  useEffect(() => {
+    async function init() {
+      const randomRecipe = await Api.get10RandomRecipe();
+      console.log(randomRecipe);
+    }
+    init();
+  }, []);
+
   return (
     <div className="home">
       <div className="home-header">
