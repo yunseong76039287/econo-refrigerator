@@ -6,7 +6,6 @@ import Api from "../Api";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 const Search = () => {
-  const [searchingResultRecipes, setSearchingResultRecipes] = useState([]);
   const [sufficientRecipes, setSufficientRecipes] = useState([]);
   const [insufficientRecipes, setInsufficientRecipes] = useState([]);
 

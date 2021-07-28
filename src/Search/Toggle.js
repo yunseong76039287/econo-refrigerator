@@ -20,14 +20,6 @@ const Toggle = ({ id, likeCount }) => {
     }
   }, [likeCount]);
 
-  // console.log("id값 : " + id);
-  // console.log("id type : " + typeof id);
-  // console.log("likeCount값 : " + count);
-  // console.log("likeCount type : " + typeof count);
-  // console.log("localstorage에 저장된 값 : " + isPressed);
-  // console.log("---------- ");
-
-  // 아직 서버와 연동이 안되서 like Count를 서버에 동기화 하지 못함.
   const handleClick = async (event) => {
     if (isPressed === true) {
       await Api.unlikeRecipe(id);
@@ -51,7 +43,6 @@ const Toggle = ({ id, likeCount }) => {
     else return <FavoriteBorderIcon></FavoriteBorderIcon>;
   };
 
-  // 좋아요가 안눌렸을 때
   return (
     <div className="like-button like-button-holder">
       <div className="like-button">{count}</div>

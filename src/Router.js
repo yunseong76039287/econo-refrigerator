@@ -15,7 +15,7 @@ const Router = ({ Page }) => {
         <Header />
         <Switch>
           <Route
-            path="/recipe"
+            path="/recipe/:id"
             component={() => {
               return (
                 <div className="contentsbody">
