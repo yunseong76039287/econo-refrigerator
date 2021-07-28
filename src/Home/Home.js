@@ -1,18 +1,52 @@
 import "./Home.css";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import HomeListSquare from "./HomeListSquare";
 import ingredientData from "../data/ingredientData";
-import recipeData from "../data/recipeData";
 import Api from "../Api";
 
 const Home = () => {
+  const [randomRecipes, setRandomRecipes] = useState([]);
+  const [randomIngredients, setRandomIngredients] = useState([]);
+
   useEffect(() => {
-    async function init() {
-      const randomRecipe = await Api.get10RandomRecipe();
-      console.log(randomRecipe);
+    initWithLocal();
+
+    async function initWithServer() {
+      const randomRecipes = await Api.get10RandomRecipes();
+      setRandomRecipes(randomRecipes);
     }
-    init();
+    initWithServer();
   }, []);
+
+  const initWithLocal = () => {
+    get10RandomIngredients();
+  };
+
+  const get10RandomIngredients = () => {
+    let random10Ingredients = [];
+
+    const randomStartIdx = getRandomIngredientsStartIdx();
+    for (let i = 0; i < 10; i++) {
+      const idx = randomStartIdx + i;
+      random10Ingredients.push(ingredientData.ingredientDataArray[idx]);
+    }
+
+    setRandomIngredients(random10Ingredients);
+  };
+
+  const getRandomIngredientsStartIdx = () => {
+    const ingredientsSize = ingredientData.ingredientDataArray.length;
+    const randomStartIdx = Math.round(Math.random() * (ingredientsSize - 11));
+    if (randomStartIdx < 0) {
+      randomStartIdx = 0;
+    }
+
+    return randomStartIdx;
+  };
+
+  useEffect(() => {
+    console.log(randomRecipes);
+  }, [randomRecipes]);
 
   return (
     <div className="home">
@@ -36,18 +70,11 @@ const Home = () => {
         </div>
 
         <div className="home-recipe-list-mapping home-list-mapping">
-          <HomeListSquare imageUrl={"/images/asparagusBeef/main.jpg"} />
-          <HomeListSquare imageUrl={"/images/friedEggplant/main.jpg"} />
-          <HomeListSquare imageUrl={"/images/lettuceGeotjeorl/main.jpg"} />
-          <HomeListSquare imageUrl={"/images/eggJangjorim/main.jpg"} />
-          <HomeListSquare
-            imageUrl={"/images/marbledSoybeanPasteStew/main.jpg"}
-          />
-          <HomeListSquare imageUrl={"/images/asparagusGarlicFried/main.jpeg"} />
-          <HomeListSquare imageUrl={"/images/squashRamen/main.jpeg"} />
-          <HomeListSquare
-            imageUrl={"/images/bokchoyChivesShrimpRice/main.jpg"}
-          />
+          {randomRecipes.map((recipe) => {
+            return (
+              <HomeListSquare key={recipe.id} imagePath={recipe.imagePath} />
+            );
+          })}
         </div>
       </div>
       <div className="home-ingredient-list home-list">
@@ -59,9 +86,9 @@ const Home = () => {
         </div>
 
         <div className="home-ingredient-list-mapping home-list-mapping">
-          {ingredientData.ingredientDataArray.map(({ imageUrl }, index) => {
+          {randomIngredients.map(({ imageUrl }, index) => {
             if (index > 10) return;
-            else return <HomeListSquare key={index} imageUrl={imageUrl} />;
+            else return <HomeListSquare key={index} imagePath={imageUrl} />;
           })}
         </div>
       </div>

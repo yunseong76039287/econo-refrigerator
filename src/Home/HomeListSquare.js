@@ -1,10 +1,10 @@
 import "./HomeListSquare.css";
 import React from "react";
 
-const HomeListSquare = ({ imageUrl }) => {
+const HomeListSquare = ({ imagePath }) => {
   return (
     <div className="square">
-      <img className="square-img" src={imageUrl} />
+      <img className="square-img" src={imagePath} />
     </div>
   );
 };

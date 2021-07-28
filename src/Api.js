@@ -1,18 +1,19 @@
 import axios from "axios";
 
-const get10RandomRecipe = async () => {
+async function get10RandomRecipes() {
   const url = process.env.REACT_APP_API_URL + "recipe/randomList";
 
-  axios
+  const data = await axios
     .get(url)
     .then(function (response) {
-      console.log(response);
-      return response;
+      return response.data;
     })
     .catch(function (error) {
       console.log(error);
       return [];
     });
-};
 
-export default { get10RandomRecipe };
+  return data;
+}
+
+export default { get10RandomRecipes };
