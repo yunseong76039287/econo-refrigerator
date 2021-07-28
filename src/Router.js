@@ -1,5 +1,5 @@
 import "./Router.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "./Header";
 import Sidebar from "./Recommandation/Sidebar";
 import Recommandation from "./Recommandation/Recommandation";
@@ -7,6 +7,7 @@ import Recipe from "./Recipe/Recipe.js";
 import Search from "./Search/Search";
 import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
 import Home from "./Home/Home";
+import Exploration from "./Search/Exploration";
 
 const Router = ({ Page }) => {
   return (
@@ -23,9 +24,7 @@ const Router = ({ Page }) => {
                 </div>
               );
             }}
-          >
-            <Recipe />
-          </Route>
+          />
           <Route
             path="/search"
             component={() => {
@@ -36,7 +35,7 @@ const Router = ({ Page }) => {
                 </div>
               );
             }}
-          ></Route>
+          />
           <Route
             path="/recommendation"
             component={() => {
@@ -47,7 +46,8 @@ const Router = ({ Page }) => {
                 </div>
               );
             }}
-          ></Route>
+          />
+          <Route path="/exploration" component={() => <Exploration />} />
           <Route
             exact
             path="/"
@@ -58,7 +58,7 @@ const Router = ({ Page }) => {
                 </div>
               );
             }}
-          ></Route>
+          />
           <Redirect to="/" />
         </Switch>
       </div>

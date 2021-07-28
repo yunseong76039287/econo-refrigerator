@@ -18,10 +18,6 @@ const Home = () => {
     initWithServer();
   }, []);
 
-  useEffect(() => {
-    console.log(randomRecipes);
-  }, [randomRecipes]);
-
   const initWithLocal = () => {
     get10RandomIngredients();
   };
@@ -70,9 +66,9 @@ const Home = () => {
         </div>
 
         <div className="home-recipe-list-mapping home-list-mapping">
-          {randomRecipes.map((recipe) => {
+          {randomRecipes.map(({ id, imagePath }) => {
             return (
-              <HomeListSquare key={recipe.id} imagePath={recipe.imagePath} />
+              <HomeListSquare recipe key={id} id={id} imagePath={imagePath} />
             );
           })}
         </div>
@@ -86,9 +82,17 @@ const Home = () => {
         </div>
 
         <div className="home-ingredient-list-mapping home-list-mapping">
-          {randomIngredients.map(({ imagePath }, index) => {
+          {randomIngredients.map(({ id, imagePath }, index) => {
             if (index > 10) return;
-            else return <HomeListSquare key={index} imagePath={imagePath} />;
+            else
+              return (
+                <HomeListSquare
+                  ingredient
+                  key={id}
+                  id={id}
+                  imagePath={imagePath}
+                />
+              );
           })}
         </div>
       </div>
