@@ -799,7 +799,11 @@ const getIngredientNameById = (id) => {
     return false;
   });
 
-  return idName.name;
+  if (idName === undefined) {
+    return "";
+  } else {
+    return idName.name;
+  }
 };
 
 export default { ingredientDataArray, getIngredientNameById };

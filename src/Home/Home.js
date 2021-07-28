@@ -18,6 +18,10 @@ const Home = () => {
     initWithServer();
   }, []);
 
+  useEffect(() => {
+    console.log(randomRecipes);
+  }, [randomRecipes]);
+
   const initWithLocal = () => {
     get10RandomIngredients();
   };
@@ -43,10 +47,6 @@ const Home = () => {
 
     return randomStartIdx;
   };
-
-  useEffect(() => {
-    console.log(randomRecipes);
-  }, [randomRecipes]);
 
   return (
     <div className="home">
