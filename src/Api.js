@@ -54,8 +54,26 @@ async function searchInsufficientRecipes(ingredientsParam) {
   return result;
 }
 
+async function likeRecipe(id) {
+  const url = process.env.REACT_APP_API_URL + "recipe/" + id + "/like";
+
+  await axios.put(url).catch(function (error) {
+    console.log(error);
+  });
+}
+
+async function unlikeRecipe(id) {
+  const url = process.env.REACT_APP_API_URL + "recipe/" + id + "/unlike";
+
+  await axios.put(url).catch(function (error) {
+    console.log(error);
+  });
+}
+
 export default {
   get10RandomRecipes,
   searchSufficientRecipes,
   searchInsufficientRecipes,
+  likeRecipe,
+  unlikeRecipe,
 };
