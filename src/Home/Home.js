@@ -1,5 +1,6 @@
 import "./Home.css";
 import React, { useEffect, useState } from "react";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import HomeListSquare from "./HomeListSquare";
 import ingredientData from "../data/ingredientData";
 import Api from "../Api";
@@ -66,11 +67,15 @@ const Home = () => {
         </div>
 
         <div className="home-recipe-list-mapping home-list-mapping">
-          {randomRecipes.map(({ id, imagePath }) => {
-            return (
-              <HomeListSquare recipe key={id} id={id} imagePath={imagePath} />
-            );
-          })}
+          {randomRecipes ? (
+            randomRecipes.map(({ id, imagePath }) => {
+              return (
+                <HomeListSquare recipe key={id} id={id} imagePath={imagePath} />
+              );
+            })
+          ) : (
+            <CircularProgress />
+          )}
         </div>
       </div>
       <div className="home-ingredient-list home-list">

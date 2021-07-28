@@ -1,11 +1,12 @@
 import "./Recipe.css";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Button from "@material-ui/core/Button";
+import ClearIcon from "@material-ui/icons/Clear";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import ingredientData from "../data/ingredientData";
 import Toggle from "../Search/Toggle";
 import Comment from "./Comment";
-import Button from "@material-ui/core/Button";
-import ClearIcon from "@material-ui/icons/Clear";
 import Api from "../Api";
 
 const Recipe = () => {
@@ -30,7 +31,7 @@ const Recipe = () => {
 
   return (
     <div className="page">
-      {recipe && (
+      {recipe ? (
         <div className="recipe">
           <h1 className="recipe-name">{recipe.name}</h1>
           <div className="like recipe-like-button">
@@ -89,6 +90,8 @@ const Recipe = () => {
           </div>
           <Comment recipeData={recipe} setRecipeData={setRecipe} />
         </div>
+      ) : (
+        <CircularProgress />
       )}
     </div>
   );

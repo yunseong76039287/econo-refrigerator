@@ -129,7 +129,7 @@ const Search = () => {
           })}
         </div>
       ) : (
-        ""
+        <CircularProgress />
       )}
     </div>
   );
