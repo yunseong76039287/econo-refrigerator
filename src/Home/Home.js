@@ -86,9 +86,9 @@ const Home = () => {
         </div>
 
         <div className="home-ingredient-list-mapping home-list-mapping">
-          {randomIngredients.map(({ imageUrl }, index) => {
+          {randomIngredients.map(({ imagePath }, index) => {
             if (index > 10) return;
-            else return <HomeListSquare key={index} imagePath={imageUrl} />;
+            else return <HomeListSquare key={index} imagePath={imagePath} />;
           })}
         </div>
       </div>

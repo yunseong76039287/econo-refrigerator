@@ -19,12 +19,12 @@ const IngredientGrid = () => {
     <div className="ingredient-container">
       {isLoaded ? (
         ingredientData.ingredientDataArray.map(
-          ({ id, name, imageUrl, type }) => (
+          ({ id, name, imagePath, type }) => (
             <IngredientSquare
               key={id}
               id={id}
               name={name}
-              imageUrl={imageUrl}
+              imagePath={imagePath}
               type={type}
             />
           )

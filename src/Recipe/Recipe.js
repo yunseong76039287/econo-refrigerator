@@ -33,7 +33,7 @@ const Recipe = () => {
       </div>
       <img
         className="recipe-image recipe-thumbnail"
-        src={recipeTestContent.imageUrl}
+        src={recipeTestContent.imagePath}
         alt="대체 텍스트가 들어갈 곳"
       ></img>
       <h2>레시피 소개</h2>
@@ -94,7 +94,7 @@ const recipeListData = {
   id: 10,
   name: "토마토 파스타",
   description: "토마토를 곁들인 매콤달콤 파스타",
-  imageUrl: "/images/test_pasta.jpg",
+  imagePath: "/images/test_pasta.jpg",
   likeCount: 0,
   ingredients: [
     {

@@ -61,7 +61,7 @@ const Search = () => {
                 name={element.name}
                 description={element.description}
                 ingredients={element.ingredients}
-                imageUrl={element.imagePath}
+                imagePath={element.imagePath}
                 likeCount={element.likeCount}
               />
             );
@@ -80,7 +80,7 @@ const Search = () => {
               description={element.description}
               ingredients={element.ingredients}
               insufficientIngredients={element.insufficientIngredients}
-              imageUrl={element.imagePath}
+              imagePath={element.imagePath}
               likeCount={element.likeCount}
             />
           );
