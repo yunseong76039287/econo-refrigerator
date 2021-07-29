@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div className="header">
-      <Link exact to="/" className="title">
+      <Link to="/" className="title">
         <div>econo refrigerator</div>
       </Link>
 

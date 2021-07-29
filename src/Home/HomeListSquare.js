@@ -16,7 +16,7 @@ const HomeListSquare = ({ recipe, ingredient, id, imagePath }) => {
   }, []);
 
   return (
-    <Link to={url}>
+    <Link to={url ? url : ""}>
       <div className="square">
         <img className="square-img" src={imagePath} />
       </div>

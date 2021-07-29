@@ -15,7 +15,7 @@ const ResultBox = ({
 }) => {
   return (
     <div className="result-box result-box-container">
-      <Link exact to={"/recipe/" + id} className="result-box recipe-link">
+      <Link to={"/recipe/" + id} className="result-box recipe-link">
         <div className="result-box thumbnail">
           <img
             className="result-box thumbnail-img"

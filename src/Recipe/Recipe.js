@@ -25,10 +25,6 @@ const Recipe = () => {
     initWithServer();
   }, []);
 
-  useEffect(() => {
-    recipe && console.log(comments);
-  }, [comments]);
-
   const deleteComment = (commentId) => {
     let password = prompt("비밀번호를 입력해주세요.");
     console.log("비밀번호 확인" + password);
