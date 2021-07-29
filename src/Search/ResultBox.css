@@ -44,12 +44,12 @@
 
 .box-content-title {
   font-weight: 700;
-  font-size: 22px;
+  font-size: min(4vw, 22px);
   color: black;
 }
 
 .box-content-description {
-  font-size: 15px;
+  font-size: min(2.6vw, 15px);
   margin-top: 5px;
   color: #7a7d80;
 }
@@ -57,21 +57,28 @@
 .box-content-ingredient-title {
   margin-top: 15px;
   margin-bottom: 5px;
-  font-size: 15px;
+  font-size: min(2.6vw, 15px);
   font-weight: 700;
   color: black;
 }
 
 .box-content-ingredient-list {
   display: flex;
+  flex-flow: row wrap;
   width: 100%;
 }
 
 .box-content-ingredient {
-  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: min(1vw, 7px);
+  margin-bottom: min(0.5vh, 5px);
   padding: 5px 7px;
   border-radius: 9px;
   background-color: rgb(212, 229, 255);
+
   font-size: 12px;
   font-weight: 800;
   color: white;
