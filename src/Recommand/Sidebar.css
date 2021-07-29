@@ -73,6 +73,9 @@
 .selected-ingredient-name {
   font-size: min(1.7vw, 26px);
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .selected-delete-button {
@@ -87,8 +90,6 @@
   border-radius: 15px;
   margin-top: 20px;
   background-color: #152f57;
-
-  color: #f7d556;
 }
 
 .search-link-text {

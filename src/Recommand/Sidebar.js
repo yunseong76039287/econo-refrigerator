@@ -52,7 +52,12 @@ const Sidebar = () => {
           to={"/search?ingredients=" + generateIngredientParam()}
           className="search-link"
         >
-          <Search style={{ fontSize: "min(max(15px, 2.1vw), 30px)" }} />
+          <Search
+            style={{
+              fontSize: "min(max(15px, 2.1vw), 30px)",
+              color: "#f7d556",
+            }}
+          />
           <div className="search-link-text">레시피 추천 받기</div>
         </Link>
       </div>
