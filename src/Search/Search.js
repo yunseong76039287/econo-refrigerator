@@ -114,27 +114,31 @@ const Search = () => {
 
       <div className="search-result-holder">
         {insufficientRecipes ? (
-          <>
-            <h1 className="search-result-title">
-              🥣 재료가 조금 더 있으면 가능한 이런 요리는 어떠세요?
-            </h1>
-            {insufficientRecipes.map((element) => {
-              return (
-                <ResultBox
-                  key={element.id}
-                  id={element.id}
-                  name={element.name}
-                  description={element.description}
-                  ingredients={getSufficientIngredients(element.ingredients)}
-                  insufficientIngredients={getInsufficientIngredients(
-                    element.ingredients
-                  )}
-                  imagePath={element.imagePath}
-                  likeCount={element.likeCount}
-                />
-              );
-            })}
-          </>
+          insufficientRecipes.length === 0 ? (
+            ""
+          ) : (
+            <>
+              <h1 className="search-result-title">
+                🥣 재료가 조금 더 있으면 가능한 이런 요리는 어떠세요?
+              </h1>
+              {insufficientRecipes.map((element) => {
+                return (
+                  <ResultBox
+                    key={element.id}
+                    id={element.id}
+                    name={element.name}
+                    description={element.description}
+                    ingredients={getSufficientIngredients(element.ingredients)}
+                    insufficientIngredients={getInsufficientIngredients(
+                      element.ingredients
+                    )}
+                    imagePath={element.imagePath}
+                    likeCount={element.likeCount}
+                  />
+                );
+              })}
+            </>
+          )
         ) : (
           <CircularProgress />
         )}
