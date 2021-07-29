@@ -68,6 +68,8 @@ blockquote,
 pre,
 a {
   text-decoration: none;
+}
+a:visited {
   color: black;
 }
 img,

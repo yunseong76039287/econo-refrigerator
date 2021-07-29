@@ -32,20 +32,25 @@ const Comment = ({ setComments }) => {
   const checkEmptyError = () => {
     if (name === "") {
       setIsNameErr(true);
-    }
-    if (password === "") {
-      setIsPasswordErr(true);
-    }
-    if (content === "") {
-      setIsContentErr(true);
-    }
-    if (isNameErr || isPasswordErr || isContentErr) {
       return true;
+    } else {
+      setIsNameErr(false);
     }
 
-    setIsNameErr(false);
-    setIsPasswordErr(false);
-    setIsContentErr(false);
+    if (password === "") {
+      setIsPasswordErr(true);
+      return true;
+    } else {
+      setIsPasswordErr(false);
+    }
+
+    if (content === "") {
+      setIsContentErr(true);
+      return true;
+    } else {
+      setIsContentErr(false);
+    }
+
     return false;
   };
 
@@ -53,9 +58,10 @@ const Comment = ({ setComments }) => {
     <div className="input-container">
       <div className="input-user-information">
         <TextField
+          className="nickname"
           label="Outlined"
           variant="outlined"
-          className="nickname"
+          size="small"
           label="닉네임"
           type="text"
           required
@@ -65,9 +71,10 @@ const Comment = ({ setComments }) => {
           onChange={({ target: { value } }) => setName(value)}
         />
         <TextField
+          className="password"
           label="Outlined"
           variant="outlined"
-          className="password"
+          size="small"
           label="비밀번호"
           type="password"
           required
@@ -83,7 +90,7 @@ const Comment = ({ setComments }) => {
           variant="outlined"
           multiline
           rows={4}
-          className="input-contents"
+          fullWidth
           label="댓글"
           type="text"
           required
@@ -93,9 +100,10 @@ const Comment = ({ setComments }) => {
           onChange={({ target: { value } }) => setContent(value)}
         />
         <Button
-          variant="outlined"
+          variant="contained"
           color="primary"
-          className="submit-button"
+          size="small"
+          style={{ marginTop: 10 }}
           onClick={submitComment}
         >
           Submit
