@@ -14,7 +14,7 @@
   width: max(180px, min(22vw, 260px));
   padding: 5px 0px;
 
-  font-size: max(20px, min(2.5vw, 30px));
+  font-size: max(20px, min(2.4vw, 30px));
   font-weight: 600;
   color: black;
 }
@@ -25,7 +25,7 @@
   border-radius: 11px;
   background-color: rgba(0, 0, 0, 0);
 
-  font-size: min(1.4vw, 15px);
+  font-size: min(3vw, 15px);
   color: black;
 
   transition: all 0.3s background-color;
