@@ -17,7 +17,7 @@ const Search = () => {
       await searchInsufficientRecipes();
     }
     initWithServer();
-  }, []);
+  }, [ingredientsParam]);
 
   useEffect(() => {
     sufficientRecipes && initLikeStateOfRecipes(sufficientRecipes);
