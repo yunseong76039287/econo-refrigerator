@@ -2,7 +2,9 @@
 
 .ingredient-container {
   display: grid;
-  height: calc(95vh - 82px);
+  height: calc(100vh - 82px);
+  margin-top: 0px;
+  padding-top: 30px;
   grid-template-rows: repeat(
     5,
     minmax(230px, 230px)
