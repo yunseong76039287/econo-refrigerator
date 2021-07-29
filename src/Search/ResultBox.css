@@ -45,6 +45,7 @@
 .box-content-title {
   font-weight: 700;
   font-size: 22px;
+  color: black;
 }
 
 .box-content-description {
@@ -58,6 +59,7 @@
   margin-bottom: 5px;
   font-size: 15px;
   font-weight: 700;
+  color: black;
 }
 
 .box-content-ingredient-list {
