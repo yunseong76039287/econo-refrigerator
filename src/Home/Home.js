@@ -1,12 +1,13 @@
 import "./Home.css";
 import React, { useEffect, useState } from "react";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import HomeListSquare from "./HomeListSquare";
 import ingredientData from "../data/ingredientData";
 import Api from "../Api";
 
 const Home = () => {
-  const [randomRecipes, setRandomRecipes] = useState([]);
-  const [randomIngredients, setRandomIngredients] = useState([]);
+  const [randomRecipes, setRandomRecipes] = useState();
+  const [randomIngredients, setRandomIngredients] = useState();
 
   useEffect(() => {
     initWithLocal();
@@ -17,10 +18,6 @@ const Home = () => {
     }
     initWithServer();
   }, []);
-
-  useEffect(() => {
-    console.log(randomRecipes);
-  }, [randomRecipes]);
 
   const initWithLocal = () => {
     get10RandomIngredients();
@@ -70,11 +67,15 @@ const Home = () => {
         </div>
 
         <div className="home-recipe-list-mapping home-list-mapping">
-          {randomRecipes.map((recipe) => {
-            return (
-              <HomeListSquare key={recipe.id} imagePath={recipe.imagePath} />
-            );
-          })}
+          {randomRecipes ? (
+            randomRecipes.map(({ id, imagePath }) => {
+              return (
+                <HomeListSquare recipe key={id} id={id} imagePath={imagePath} />
+              );
+            })
+          ) : (
+            <CircularProgress />
+          )}
         </div>
       </div>
       <div className="home-ingredient-list home-list">
@@ -86,10 +87,22 @@ const Home = () => {
         </div>
 
         <div className="home-ingredient-list-mapping home-list-mapping">
-          {randomIngredients.map(({ imageUrl }, index) => {
-            if (index > 10) return;
-            else return <HomeListSquare key={index} imagePath={imageUrl} />;
-          })}
+          {randomIngredients ? (
+            randomIngredients.map(({ id, imagePath }, index) => {
+              if (index > 10) return;
+              else
+                return (
+                  <HomeListSquare
+                    ingredient
+                    key={id}
+                    id={id}
+                    imagePath={imagePath}
+                  />
+                );
+            })
+          ) : (
+            <CircularProgress />
+          )}
         </div>
       </div>
     </div>

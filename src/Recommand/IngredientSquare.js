@@ -8,7 +8,7 @@ import {
   useIsSelectedIngredient,
 } from "../IngredientContext";
 
-const IngredientSquare = ({ id, name, imageUrl, type }) => {
+const IngredientSquare = ({ id, name, imagePath, type }) => {
   const selectIngredient = useSelectIngredient();
   const unselectIngredient = useUnselectIngredient();
   const isSelectedIngredient = useIsSelectedIngredient();
@@ -40,7 +40,7 @@ const IngredientSquare = ({ id, name, imageUrl, type }) => {
         </IconButton>
       </div>
       <div className="ingredient-thumbnail">
-        <img className="ingredient-thumbnail-img" src={imageUrl} />
+        <img className="ingredient-thumbnail-img" src={imagePath} />
       </div>
       <div className="ingredient-footer">
         <span className="ingredient-name">{name}</span>

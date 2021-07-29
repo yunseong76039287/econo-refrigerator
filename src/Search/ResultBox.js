@@ -8,19 +8,19 @@ const ResultBox = ({
   id,
   name,
   description,
-  imageUrl,
+  imagePath,
   ingredients,
   insufficientIngredients,
   likeCount,
 }) => {
   return (
     <div className="result-box result-box-container">
-      <Link exact to="/recipe" className="result-box recipe-link">
+      <Link exact to={"/recipe/" + id} className="result-box recipe-link">
         <div className="result-box thumbnail">
           <img
             className="result-box thumbnail-img"
-            src={imageUrl}
-            alt={imageUrl}
+            src={imagePath}
+            alt={imagePath}
           />
         </div>
         <div className="result-box box-content">
@@ -31,14 +31,14 @@ const ResultBox = ({
           <div className="box-content-ingredient-title">재료</div>
           <div className="box-content-ingredient-list">
             {insufficientIngredients &&
-              insufficientIngredients.map(({ id, ingredient }) => (
+              insufficientIngredients.map(({ id }) => (
                 <div className="box-content-ingredient insufficient" key={id}>
-                  {ingredientData.getIngredientNameById(ingredient)}
+                  {ingredientData.getIngredientNameById(id)}
                 </div>
               ))}
-            {ingredients.map(({ id, ingredient }) => (
+            {ingredients.map(({ id }) => (
               <div className="box-content-ingredient" key={id}>
-                {ingredientData.getIngredientNameById(ingredient)}
+                {ingredientData.getIngredientNameById(id)}
               </div>
             ))}
           </div>

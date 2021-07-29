@@ -1,7 +1,7 @@
 let soyEggFriedRice = {
   name: "백종원 달걀볶음밥",
   description: "불맛 가득한 달걀볶음밥! 맛없으면 이상한거쥬~",
-  imageUrl: "",
+  imagePath: "",
   likeCount: 0,
   ingredients: [
     {
@@ -66,7 +66,7 @@ let perillaKalguksu = {
   name: "백종원 들깨칼국수",
   description:
     "들깨의 맛, 설명이 필요없죠? 이 방법으로 칼국수, 수제비, 소면, 라면 다 가능해요.",
-  imageUrl: "",
+  imagePath: "",
   likeCount: 0,
   ingredients: [
     {
@@ -147,7 +147,7 @@ let fishCakeRamen = {
   name: "백종원 어묵듬뿍! 해물맛 라면",
   description:
     "제가 만든 마라소스가 출시되었습니다ㅎㅎ CU 가면 사실 수 있는데 ㅎㅎ백종원 마라소스와 어묵 듬뿍 넣은 라면이랑 먹으면 얼마나 맛있는지 몰라요 ㅎㅎ 사라는 건 아니고요 ㅎㅎ 그냥 그렇다고요 ㅎㅎ",
-  imageUrl: "",
+  imagePath: "",
   likeCount: 0,
   ingredients: [
     {
@@ -212,7 +212,7 @@ let fishCakeRamen = {
 let porkKimchiJjim = {
   name: "백종원 돼지김치찜",
   description: "김치와 고기가 쭉~쭉 찢어지는 김치찜!",
-  imageUrl: "",
+  imagePath: "",
   likeCount: 0,
   ingredients: [
     {
@@ -298,7 +298,7 @@ let tunaRice = {
   name: "참치덮밥",
   description:
     "혼밥족을 위한 1인분 레시피, 쉽고 간단해 누구나 맛을 낼 수 있는 레시피. 출처 : https://www.10000recipe.com/recipe/6860493",
-  imageUrl: "",
+  imagePath: "",
   likeCount: 0,
   ingredients: [
     {
@@ -383,7 +383,7 @@ let lettuceGeotjeorl = {
   id: 10,
   name: "상추겉절이",
   description: "봄철 입맛 돌게 만드는 상추겉절이~ 밥에도 안성맞춤!!",
-  imageUrl: "/images/lettuceGeotjeorl/main.jpg",
+  imagePath: "/images/lettuceGeotjeorl/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -446,7 +446,7 @@ let asparagusBeef = {
   name: "아스파라거스 소고기말이",
   description:
     "아스파라거스는 섬유질이 풍부해 칼로리가 매우 낮지만 영양분은 풍부하게 들어 있어 체중 감량에 좋은 식재료입니다.",
-  imageUrl: "/images/asparagusBeef/main.jpg",
+  imagePath: "/images/asparagusBeef/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -531,7 +531,7 @@ let friedEggplant = {
   name: "백종원 가지볶음",
   description:
     "좋은 먹거리 가지로 간단하지만 정말 맛있는 가지볶음을 해 보아요:D",
-  imageUrl: "/images/friedEggplant/main.jpg",
+  imagePath: "/images/friedEggplant/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -614,7 +614,7 @@ let eggJangjorim = {
   name: "계란장조림",
   description:
     "한번 만들어두면 2~3일은 든든한 계란장조림 황금레시피! 고소한 계란에 짭쪼름한 간장양념을 더해 밥도둑 반찬 중 하나죠!",
-  imageUrl: "/images/eggJangjorim/main.jpg",
+  imagePath: "/images/eggJangjorim/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -680,7 +680,7 @@ let marbledSoybeanPasteStew = {
   name: "차돌박이 된장찌개",
   description:
     "오늘은 누가 만들어도 실패하지 않는 된장찌개 황금레시피를 준비해보았어요.",
-  imageUrl: "/images/marbledSoybeanPasteStew/main.jpg",
+  imagePath: "/images/marbledSoybeanPasteStew/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -769,7 +769,7 @@ let bokchoyChivesShrimpRice = {
   name: "청경채부추새우덮밥",
   description:
     "새우를 좋아하는 남편을 위한 건강식 청경채새우덮밥! 중국집보다 더 맛있게 냠냠 완성!",
-  imageUrl: "/images/bokchoyChivesShrimpRice/main.jpg",
+  imagePath: "/images/bokchoyChivesShrimpRice/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -876,7 +876,7 @@ let asparagusGarlicFried = {
   name: "아스파라거스 마늘볶음",
   description:
     "맛남의 광장에서 나온 아스파라거스요리! 입에 감기는 맛이지만, 쉬운 요리법에 술안주, 밥반찬으로 추천!",
-  imageUrl: "/images/asparagusGarlicFried/main.jpg",
+  imagePath: "/images/asparagusGarlicFried/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -927,7 +927,7 @@ let asparagusGarlicFried = {
 let squashRamen = {
   name: "애호박국수",
   description: "호로록 간단하게 국수를 먹고 싶을 땐? 수미네반찬 애호박국수!!",
-  imageUrl: "/images/squashRamen/main.jpg",
+  imagePath: "/images/squashRamen/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -990,7 +990,7 @@ let beefSeaweedStew = {
   name: "소고기미역국",
   description:
     "산후조리하실때나 생일상에는 두말하면 잔소리고, 회복식이나 건강식으로도 참 좋은 미역국!",
-  imageUrl: "/images/beefSeaweedStew/main.jpg",
+  imagePath: "/images/beefSeaweedStew/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1030,7 +1030,8 @@ let beefSeaweedStew = {
       imagePath: "",
     },
     {
-      description: "3. 이제 냄비에 들기름(1스푼)을 두르고 준비한 미역을 넣고 약불에서 볶아주세요, 밑간을해둔 고기도 같이 볶아주세요",
+      description:
+        "3. 이제 냄비에 들기름(1스푼)을 두르고 준비한 미역을 넣고 약불에서 볶아주세요, 밑간을해둔 고기도 같이 볶아주세요",
       imagePath: "",
     },
     {
@@ -1043,7 +1044,6 @@ let beefSeaweedStew = {
         "5. 이제 국간장(1스푼), 멸치or 까나리액젓(1스푼), 다진마늘(0.5~1스푼), 후춧가루(0.2스푼), 소금(간보시고 기호대로 가감)을 넣고 한소끔만 더 끓여주세요~",
       imagePath: "",
     },
-   
   ],
   comments: [],
 };
@@ -1052,7 +1052,7 @@ let partyNoodle = {
   name: "잔치국수",
   description:
     "따스한 육수에 호로록 말아먹은 잔치국수 황금레시피 알려드릴게요. 물론 더 맛있게 만들어주는 양념장까지요 ^^",
-  imageUrl: "/images/partyNoodle/main.jpg",
+  imagePath: "/images/partyNoodle/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1116,7 +1116,8 @@ let partyNoodle = {
       imagePath: "",
     },
     {
-      description: "3. 당근과 , 호박을 채썰어 후라이팬에 살짝 볶아주세요. 전 살짝 소금간도 해줬네요.",
+      description:
+        "3. 당근과 , 호박을 채썰어 후라이팬에 살짝 볶아주세요. 전 살짝 소금간도 해줬네요.",
       imagePath: "",
     },
     {
@@ -1130,22 +1131,25 @@ let partyNoodle = {
       imagePath: "",
     },
     {
-      description: "6. 끓는 물에 국수를 삶아 주세요. 500원 동전만한 양이 1인분이라니 분량에 맞춰 주시면 되세요.",
+      description:
+        "6. 끓는 물에 국수를 삶아 주세요. 500원 동전만한 양이 1인분이라니 분량에 맞춰 주시면 되세요.",
       imagePath: "",
     },
     {
-      description: "7. 끓어오를때 넘치는데요 그럴때 찬물을 조금씩 넣어주면서 삶으시면 면이 쫄깃해져요. 넘쳐흐르지도 않고 딱 좋죠. 보통 국수봉지엔 4분 삶으라고 나와있던데요. 요렇게 찬물을 조금씩 부어주면서 삶다보면 6분정도가 딱 잘맞게 익는 것 같아요.",
+      description:
+        "7. 끓어오를때 넘치는데요 그럴때 찬물을 조금씩 넣어주면서 삶으시면 면이 쫄깃해져요. 넘쳐흐르지도 않고 딱 좋죠. 보통 국수봉지엔 4분 삶으라고 나와있던데요. 요렇게 찬물을 조금씩 부어주면서 삶다보면 6분정도가 딱 잘맞게 익는 것 같아요.",
       imagePath: "",
     },
     {
-      description: "8. 삶은 국수는 찬물에 헤우거주세요. 면발이 더욱 더 쫄깃 탱탱해지도록 말이에요. 체에 받쳐 물기도 좀 빼주구요.",
+      description:
+        "8. 삶은 국수는 찬물에 헤우거주세요. 면발이 더욱 더 쫄깃 탱탱해지도록 말이에요. 체에 받쳐 물기도 좀 빼주구요.",
       imagePath: "",
     },
     {
-      description: "9. 면을 제일 먼저 담고 고명을 올려준 다음 육수를 담아주시면 완성이에요.",
+      description:
+        "9. 면을 제일 먼저 담고 고명을 올려준 다음 육수를 담아주시면 완성이에요.",
       imagePath: "",
     },
-
   ],
   comments: [],
 };
@@ -1154,7 +1158,7 @@ let butadong = {
   name: "부타동",
   description:
     "부타동은 일본식 돼지고기 덮밥으로 부타는 일본어로 돼지를 뜻하고, 동은 밥을 뜻합니다.일본식 소스로 돼지고기를 조려서 밥위에 올린 덮밥식 음식인데요.. 부타동은 주로 목살 부위를 사용하지만 저는 대패삼겹살을 이용해서 만들었습니다.",
-  imageUrl: "/images/butadong/main.jpg",
+  imagePath: "/images/butadong/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1181,8 +1185,7 @@ let butadong = {
   ],
   steps: [
     {
-      description:
-        "1. 먼저 양파는 1/2개만 썰어주세요.",
+      description: "1. 먼저 양파는 1/2개만 썰어주세요.",
       imagePath: "",
     },
     {
@@ -1191,7 +1194,8 @@ let butadong = {
       imagePath: "",
     },
     {
-      description: "3. 그 다음 후라이팬에 대패삼겹살 200g을 넣고, 설탕 1큰술 넣고 볶아줍니다.",
+      description:
+        "3. 그 다음 후라이팬에 대패삼겹살 200g을 넣고, 설탕 1큰술 넣고 볶아줍니다.",
       imagePath: "",
     },
     {
@@ -1200,8 +1204,7 @@ let butadong = {
       imagePath: "",
     },
     {
-      description:
-        "5. 고기가 다 익으면 밥위에 먹음직스럽게 고기를 올려주세요.",
+      description: "5. 고기가 다 익으면 밥위에 먹음직스럽게 고기를 올려주세요.",
       imagePath: "",
     },
     {
@@ -1217,7 +1220,7 @@ let gochujangMushroom = {
   name: "새송이버섯 고추장구이",
   description:
     "오늘은 향긋한 새송이버섯을 이용해 간단한 밑반찬 하나를 만들어보았어요. 바로 쫄깃쫄깃 매콤한 새송이버섯 고추장구이되시겠슴당 :)",
-  imageUrl: "/images/gochujangMushroom/main.jpg",
+  imagePath: "/images/gochujangMushroom/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1247,22 +1250,20 @@ let gochujangMushroom = {
   ],
   steps: [
     {
-      description:
-        "1. 새송이버섯(3개)은 0.5cm 두께로 잘라주세요.",
+      description: "1. 새송이버섯(3개)은 0.5cm 두께로 잘라주세요.",
+      imagePath: "",
+    },
+    {
+      description: "2. 쪽파(적당히) 는 송송 썰어주세요.",
       imagePath: "",
     },
     {
       description:
-        "2. 쪽파(적당히) 는 송송 썰어주세요.",
+        "3. 고추장 2.5T, 고춧가루 1/2T, 진간장 1T, 올리고당 1T, 다진 마늘 1/3T, 물 3T, 참기름 1T을 넣고 잘 섞어 양념장을 만들어요.",
       imagePath: "",
     },
     {
-      description: "3. 고추장 2.5T, 고춧가루 1/2T, 진간장 1T, 올리고당 1T, 다진 마늘 1/3T, 물 3T, 참기름 1T을 넣고 잘 섞어 양념장을 만들어요.",
-      imagePath: "",
-    },
-    {
-      description:
-        "4. 예열한 팬에 새송이버섯을 앞뒤로 가볍게 구워줍니다.",
+      description: "4. 예열한 팬에 새송이버섯을 앞뒤로 가볍게 구워줍니다.",
       imagePath: "",
     },
     {
@@ -1283,7 +1284,7 @@ let eggJjim = {
   name: "계란찜",
   description:
     "폭탄계란찜~ 오늘은 폭탄 맞은 것처럼 부풀어 올랐다는 일명 폭탄 계란찜을 만들어봤어요!",
-  imageUrl: "/images/eggJjim/main.jpg",
+  imagePath: "/images/eggJjim/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1311,19 +1312,19 @@ let eggJjim = {
       imagePath: "",
     },
     {
-      description: "3. 약불로 줄인 후 파를 조금 뿌리고 밥그릇을 덮은 후 김이 나고 뚜껑이 들썩거리면서 부풀어 오르면 불을 끄고 1분 정도 뜸을 들여줍니다",
+      description:
+        "3. 약불로 줄인 후 파를 조금 뿌리고 밥그릇을 덮은 후 김이 나고 뚜껑이 들썩거리면서 부풀어 오르면 불을 끄고 1분 정도 뜸을 들여줍니다",
       imagePath: "",
     },
   ],
   comments: [],
 };
 
-
 let budaeJjigae = {
   name: "부대찌개",
   description:
     "​밖에서 파는 맛처럼 맛있는 부대찌개 양념 만드는 법! 고추장을 넣으면 텁텁해지면서 고추장 맛이 나고 별로인 분들에게 알려드리고 싶은 팁이에요!",
-  imageUrl: "/images/budaeJjigae/main.jpg",
+  imagePath: "/images/budaeJjigae/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1371,8 +1372,7 @@ let budaeJjigae = {
   ],
   steps: [
     {
-      description:
-        "1. 고추는 어슷썰고 두부는 한입크기로 썰어주세요.",
+      description: "1. 고추는 어슷썰고 두부는 한입크기로 썰어주세요.",
       imagePath: "",
     },
     {
@@ -1381,48 +1381,55 @@ let budaeJjigae = {
       imagePath: "",
     },
     {
-      description: "3. 떡은 너무 많이 넣으면 국물이 텁텁해지므로 반드시 1줌만 넣어주세요.",
+      description:
+        "3. 떡은 너무 많이 넣으면 국물이 텁텁해지므로 반드시 1줌만 넣어주세요.",
       imagePath: "",
     },
     {
-      description: "4. 김치도 많이 넣으면 김치맛이 많이 나요. 적당한 밸런스가 중요한데요. 밥공기 1/4 넣어주세요.	",
+      description:
+        "4. 김치도 많이 넣으면 김치맛이 많이 나요. 적당한 밸런스가 중요한데요. 밥공기 1/4 넣어주세요.	",
       imagePath: "",
     },
     {
-      description: "5. 된장반큰술,고추가루 4큰술(듬뿍), 마늘2큰술, 국간장2큰술, 설탕반큰술, 물 소주컵 반컵을 섞어주세요.",
+      description:
+        "5. 된장반큰술,고추가루 4큰술(듬뿍), 마늘2큰술, 국간장2큰술, 설탕반큰술, 물 소주컵 반컵을 섞어주세요.",
       imagePath: "",
     },
     {
-      description: "6. 두부, 햄, 떡을 테두리에 두르고 김치는 가운데 넣어주세요.",
+      description:
+        "6. 두부, 햄, 떡을 테두리에 두르고 김치는 가운데 넣어주세요.",
       imagePath: "",
     },
     {
-      description: "7. 양념장 올리고 육수 붓고, 물 보충을 해주세요.(기호에 맞게)",
+      description:
+        "7. 양념장 올리고 육수 붓고, 물 보충을 해주세요.(기호에 맞게)",
       imagePath: "",
     },
     {
-      description: "8. 대파와 청양고추 홍고추 모두 올려주세요. 이제 팔팔 끓입니다. 청양고추와 대파가 어우러져 매콤한 향이 올라와요. 냄새부터 다르답니다.",
+      description:
+        "8. 대파와 청양고추 홍고추 모두 올려주세요. 이제 팔팔 끓입니다. 청양고추와 대파가 어우러져 매콤한 향이 올라와요. 냄새부터 다르답니다.",
       imagePath: "",
     },
     {
-      description: "9. 라면은 먹다가 나중에 추가해서 먹어도 되구요~ 저는 팔팔 끓인 후 바로 넣어줬어요. ",
+      description:
+        "9. 라면은 먹다가 나중에 추가해서 먹어도 되구요~ 저는 팔팔 끓인 후 바로 넣어줬어요. ",
       imagePath: "",
     },
     {
-      description: "10. 라면을 끓이려면 국물이 여유가 있어야 해요. 라면 넣기 전 육수가 너무 졸았다면 물 보충을 해주고 끓이세요.",
+      description:
+        "10. 라면을 끓이려면 국물이 여유가 있어야 해요. 라면 넣기 전 육수가 너무 졸았다면 물 보충을 해주고 끓이세요.",
       imagePath: "",
     },
-
   ],
 
   comments: [],
 };
 
-let spinachOnionEggFried= {
+let spinachOnionEggFried = {
   name: "시금치양파계란볶음",
   description:
     "​겨울철 노지시금치와 양파에 계란을 넣어서 후다닥볶아보세요! 쉽고간단하지만 영양반찬이자 다이어트식에도 좋은 레시피이네요.",
-  imageUrl: "/images/spinachOnionEggFried/main.jpg",
+  imagePath: "/images/spinachOnionEggFried/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1446,13 +1453,11 @@ let spinachOnionEggFried= {
   ],
   steps: [
     {
-      description:
-        "1. 시금치 한줌을 작은크기로 잘라주세요.",
+      description: "1. 시금치 한줌을 작은크기로 잘라주세요.",
       imagePath: "",
     },
     {
-      description:
-        "2. 양파 반개를 작게 썰어주세요.",
+      description: "2. 양파 반개를 작게 썰어주세요.",
       imagePath: "",
     },
     {
@@ -1468,11 +1473,13 @@ let spinachOnionEggFried= {
       imagePath: "",
     },
     {
-      description: "6. 양파가 투명해지면 풀어둔 계란물을 가운데쪽으로 부어주시고 소금 1작은술을 고루 뿌려주시고 살살 섞어가면서 볶아주세요.",
+      description:
+        "6. 양파가 투명해지면 풀어둔 계란물을 가운데쪽으로 부어주시고 소금 1작은술을 고루 뿌려주시고 살살 섞어가면서 볶아주세요.",
       imagePath: "",
     },
     {
-      description: "7. 계란물이 익을정도로만 휘리릭 볶아주시고 통깨를 뿌려주시면 완성이네요.",
+      description:
+        "7. 계란물이 익을정도로만 휘리릭 볶아주시고 통깨를 뿌려주시면 완성이네요.",
       imagePath: "",
     },
   ],
@@ -1480,11 +1487,11 @@ let spinachOnionEggFried= {
   comments: [],
 };
 
-let vegetableTunaFried= {
+let vegetableTunaFried = {
   name: "야채 참치 볶음",
   description:
     "​제가 어렸을 적 엄마가 자주 해 주신 도시락 반찬이에요. 그냥 참치만 드시는 것보다 훨씬 맛도 좋고, 채소와 함께 영양도 챙길수 있는 반찬입니다. 참치의 단백함과 소스의 짭조름한 맛이 아주 맛있답니다. ^_^",
-  imageUrl: "/images/vegetableTunaFried/main.jpg",
+  imagePath: "/images/vegetableTunaFried/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1524,15 +1531,18 @@ let vegetableTunaFried= {
       imagePath: "",
     },
     {
-      description: "3. 진간장 2 스푼, 설탕 1스푼, 다진 마늘 반스푼, 고추가루 1 스푼 반을 넣어주세요.",
+      description:
+        "3. 진간장 2 스푼, 설탕 1스푼, 다진 마늘 반스푼, 고추가루 1 스푼 반을 넣어주세요.",
       imagePath: "",
     },
     {
-      description: "4. 강불에서 약 1분간 볶아주시고, 중불에서 약 2~3분간 졸이듯 더 볶아 줍니다.",
+      description:
+        "4. 강불에서 약 1분간 볶아주시고, 중불에서 약 2~3분간 졸이듯 더 볶아 줍니다.",
       imagePath: "",
     },
     {
-      description: "5. 마무리로 통깨 솔솔 뿌려주시면 맛있는 반찬이 완성 된답니다.^_^",
+      description:
+        "5. 마무리로 통깨 솔솔 뿌려주시면 맛있는 반찬이 완성 된답니다.^_^",
       imagePath: "",
     },
   ],
@@ -1540,11 +1550,11 @@ let vegetableTunaFried= {
   comments: [],
 };
 
-let jobchae= {
+let jobchae = {
   name: "잡채",
   description:
     "​손이 많이 가는 잡채이지만 간단한 방법으로 느끼함을 줄이고 달달함을 올린 먹음직스러운 잡채를 만들어 보세요.",
-  imageUrl: "/images/jobchae/main.jpg",
+  imagePath: "/images/jobchae/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1583,46 +1593,47 @@ let jobchae= {
   ],
   steps: [
     {
-      description:
-        "1. 당면(4인분)을 끓는 물에 11분간 끓여주세요.",
+      description: "1. 당면(4인분)을 끓는 물에 11분간 끓여주세요.",
+      imagePath: "",
+    },
+    {
+      description: "2. 삶아진 당면을 찬물로 헹군 뒤 체에 받쳐 물기를 빼주세요.",
       imagePath: "",
     },
     {
       description:
-        "2. 삶아진 당면을 찬물로 헹군 뒤 체에 받쳐 물기를 빼주세요.",
+        "3. 당근(1개), 양파(1개), 어묵(2장), 표고버섯(6개), 부추(1줌)는 채 썬 후 식용유를 두른 후 각각 후라이팬에 소금을 넣고볶아주세요.",
       imagePath: "",
     },
     {
-      description: "3. 당근(1개), 양파(1개), 어묵(2장), 표고버섯(6개), 부추(1줌)는 채 썬 후 식용유를 두른 후 각각 후라이팬에 소금을 넣고볶아주세요.",
+      description:
+        "4. 당면 소스인 간장, 올리고당, 식용유를 넣고 물기가 빠진 당면을 넣고 잘 섞어주세요.(간장 5T, 올리고당 5T, 식용유 2T)",
       imagePath: "",
     },
     {
-      description: "4. 당면 소스인 간장, 올리고당, 식용유를 넣고 물기가 빠진 당면을 넣고 잘 섞어주세요.(간장 5T, 올리고당 5T, 식용유 2T)",
+      description:
+        "5. 센불로 2분을 볶은 후 불을 줄여 3분간 더 볶아주세요. 그리고 소스가 없어질때까지 졸여주세요.",
       imagePath: "",
     },
     {
-      description: "5. 센불로 2분을 볶은 후 불을 줄여 3분간 더 볶아주세요. 그리고 소스가 없어질때까지 졸여주세요.",
-      imagePath: "",
-    },
-    {
-      description: "6. 당면이 완성되었다면 불을 끄고 볶아놓은 재료들을 모두 넣어 잘 섞어주세요.",
+      description:
+        "6. 당면이 완성되었다면 불을 끄고 볶아놓은 재료들을 모두 넣어 잘 섞어주세요.",
       imagePath: "",
     },
     {
       description: "7. 참기름과 참깨까지 솔솔 뿌려주면 완성이예요.",
       imagePath: "",
     },
-
   ],
 
   comments: [],
 };
 
-let butterPotato= {
+let butterPotato = {
   name: "버터구이감자",
   description:
     "​휴게소에만 가면 놓치지 않고 챙겨먹는 휴게소감자 버터구이감자입니다 ㅋㅋ",
-  imageUrl: "/images/butterPotato/main.jpg",
+  imagePath: "/images/butterPotato/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1640,7 +1651,6 @@ let butterPotato= {
     {
       ingredient: "소금",
     },
- 
   ],
   steps: [
     {
@@ -1654,11 +1664,13 @@ let butterPotato= {
       imagePath: "",
     },
     {
-      description: "3. 노릇노릇하게 감자를 익혀주다가 버터가 자작해지고 감자가 잘익었을때 (젓가락으로 찔러서 푹 들어가면 익은거예요) 설탕을 두스푼정도(기호에 맞게 가감하면 됩니다) 넣어줍니다.",
+      description:
+        "3. 노릇노릇하게 감자를 익혀주다가 버터가 자작해지고 감자가 잘익었을때 (젓가락으로 찔러서 푹 들어가면 익은거예요) 설탕을 두스푼정도(기호에 맞게 가감하면 됩니다) 넣어줍니다.",
       imagePath: "",
     },
     {
-      description: "4. 감자 겉면이 달콤하고 바삭하고 속은 부드러운 버터구이 감자 완성!",
+      description:
+        "4. 감자 겉면이 달콤하고 바삭하고 속은 부드러운 버터구이 감자 완성!",
       imagePath: "",
     },
   ],
@@ -1666,11 +1678,10 @@ let butterPotato= {
   comments: [],
 };
 
-let grilledMackerelTeriyaki= {
+let grilledMackerelTeriyaki = {
   name: "버터구이감자",
-  description:
-    "​달콤짭짤한 고등어 데리야끼구이입니다.",
-  imageUrl: "/images/grilledMackerelTeriyaki/main.jpg",
+  description: "​달콤짭짤한 고등어 데리야끼구이입니다.",
+  imagePath: "/images/grilledMackerelTeriyaki/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1719,7 +1730,8 @@ let grilledMackerelTeriyaki= {
       imagePath: "",
     },
     {
-      description: "3. 고등어 앞뒤로 구워주세요. 기름기를 빼고 양념장을 조금씩 넣어서 윤기있게 졸여주시면 됩니다.",
+      description:
+        "3. 고등어 앞뒤로 구워주세요. 기름기를 빼고 양념장을 조금씩 넣어서 윤기있게 졸여주시면 됩니다.",
       imagePath: "",
     },
   ],
@@ -1727,11 +1739,10 @@ let grilledMackerelTeriyaki= {
   comments: [],
 };
 
-let sauryKimchiJjigae= {
+let sauryKimchiJjigae = {
   name: "꽁치김치찌개",
-  description:
-    "​백종원의 황금레시피 꽁치김치찌개!!",
-  imageUrl: "/images/sauryKimchiJjigae/main.jpg",
+  description: "​백종원의 황금레시피 꽁치김치찌개!!",
+  imagePath: "/images/sauryKimchiJjigae/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1761,12 +1772,10 @@ let sauryKimchiJjigae= {
     {
       ingredient: "참기름",
     },
-
   ],
   steps: [
     {
-      description:
-        "1. 김치는 1/4포기를 준비해 먹기 좋게 썰어주고",
+      description: "1. 김치는 1/4포기를 준비해 먹기 좋게 썰어주고",
       imagePath: "",
     },
     {
@@ -1775,27 +1784,33 @@ let sauryKimchiJjigae= {
       imagePath: "",
     },
     {
-      description: "3. 팬에 참기름 1T을 두르고 썰어 놓은 김치를 넣고달달 볶아주세요.",
+      description:
+        "3. 팬에 참기름 1T을 두르고 썰어 놓은 김치를 넣고달달 볶아주세요.",
       imagePath: "",
     },
     {
-      description: "4. 김치가 숨이 죽고 익기 시작하면 꽁치통조림 1캔을 모두 넣어주세요.",
+      description:
+        "4. 김치가 숨이 죽고 익기 시작하면 꽁치통조림 1캔을 모두 넣어주세요.",
       imagePath: "",
     },
     {
-      description: "5. 이때 국물까지 모조리 넣어주는 게 나름 비법이랍니다. 국물 때문인지 간도 좋고 감칠맛도 생기더라고요.",
+      description:
+        "5. 이때 국물까지 모조리 넣어주는 게 나름 비법이랍니다. 국물 때문인지 간도 좋고 감칠맛도 생기더라고요.",
       imagePath: "",
     },
     {
-      description: "6. 그러고 나서 통조림 캔들 이용해 1캔 물을 계량해 넣어주세요. 김치 염도에 따라 물의 양이 달라질 수 있으니 참고하시고, 저는 1캔만 부어주었답니다.",
+      description:
+        "6. 그러고 나서 통조림 캔들 이용해 1캔 물을 계량해 넣어주세요. 김치 염도에 따라 물의 양이 달라질 수 있으니 참고하시고, 저는 1캔만 부어주었답니다.",
       imagePath: "",
     },
     {
-      description: "7. 그리고 설탕 1,다진 마늘 0.5, 된장 0.3을 넣어 주세요. 설탕은 김치 신맛을 줄여주는 역할을 하니 김치 익힘에 따라 조절해주시고 된장은 비린 맛을 잡아 주는 담당을 한답니다. 된장도 염도가 있으니 간에 따라 양을 조절해 주신 센스!",
+      description:
+        "7. 그리고 설탕 1,다진 마늘 0.5, 된장 0.3을 넣어 주세요. 설탕은 김치 신맛을 줄여주는 역할을 하니 김치 익힘에 따라 조절해주시고 된장은 비린 맛을 잡아 주는 담당을 한답니다. 된장도 염도가 있으니 간에 따라 양을 조절해 주신 센스!",
       imagePath: "",
     },
     {
-      description: "8. 보글보글 찌개가 끓기 시작하면 미리 썰어둔 양피를 모두 넣어주세요.",
+      description:
+        "8. 보글보글 찌개가 끓기 시작하면 미리 썰어둔 양피를 모두 넣어주세요.",
       imagePath: "",
     },
     {
@@ -1811,11 +1826,11 @@ let sauryKimchiJjigae= {
   comments: [],
 };
 
-let oiSobagi= {
+let oiSobagi = {
   name: "오이소박이",
   description:
     "아삭한 오이소박이 하나 있음 밥 한공기 뚝딱 하게 되는데요! 요리초보도 실패없는 백주부님 오이소박이 소개할께요.",
-  imageUrl: "/images/oiSobagi/main.jpg",
+  imagePath: "/images/oiSobagi/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1848,7 +1863,6 @@ let oiSobagi= {
     {
       ingredient: "새우젓",
     },
-
   ],
   steps: [
     {
@@ -1862,7 +1876,8 @@ let oiSobagi= {
       imagePath: "",
     },
     {
-      description: "3. 오이에 팔팔 끓은 소금물을 부어 약 30분 정도 절여 주세요. 이렇게 뜨거운 물을 부어주면 오이가 아삭하답니다.절이면서 한두번 뒤적뒤적 해주세요.",
+      description:
+        "3. 오이에 팔팔 끓은 소금물을 부어 약 30분 정도 절여 주세요. 이렇게 뜨거운 물을 부어주면 오이가 아삭하답니다.절이면서 한두번 뒤적뒤적 해주세요.",
       imagePath: "",
     },
     {
@@ -1870,15 +1885,18 @@ let oiSobagi= {
       imagePath: "",
     },
     {
-      description: "5. 멸치액젓2스푼,새우젓1/3스푼,고추가루4스푼,다진마늘1스푼,설탕1스푼을 섞어 양념장을 만들어 주시구요. 손질한 부추,양파,당근을 넣고 가볍게 버무려 줍니다.",
+      description:
+        "5. 멸치액젓2스푼,새우젓1/3스푼,고추가루4스푼,다진마늘1스푼,설탕1스푼을 섞어 양념장을 만들어 주시구요. 손질한 부추,양파,당근을 넣고 가볍게 버무려 줍니다.",
       imagePath: "",
     },
     {
-      description: "6. 절여진 오이는 체에 받쳐 물기를 제거해 준 뒤 방금 만든 양념장을 오이속으로 적당히 넣어주시면 끝입니다.",
+      description:
+        "6. 절여진 오이는 체에 받쳐 물기를 제거해 준 뒤 방금 만든 양념장을 오이속으로 적당히 넣어주시면 끝입니다.",
       imagePath: "",
     },
     {
-      description: "7. 요리초보도 실패없는 아삭한 백주부님 오이소박이 완성입니다.",
+      description:
+        "7. 요리초보도 실패없는 아삭한 백주부님 오이소박이 완성입니다.",
       imagePath: "",
     },
   ],
@@ -1886,11 +1904,10 @@ let oiSobagi= {
   comments: [],
 };
 
-let onionEggRice= {
+let onionEggRice = {
   name: "양파계란덮밥",
-  description:
-    "초스피드로 해먹을 수있는 양파계란덮밥입니다^^",
-  imageUrl: "/images/onionEggRice/main.jpg",
+  description: "초스피드로 해먹을 수있는 양파계란덮밥입니다^^",
+  imagePath: "/images/onionEggRice/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1917,21 +1934,21 @@ let onionEggRice= {
   ],
   steps: [
     {
-      description:
-        "1. 대파를 쫑쫑 썰어주세요.",
+      description: "1. 대파를 쫑쫑 썰어주세요.",
+      imagePath: "",
+    },
+    {
+      description: "2. 메인 재료 양파 반개를 얇게 썰어주세요.",
       imagePath: "",
     },
     {
       description:
-        "2. 메인 재료 양파 반개를 얇게 썰어주세요.",
+        "3. 간장(2t)과 설탕(1/2t) 맛술(2t)을 섞어 소스를 만들어주세요. 사진은 물 넣기 전입니다.",
       imagePath: "",
     },
     {
-      description: "3. 간장(2t)과 설탕(1/2t) 맛술(2t)을 섞어 소스를 만들어주세요. 사진은 물 넣기 전입니다.",
-      imagePath: "",
-    },
-    {
-      description: "4. 간장 소스와 양파, 대파를 약불에서 살짝 조리듯 끓여줍니다. 양파를 함께 넣고 끓여주시면 양파와 대파가 적당히 잘 익어요.",
+      description:
+        "4. 간장 소스와 양파, 대파를 약불에서 살짝 조리듯 끓여줍니다. 양파를 함께 넣고 끓여주시면 양파와 대파가 적당히 잘 익어요.",
       imagePath: "",
     },
     {
@@ -1947,11 +1964,10 @@ let onionEggRice= {
   comments: [],
 };
 
-let bokchoyDoenjangMucim= {
+let bokchoyDoenjangMucim = {
   name: "청경채된장무침",
-  description:
-    "청경채도 무침으로 먹으면 맛있을것 같아서 만들었어요~",
-  imageUrl: "/images/bokchoyDoenjangMucim/main.jpg",
+  description: "청경채도 무침으로 먹으면 맛있을것 같아서 만들었어요~",
+  imagePath: "/images/bokchoyDoenjangMucim/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -1975,13 +1991,11 @@ let bokchoyDoenjangMucim= {
   ],
   steps: [
     {
-      description:
-        "1. 청경채(7개)를 준비해주세요.",
+      description: "1. 청경채(7개)를 준비해주세요.",
       imagePath: "",
     },
     {
-      description:
-        "2. 청경채 꼭다리를 잘른뒤 씻어주세요.",
+      description: "2. 청경채 꼭다리를 잘른뒤 씻어주세요.",
       imagePath: "",
     },
     {
@@ -1993,7 +2007,8 @@ let bokchoyDoenjangMucim= {
       imagePath: "",
     },
     {
-      description: "5. 양념(된장 1/2숟갈, 참기름 1/2숟갈, 다진마늘 1/2숟갈, 깨 1/2숟갈, 소금 2꼬집)에 무쳐주세요.",
+      description:
+        "5. 양념(된장 1/2숟갈, 참기름 1/2숟갈, 다진마늘 1/2숟갈, 깨 1/2숟갈, 소금 2꼬집)에 무쳐주세요.",
       imagePath: "",
     },
     {
@@ -2005,11 +2020,11 @@ let bokchoyDoenjangMucim= {
   comments: [],
 };
 
-let spamDonburi= {
+let spamDonburi = {
   name: "스팸돈부리덮밥",
   description:
     "지속된 한파에 야채값들이 상승을 했나 봅니다. 그리하여 오늘도 냉장고파먹기로 스팸돈부리덮밥으로 한그릇음식을 만들어봤어요.",
-  imageUrl: "/images/spamDonburi/main.jpg",
+  imagePath: "/images/spamDonburi/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -2043,7 +2058,8 @@ let spamDonburi= {
       imagePath: "",
     },
     {
-      description: "3. 양파 1개는 채 썰어서 팬에 볶아주는데 뻣뻣함이 사라질 정도로 볶은 후에 양파 위로 부어줍니다.",
+      description:
+        "3. 양파 1개는 채 썰어서 팬에 볶아주는데 뻣뻣함이 사라질 정도로 볶은 후에 양파 위로 부어줍니다.",
       imagePath: "",
     },
     {
@@ -2051,7 +2067,8 @@ let spamDonburi= {
       imagePath: "",
     },
     {
-      description: "5. 계란을 2개를 풀었고요. 흰자와 노른자가 다 섞이지 않고 살짝만 섞이게 해주세요. 완전 섞이면 흰자가 안 보이면 재미가 없으니까요.",
+      description:
+        "5. 계란을 2개를 풀었고요. 흰자와 노른자가 다 섞이지 않고 살짝만 섞이게 해주세요. 완전 섞이면 흰자가 안 보이면 재미가 없으니까요.",
       imagePath: "",
     },
     {
@@ -2062,11 +2079,11 @@ let spamDonburi= {
 
   comments: [],
 };
-let onionGeotjeorl= {
+let onionGeotjeorl = {
   name: "양파겉절이",
   description:
     "오늘은 느끼한 음식 먹을 때 곁들임 반찬으로 좋은 양파 겉절이 담그는 법을 소개해 드리려고 해요.",
-  imageUrl: "/images/onionGeotjeorl/main.jpg",
+  imagePath: "/images/onionGeotjeorl/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -2096,8 +2113,7 @@ let onionGeotjeorl= {
   ],
   steps: [
     {
-      description:
-        "1. 양파 2개는 껍질을 벗기고 2등분하여 두툼하게 썰어주세요.",
+      description: "1. 양파 2개는 껍질을 벗기고 2등분하여 두툼하게 썰어주세요.",
       imagePath: "",
     },
     {
@@ -2106,23 +2122,28 @@ let onionGeotjeorl= {
       imagePath: "",
     },
     {
-      description: "3. 옅은 소금물에 담궈두었던 양파는 체에 받치어 물기를 빼주세요.",
+      description:
+        "3. 옅은 소금물에 담궈두었던 양파는 체에 받치어 물기를 빼주세요.",
       imagePath: "",
     },
     {
-      description: "4. 물기를 뺸 양파에 멸치액젓 4큰술을 넣고 골고루 버무려 주세요. 버무린뒤 10분 정도 재워둡니다.",
+      description:
+        "4. 물기를 뺸 양파에 멸치액젓 4큰술을 넣고 골고루 버무려 주세요. 버무린뒤 10분 정도 재워둡니다.",
       imagePath: "",
     },
     {
-      description: "5. 10분정도 지나 양파는 다른 접시에 잠시 옮겨두세요. 양파 밑으로 양파에서 나온 수분과 액젓이 남아 있을거에요. 요건 버리지 마시고 양념을 분량대로 넣어 섞어주세요.",
+      description:
+        "5. 10분정도 지나 양파는 다른 접시에 잠시 옮겨두세요. 양파 밑으로 양파에서 나온 수분과 액젓이 남아 있을거에요. 요건 버리지 마시고 양념을 분량대로 넣어 섞어주세요.",
       imagePath: "",
     },
     {
-      description: "6. 양파 절인물과 양념을 골고루 섞어 잠시 고춧가루를 불린뒤에 양파에 버무리시면 되요, 마무리로 깨 조금 뿌려주시고요. 혹시 싱거우시면, 소금으로 간을 맞춰주세요.",
+      description:
+        "6. 양파 절인물과 양념을 골고루 섞어 잠시 고춧가루를 불린뒤에 양파에 버무리시면 되요, 마무리로 깨 조금 뿌려주시고요. 혹시 싱거우시면, 소금으로 간을 맞춰주세요.",
       imagePath: "",
     },
     {
-      description: "7. 첫맛은 강하게 느껴질지 몰라도 반나절 정도 냉장보관후 드셔보시면, 양파 겉절이의 매력이 푸욱~ 빠지실 거에요.",
+      description:
+        "7. 첫맛은 강하게 느껴질지 몰라도 반나절 정도 냉장보관후 드셔보시면, 양파 겉절이의 매력이 푸욱~ 빠지실 거에요.",
       imagePath: "",
     },
   ],
@@ -2130,11 +2151,10 @@ let onionGeotjeorl= {
   comments: [],
 };
 
-let kimchiSausageRice= {
+let kimchiSausageRice = {
   name: "김치소세지덮밥",
-  description:
-    "간단하게 휘리릭 한끼 해결하기 좋은 김치소시지덮밥입니다.",
-  imageUrl: "/images/kimchiSausageRice/main.jpg",
+  description: "간단하게 휘리릭 한끼 해결하기 좋은 김치소시지덮밥입니다.",
+  imagePath: "/images/kimchiSausageRice/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -2164,8 +2184,7 @@ let kimchiSausageRice= {
   ],
   steps: [
     {
-      description:
-        "1. 묵은지(100g)는 잘라서 준비합니다.",
+      description: "1. 묵은지(100g)는 잘라서 준비합니다.",
       imagePath: "",
     },
     {
@@ -2174,7 +2193,8 @@ let kimchiSausageRice= {
       imagePath: "",
     },
     {
-      description: "3. 팬에 들기름(1t)을 넣고 묵은지를 볶다가 양파를 넣어 양파가 하얗게 될때까지 볶아주세요. 그리고 설탕(1t)을 넣어 볶아줍니다.",
+      description:
+        "3. 팬에 들기름(1t)을 넣고 묵은지를 볶다가 양파를 넣어 양파가 하얗게 될때까지 볶아주세요. 그리고 설탕(1t)을 넣어 볶아줍니다.",
       imagePath: "",
     },
     {
@@ -2182,7 +2202,8 @@ let kimchiSausageRice= {
       imagePath: "",
     },
     {
-      description: "5. 밥(1공기)위에 완성된 소시지김치볶음을 올리면 완성입니다.",
+      description:
+        "5. 밥(1공기)위에 완성된 소시지김치볶음을 올리면 완성입니다.",
       imagePath: "",
     },
   ],
@@ -2191,9 +2212,8 @@ let kimchiSausageRice= {
 };
 let ricecakeBaconSoysauceJorim = {
   name: "떡베이컨간장조림",
-  description:
-    "간단하니 맛있는 반찬! 아주 쉬워요 : )",
-  imageUrl: "/images/ricecakeBaconSoysauceJorim/main.jpg",
+  description: "간단하니 맛있는 반찬! 아주 쉬워요 : )",
+  imagePath: "/images/ricecakeBaconSoysauceJorim/main.jpg",
   likeCount: 0,
   ingredients: [
     {
@@ -2220,17 +2240,16 @@ let ricecakeBaconSoysauceJorim = {
   ],
   steps: [
     {
-      description:
-        "1. 대파에 떡국떡 (가래떡, 떡볶이떡) 베이컨",
+      description: "1. 대파에 떡국떡 (가래떡, 떡볶이떡) 베이컨",
+      imagePath: "",
+    },
+    {
+      description: "2. 기름두르고 볶듯구워요.(튀기듯하면 더 맛있습니다)",
       imagePath: "",
     },
     {
       description:
-        "2. 기름두르고 볶듯구워요.(튀기듯하면 더 맛있습니다)",
-      imagePath: "",
-    },
-    {
-      description: "3. 간장.물엿.참기름을 넣어 볶아요. 간장 한스푼, 물엿 넉넉히, 참기름한스푼(이런 느낌 비율로.)",
+        "3. 간장.물엿.참기름을 넣어 볶아요. 간장 한스푼, 물엿 넉넉히, 참기름한스푼(이런 느낌 비율로.)",
       imagePath: "",
     },
     {
@@ -2238,7 +2257,8 @@ let ricecakeBaconSoysauceJorim = {
       imagePath: "",
     },
     {
-      description: "5. 국물없게끔 졸여야 맛있어용: ) 깨도 뿌리고 한번 볶아준 후 끝.",
+      description:
+        "5. 국물없게끔 졸여야 맛있어용: ) 깨도 뿌리고 한번 볶아준 후 끝.",
       imagePath: "",
     },
   ],

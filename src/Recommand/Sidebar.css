@@ -11,13 +11,14 @@
 }
 
 .sidebar-header {
+  font-size: max(20px, min(3vw, 40px));
   font-weight: 700;
   color: white;
-  padding-left: 40px;
-  /* border-bottom: 10px solid #ffffff; */
   border-width: 3px;
 
-  padding: 30px 20px;
+  /* height: 1%; */
+  padding: 30px 0px;
+  padding-left: min(2.5vw, 30px);
   margin: 0;
 }
 
@@ -30,22 +31,21 @@
   align-items: center;
 }
 
-.ingredient-list {
+.selected-ingredient-list {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 2em;
-  font-size: x-large;
   margin-top: 0;
   padding-top: 20px;
 }
 
-.ingredient-element {
+.selected-ingredient-element {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 85%;
   background-color: white;
   border-radius: 15px;
@@ -53,39 +53,13 @@
   padding: 10px 0;
   padding-left: 15px;
   margin-bottom: 15px;
-
-  font-size: 20px;
 }
 
-.ingredient-element-outer {
-  position: relative;
-  width: 85%;
-  /* height: 100px; */
-  padding: 1px 0px;
-  background-color: white;
-  border-radius: 15px;
-  /* border-bottom: 1px solid #3772bf; */
-  margin-bottom: 15px;
+.selected-ingredient-element:hover {
+  background-color: #f7f7f7;
 }
 
-.ingredient-element-inner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  border-radius: 15px;
-  /* border-bottom: 1px solid #3772bf; */
-  padding: 10px 0;
-  padding-left: 15px;
-
-  font-size: 20px;
-}
-
-.ingredient-element:hover {
-  background-color: #f0efef;
-}
-
-.ingredient-pin {
+.selected-ingredient-pin {
   position: absolute;
   top: -18px;
   left: -18px;
@@ -93,23 +67,31 @@
   height: 35px;
 }
 
+.selected-ingredient-name {
+  font-size: min(1.7vw, 26px);
+  height: 100%;
+}
+
+.selected-delete-button {
+}
+
 .search-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  padding: 15px 5px;
+  width: 85%;
   border-radius: 15px;
-  background-color: #152f57;
-  padding: 15px 30px;
   margin-top: 20px;
+  background-color: #152f57;
 
   color: #f7d556;
 }
 
 .search-link-text {
-  color: #f7d556;
-  text-align: center;
-  font-weight: 800;
-
   margin-left: 5px;
+  text-align: center;
+  font-size: min(1.4vw, 23px);
+  font-weight: 800;
+  color: #f7d556;
 }
