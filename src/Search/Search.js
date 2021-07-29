@@ -86,11 +86,13 @@ const Search = () => {
   return (
     <div className="search-content">
       <div className="search-result-holder">
-        <h1 className="search-result-title">👨‍🍳 우리가 추천하는 레시피는</h1>
+        <h1 className="search-result-title">
+          👨‍🍳 냉장고에 있는 재료로 만들 수 있는 레시피에요.
+        </h1>
         <div className="search-result-list">
           {sufficientRecipes ? (
             sufficientRecipes.length === 0 ? (
-              "일치하는 레시피가 없어요 😭"
+              "만들 수 있는 레시피가 없어요 😭"
             ) : (
               sufficientRecipes.map((element) => {
                 return (
@@ -116,7 +118,7 @@ const Search = () => {
         {insufficientRecipes ? (
           <>
             <h1 className="search-result-title">
-              재료가 조금만 더 있으면 이것도 가능해요!
+              🥣 재료가 조금 더 있으면 가능한 이런 요리는 어떠세요?
             </h1>
             <div className="search-result-list">
               {insufficientRecipes.map((element) => {
