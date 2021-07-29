@@ -2,31 +2,33 @@ import React, { useState } from "react";
 import "./Comment.css";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
+import Api from "../Api";
 
-const Comment = ({ setComments }) => {
+const Comment = ({ recipeId, setComments }) => {
   const [isNameErr, setIsNameErr] = useState(false);
   const [isPasswordErr, setIsPasswordErr] = useState(false);
   const [isContentErr, setIsContentErr] = useState(false);
 
   const [name, setName] = useState("");
-  const [password, setPassword] = useState("");
   const [content, setContent] = useState("");
+  const [password, setPassword] = useState("");
 
-  const submitComment = () => {
+  const submitComment = async () => {
     if (checkEmptyError()) {
       return;
     }
 
     const newComment = {
       author: name,
-      password: password,
       content: content,
+      password: password,
     };
     setComments((prev) => [...prev, newComment]);
-
     setName("");
     setPassword("");
     setContent("");
+
+    await Api.postComment(recipeId, newComment);
   };
 
   const checkEmptyError = () => {

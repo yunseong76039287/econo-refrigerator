@@ -90,7 +90,7 @@ const Recipe = () => {
                 </div>
               ))}
           </div>
-          <Comment setComments={setComments} />
+          <Comment recipeId={id} setComments={setComments} />
         </div>
       ) : (
         <CircularProgress />

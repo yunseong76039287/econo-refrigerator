@@ -5,8 +5,9 @@ import IconButton from "@material-ui/core/IconButton";
 import Api from "../Api";
 
 const Toggle = ({ id, likeCount }) => {
-  let [isPressed, setStatus] = useState(false);
-  let [count, setCount] = useState(0);
+  const [isPressed, setStatus] = useState(false);
+  const [count, setCount] = useState(0);
+
   useEffect(() => {
     setCount(likeCount);
     if (
@@ -20,7 +21,7 @@ const Toggle = ({ id, likeCount }) => {
     }
   }, [likeCount]);
 
-  const handleClick = async (event) => {
+  const handleClick = async () => {
     if (isPressed === true) {
       await Api.unlikeRecipe(id);
 
