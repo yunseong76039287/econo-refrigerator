@@ -6,8 +6,8 @@ import ingredientData from "../data/ingredientData";
 import Api from "../Api";
 
 const Home = () => {
-  const [randomRecipes, setRandomRecipes] = useState([]);
-  const [randomIngredients, setRandomIngredients] = useState([]);
+  const [randomRecipes, setRandomRecipes] = useState();
+  const [randomIngredients, setRandomIngredients] = useState();
 
   useEffect(() => {
     initWithLocal();
@@ -87,18 +87,22 @@ const Home = () => {
         </div>
 
         <div className="home-ingredient-list-mapping home-list-mapping">
-          {randomIngredients.map(({ id, imagePath }, index) => {
-            if (index > 10) return;
-            else
-              return (
-                <HomeListSquare
-                  ingredient
-                  key={id}
-                  id={id}
-                  imagePath={imagePath}
-                />
-              );
-          })}
+          {randomIngredients ? (
+            randomIngredients.map(({ id, imagePath }, index) => {
+              if (index > 10) return;
+              else
+                return (
+                  <HomeListSquare
+                    ingredient
+                    key={id}
+                    id={id}
+                    imagePath={imagePath}
+                  />
+                );
+            })
+          ) : (
+            <CircularProgress />
+          )}
         </div>
       </div>
     </div>

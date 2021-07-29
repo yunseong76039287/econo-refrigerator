@@ -6,7 +6,7 @@ import Api from "../Api";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 const Exploration = () => {
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState();
   const [offset, setOffset] = useState(0);
 
   const { search: ingredientsParam } = useLocation();
@@ -20,9 +20,11 @@ const Exploration = () => {
       }
     }
     initWithServer();
-
-    initLikeStateOfRecipes(recipes);
   }, []);
+
+  useEffect(() => {
+    recipes && initLikeStateOfRecipes(recipes);
+  }, [recipes]);
 
   const get10RecipeWithOffset = async () => {
     const searchResult = await Api.get10RecipeWithOffset(offset);

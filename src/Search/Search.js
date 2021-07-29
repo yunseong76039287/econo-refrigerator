@@ -6,8 +6,8 @@ import Api from "../Api";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 const Search = () => {
-  const [sufficientRecipes, setSufficientRecipes] = useState([]);
-  const [insufficientRecipes, setInsufficientRecipes] = useState([]);
+  const [sufficientRecipes, setSufficientRecipes] = useState();
+  const [insufficientRecipes, setInsufficientRecipes] = useState();
 
   const { search: ingredientsParam } = useLocation();
 
@@ -17,10 +17,14 @@ const Search = () => {
       await searchInsufficientRecipes();
     }
     initWithServer();
-
-    initLikeStateOfRecipes(sufficientRecipes);
-    initLikeStateOfRecipes(insufficientRecipes);
   }, []);
+
+  useEffect(() => {
+    sufficientRecipes && initLikeStateOfRecipes(sufficientRecipes);
+  }, [sufficientRecipes]);
+  useEffect(() => {
+    insufficientRecipes && initLikeStateOfRecipes(insufficientRecipes);
+  }, [insufficientRecipes]);
 
   // 서버로 부터 요청 by axios
   const searchSufficientRecipes = async () => {
@@ -106,31 +110,33 @@ const Search = () => {
         )}
       </div>
 
-      {insufficientRecipes ? (
-        <div className="search-result-holder">
-          <h1 className="search-result-title">
-            재료가 조금만 더 있으면 이것도 가능해요!
-          </h1>
-          {insufficientRecipes.map((element) => {
-            return (
-              <ResultBox
-                key={element.id}
-                id={element.id}
-                name={element.name}
-                description={element.description}
-                ingredients={getSufficientIngredients(element.ingredients)}
-                insufficientIngredients={getInsufficientIngredients(
-                  element.ingredients
-                )}
-                imagePath={element.imagePath}
-                likeCount={element.likeCount}
-              />
-            );
-          })}
-        </div>
-      ) : (
-        <CircularProgress />
-      )}
+      <div className="search-result-holder">
+        {insufficientRecipes ? (
+          <>
+            <h1 className="search-result-title">
+              재료가 조금만 더 있으면 이것도 가능해요!
+            </h1>
+            {insufficientRecipes.map((element) => {
+              return (
+                <ResultBox
+                  key={element.id}
+                  id={element.id}
+                  name={element.name}
+                  description={element.description}
+                  ingredients={getSufficientIngredients(element.ingredients)}
+                  insufficientIngredients={getInsufficientIngredients(
+                    element.ingredients
+                  )}
+                  imagePath={element.imagePath}
+                  likeCount={element.likeCount}
+                />
+              );
+            })}
+          </>
+        ) : (
+          <CircularProgress />
+        )}
+      </div>
     </div>
   );
 };
