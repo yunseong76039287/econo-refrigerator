@@ -30,7 +30,11 @@ const Explore = () => {
 
   const get10RecipeWithOffset = async () => {
     const searchResult = await Api.get10RecipeWithOffset(offset);
-    setRecipes(searchResult);
+    if (recipes) {
+      setRecipes((prev) => [...prev, ...searchResult]);
+    } else {
+      setRecipes(searchResult);
+    }
     setOffset((prev) => prev + 10);
   };
 
