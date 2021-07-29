@@ -87,27 +87,29 @@ const Search = () => {
     <div className="search-content">
       <div className="search-result-holder">
         <h1 className="search-result-title">👨‍🍳 우리가 추천하는 레시피는</h1>
-        {sufficientRecipes ? (
-          sufficientRecipes.length === 0 ? (
-            "일치하는 레시피가 없어요 😭"
+        <div className="search-result-list">
+          {sufficientRecipes ? (
+            sufficientRecipes.length === 0 ? (
+              "일치하는 레시피가 없어요 😭"
+            ) : (
+              sufficientRecipes.map((element) => {
+                return (
+                  <ResultBox
+                    key={element.id}
+                    id={element.id}
+                    name={element.name}
+                    description={element.description}
+                    ingredients={element.ingredients}
+                    imagePath={element.imagePath}
+                    likeCount={element.likeCount}
+                  />
+                );
+              })
+            )
           ) : (
-            sufficientRecipes.map((element) => {
-              return (
-                <ResultBox
-                  key={element.id}
-                  id={element.id}
-                  name={element.name}
-                  description={element.description}
-                  ingredients={element.ingredients}
-                  imagePath={element.imagePath}
-                  likeCount={element.likeCount}
-                />
-              );
-            })
-          )
-        ) : (
-          <CircularProgress />
-        )}
+            <CircularProgress />
+          )}
+        </div>
       </div>
 
       <div className="search-result-holder">
@@ -116,22 +118,24 @@ const Search = () => {
             <h1 className="search-result-title">
               재료가 조금만 더 있으면 이것도 가능해요!
             </h1>
-            {insufficientRecipes.map((element) => {
-              return (
-                <ResultBox
-                  key={element.id}
-                  id={element.id}
-                  name={element.name}
-                  description={element.description}
-                  ingredients={getSufficientIngredients(element.ingredients)}
-                  insufficientIngredients={getInsufficientIngredients(
-                    element.ingredients
-                  )}
-                  imagePath={element.imagePath}
-                  likeCount={element.likeCount}
-                />
-              );
-            })}
+            <div className="search-result-list">
+              {insufficientRecipes.map((element) => {
+                return (
+                  <ResultBox
+                    key={element.id}
+                    id={element.id}
+                    name={element.name}
+                    description={element.description}
+                    ingredients={getSufficientIngredients(element.ingredients)}
+                    insufficientIngredients={getInsufficientIngredients(
+                      element.ingredients
+                    )}
+                    imagePath={element.imagePath}
+                    likeCount={element.likeCount}
+                  />
+                );
+              })}
+            </div>
           </>
         ) : (
           <CircularProgress />
