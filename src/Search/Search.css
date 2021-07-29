@@ -6,6 +6,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .search-result-holder {
@@ -14,7 +16,6 @@
   justify-items: center;
   align-items: center;
   width: 100%;
-  height: calc(50vh - 41px);
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -24,15 +25,6 @@
   text-align: center;
 }
 
-.search-result-list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  overflow: hidden;
-  overflow-y: scroll;
-}
 .more-button {
   width: 10%;
 }
