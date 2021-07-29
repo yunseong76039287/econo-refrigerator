@@ -39,8 +39,8 @@
 }
 
 .recipe-thumbnail-image {
-  height: 400px;
-  width: auto;
+  width: 50%;
+  height: auto;
   border-radius: 20px;
 }
 
