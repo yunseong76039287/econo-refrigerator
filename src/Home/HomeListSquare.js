@@ -11,7 +11,7 @@ const HomeListSquare = ({ recipe, ingredient, id, imagePath }) => {
     }
 
     if (ingredient) {
-      setUrl("/exploration?ingredients=" + id);
+      setUrl("/explore?ingredients=" + id);
     }
   }, []);
 

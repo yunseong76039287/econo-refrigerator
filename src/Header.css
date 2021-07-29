@@ -10,23 +10,23 @@
 }
 
 .title {
-  margin-left: 50px;
-  font-size: 25px;
+  margin-left: min(34px, 3%);
+  font-size: max(20px, min(2.5vw, 30px));
   font-weight: 600;
+  width: max(180px, min(22vw, 260px));
+  padding: 5px 0px;
 }
 
 .menu {
-  margin-left: 25px;
-  font-size: 15px;
-
+  margin-left: min(2.5vw, 25px);
+  font-size: min(1.4vw, 15px);
   padding: 5px 10px;
   border-radius: 11px;
+
   background-color: rgba(0, 0, 0, 0);
-  transition: all 0.3s ease;
+  transition: all 0.3s background-color;
 }
 
 .menu:hover {
-  padding: 5px 10px;
-  border-radius: 11px;
   background-color: #e0e0e0;
 }

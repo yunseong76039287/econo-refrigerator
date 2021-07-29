@@ -1,13 +1,13 @@
-import "./Recommandation.css";
+import "./Recommand.css";
 import React from "react";
 import IngredientGrid from "./IngredientGrid.js";
 
-const Recommandation = () => {
+const Recommand = () => {
   return (
-    <div className="recommandation">
+    <div className="recommand">
       <IngredientGrid />
     </div>
   );
 };
 
-export default Recommandation;
+export default Recommand;
