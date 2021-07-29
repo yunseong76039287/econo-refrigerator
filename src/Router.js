@@ -1,13 +1,13 @@
 import "./Router.css";
 import React from "react";
 import Header from "./Header";
-import Sidebar from "./Recommandation/Sidebar";
-import Recommandation from "./Recommandation/Recommandation";
+import Sidebar from "./Recommand/Sidebar";
+import Recommand from "./Recommand/Recommand";
 import Recipe from "./Recipe/Recipe.js";
 import Search from "./Search/Search";
 import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
 import Home from "./Home/Home";
-import Exploration from "./Search/Exploration";
+import Explore from "./Search/Explore";
 
 const Router = ({ Page }) => {
   return (
@@ -42,12 +42,12 @@ const Router = ({ Page }) => {
               return (
                 <div className="contentsbody">
                   <Sidebar />
-                  <Recommandation />
+                  <Recommand />
                 </div>
               );
             }}
           />
-          <Route path="/exploration" component={() => <Exploration />} />
+          <Route path="/explore" component={() => <Explore />} />
           <Route
             exact
             path="/"

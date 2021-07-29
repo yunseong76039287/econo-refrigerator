@@ -1,11 +1,13 @@
 import "./Search.css";
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import Button from "@material-ui/core/Button";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import ResultBox from "./ResultBox";
 import Api from "../Api";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
-const Exploration = () => {
+const Explore = () => {
   const [recipes, setRecipes] = useState([]);
   const [offset, setOffset] = useState(0);
 
@@ -73,8 +75,17 @@ const Exploration = () => {
           <CircularProgress />
         )}
       </div>
+      <Button
+        className="more-button"
+        color="primary"
+        size="large"
+        startIcon={<ExpandMoreIcon />}
+        onClick={() => get10RecipeWithOffset()}
+      >
+        more
+      </Button>
     </div>
   );
 };
 
-export default Exploration;
+export default Explore;

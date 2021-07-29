@@ -12,8 +12,8 @@ const Header = () => {
         <span className="menu">recommendation</span>
       </Link>
 
-      <Link to="/exploration?ingredients=0">
-        <span className="menu">exploration</span>
+      <Link to="/explore?ingredients=0">
+        <span className="menu">explore</span>
       </Link>
     </div>
   );
