@@ -13,16 +13,22 @@ const Recipe = () => {
   const { id } = useParams();
 
   const [recipe, setRecipe] = useState();
+  const [comments, setComments] = useState();
 
   useEffect(() => {
     async function initWithServer() {
       const recipeData = await Api.getRecipeById(id);
       setRecipe(recipeData);
+
+      setComments(recipeData.comments);
     }
     initWithServer();
   }, []);
 
-  // 비밀번호 입력을 받아옵니다.
+  useEffect(() => {
+    recipe && console.log(comments);
+  }, [comments]);
+
   const deleteComment = (commentId) => {
     let password = prompt("비밀번호를 입력해주세요.");
     console.log("비밀번호 확인" + password);
@@ -72,8 +78,8 @@ const Recipe = () => {
 
           <h3 className="comment-header">Comment</h3>
           <div className="comment-container">
-            {recipe.comments &&
-              recipe.comments.map((e) => (
+            {comments &&
+              comments.map((e) => (
                 <div className="comment-box comment-mapping" key={e.id}>
                   <div className="comment-author">{e.author}</div>
                   <div className="comment-content">{e.content}</div>
@@ -88,7 +94,7 @@ const Recipe = () => {
                 </div>
               ))}
           </div>
-          <Comment recipeData={recipe} setRecipeData={setRecipe} />
+          <Comment setComments={setComments} />
         </div>
       ) : (
         <CircularProgress />

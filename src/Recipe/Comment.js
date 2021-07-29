@@ -3,75 +3,50 @@ import "./Comment.css";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 
-const Comment = ({ recipeData, setRecipeData }) => {
+const Comment = ({ setComments }) => {
   const [isNameErr, setIsNameErr] = useState(false);
   const [isPasswordErr, setIsPasswordErr] = useState(false);
-  const [isContentsErr, setIsContentsErr] = useState(false);
+  const [isContentErr, setIsContentErr] = useState(false);
 
-  let tempName = "";
-  let tempPassword = "";
-  let tempContents = "";
-  const getTargetName = (event) => {
-    tempName = event.target.value;
-    console.log("name :" + tempName);
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [content, setContent] = useState("");
+
+  const submitComment = () => {
+    if (checkEmptyError()) {
+      return;
+    }
+
+    const newComment = {
+      author: name,
+      password: password,
+      content: content,
+    };
+    setComments((prev) => [...prev, newComment]);
+
+    setName("");
+    setPassword("");
+    setContent("");
   };
 
-  const getTargetPassword = (event) => {
-    tempPassword = event.target.value;
-    console.log("password :" + tempPassword);
-  };
-
-  const getTargetContents = (event) => {
-    tempContents = event.target.value;
-    console.log("comment contents : " + tempContents);
-  };
-
-  const handleInput = () => {
-    if (tempName === "") {
+  const checkEmptyError = () => {
+    if (name === "") {
       setIsNameErr(true);
-      return;
     }
-    if (tempPassword === "") {
+    if (password === "") {
       setIsPasswordErr(true);
-      return;
     }
-    if (tempContents === "") {
-      setIsContentsErr(true);
-      return;
+    if (content === "") {
+      setIsContentErr(true);
     }
+    if (isNameErr || isPasswordErr || isContentErr) {
+      return true;
+    }
+
     setIsNameErr(false);
     setIsPasswordErr(false);
-    setIsContentsErr(false);
-
-    let copyRecipeData = recipeData;
-    let existComments = recipeData.comments;
-    let countComment = recipeData.comments.length;
-    let newComment;
-
-    console.log("현재 존재하는 댓글");
-    console.log(existComments);
-    console.log("댓글의 개수");
-    console.log(countComment);
-
-    countComment = countComment + 1;
-    newComment = {
-      id: countComment,
-      author: tempName,
-      content: tempContents,
-      password: tempPassword,
-    };
-    existComments.push(newComment);
-
-    copyRecipeData.comments = existComments;
-    setRecipeData(copyRecipeData);
-    console.log("새로운 댓글을 포함한 결과");
-    console.log(existComments);
-    console.log("recipeData update 상태");
-    console.log(recipeData.comments);
-    console.log("call handleInput.");
-    tempName = "";
-    tempPassword = "";
-    tempContents = "";
+    setIsContentErr(false);
+    return false;
   };
 
   return (
@@ -86,7 +61,8 @@ const Comment = ({ recipeData, setRecipeData }) => {
           required
           error={isNameErr}
           helperText={isNameErr ? "닉네임을 입력해주세요." : ""}
-          onChange={getTargetName}
+          value={name}
+          onChange={({ target: { value } }) => setName(value)}
         />
         <TextField
           label="Outlined"
@@ -97,7 +73,8 @@ const Comment = ({ recipeData, setRecipeData }) => {
           required
           error={isPasswordErr}
           helperText={isPasswordErr ? "올바르지 않은 비밀번호입니다." : ""}
-          onChange={getTargetPassword}
+          value={password}
+          onChange={({ target: { value } }) => setPassword(value)}
         />
       </div>
       <div className="input-contents-box">
@@ -110,15 +87,16 @@ const Comment = ({ recipeData, setRecipeData }) => {
           label="댓글"
           type="text"
           required
-          error={isContentsErr}
+          error={isContentErr}
           helperText={isPasswordErr ? "댓글을 입력해주세요." : ""}
-          onChange={getTargetContents}
+          value={content}
+          onChange={({ target: { value } }) => setContent(value)}
         />
         <Button
           variant="outlined"
           color="primary"
           className="submit-button"
-          onClick={handleInput}
+          onClick={submitComment}
         >
           Submit
         </Button>
