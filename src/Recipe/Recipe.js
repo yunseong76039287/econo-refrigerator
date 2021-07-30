@@ -25,10 +25,16 @@ const Recipe = () => {
     initWithServer();
   }, []);
 
-  const deleteComment = (commentId) => {
-    let password = prompt("비밀번호를 입력해주세요.");
-    console.log("비밀번호 확인" + password);
-    console.log("해당 댓글 id" + commentId);
+  const deleteComment = async (commentId) => {
+    const inputPassword = prompt("비밀번호를 입력해주세요.");
+
+    const result = await Api.deleteComment(commentId, inputPassword);
+    if (result === true) {
+      alert("삭제되었습니다.");
+      setComments((prev) => prev.filter((comment) => comment.id !== commentId));
+    } else {
+      alert("비밀번호가 일치하지 않습니다..");
+    }
   };
 
   return (

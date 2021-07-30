@@ -28,7 +28,16 @@ const Comment = ({ recipeId, setComments }) => {
     setPassword("");
     setContent("");
 
-    await Api.postComment(recipeId, newComment);
+    const newCommentId = await Api.postComment(recipeId, newComment);
+    if (newCommentId === undefined) {
+      setComments((prev) => prev.splice(-1, 1));
+    } else {
+      setComments((prev) => {
+        prev[prev.length - 1].id = newCommentId;
+
+        return prev;
+      });
+    }
   };
 
   const checkEmptyError = () => {

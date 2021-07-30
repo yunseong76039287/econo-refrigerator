@@ -104,9 +104,7 @@ async function unlikeRecipe(recipeId) {
 
 async function postComment(recipeId, comment) {
   const url = process.env.REACT_APP_API_URL + "recipe/" + recipeId + "/comment";
-  // const url = "http://localhost:8080/recipe/" + 1 + "/comment";
 
-  console.log(comment);
   const result = await axios
     .post(url, comment)
     .then(function (response) {
