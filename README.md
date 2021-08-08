@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# econo-refrigerator(에코노 냉장고)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 프로젝트 소개
+----
+코로나 19로 인한 언택트 시대에, 모두들 집에서 생활하는 시간이 늘어나 집밥을 해 먹는 시간도 자연스레 늘어났습니다. 막상 재료는 이것저것 사놨는데, 어떤 요리를 만들지 고민하는 분들을 위해 이 프로젝트를 기획하였습니다. 
 
-## Available Scripts
+냉장고에 있는 재료들을 넣고, 검색 버튼을 클릭하기만 한다면 지금 가지고 있는 재료로 만들 수 있는 레시피를 추천해줍니다!
 
-In the project directory, you can run:
+집에 있는 재료를 선택한 뒤에, "레시피 추천받기" 버튼을 누르기만 한다면 해당 재료로 만들 수 있는 요리 레시피를 추천해줍니다. 
 
-### `yarn start`
+현재 재료로만 만들 수 있는 레시피 이외에도 현재 재료에 하나에서 두 개의 재료를 추가하면 만들 수 있는 요리 레시피도 제안해드립니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup
+----
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `yarn test`
+## 기능
+----
+1. 재료 선택 / 제거
+   
+   (gif추가 예정)
+2. 맞춤 레시피 검색
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+   (gif추가 예정)
+3. 맞춤 레시피 제안
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   (gif추가 예정)
+4. 추천, 댓글
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+   (gif추가 예정)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 문서
+----
+| 제목    | 설명                         |링크                              |
+| -------- | ------------------------------------ | ---------------------------------------- |
+| Styles   | 사용한 css property 정리    | [Link](./Documents/Styles.md)   |
+| Learn  | 프론트엔드 개발 지식 습득 과정  | [Link](./Documents/Learn.md)  |
+| Router   |  react-router-dom을 이용한 다중 페이지 관리  | [Link](./Documents/Router.md)   |
+| Frontend | 프론트엔드 개발과정    | [Link](./Documents/Frontend.md) |
